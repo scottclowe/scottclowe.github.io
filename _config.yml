@@ -29,6 +29,7 @@ description: Machine Learning, Deep Learning, Neuroinformatics; Python, MATLAB, 
 navbar-links:
   Home: ""
   About Me: "about"
+  CV: cv.pdf
 
 # --- Footer options --- #
 
