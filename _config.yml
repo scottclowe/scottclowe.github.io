@@ -29,7 +29,7 @@ description: Machine Learning, Deep Learning, Neuroinformatics; Python, MATLAB, 
 navbar-links:
   Home: ""
   About Me: "about"
-  
+
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
@@ -42,7 +42,7 @@ author:
   twitter: scottclowe   # eg. daattali
   linkedin: in/scottclowe  # eg. "pub/dean-attali/8/946/143"
   stackoverflow: 1960959/scottclowe  # eg. "3943160/daattali"
- 
+
 # Select which links to show in the footer
 footer-links-active:
   rss: true
@@ -143,6 +143,6 @@ prose:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
-  
+
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
