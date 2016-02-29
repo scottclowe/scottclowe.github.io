@@ -37,7 +37,7 @@ navbar-links:
 author:
   name: Scott C. Lowe
   email: "scottclowe@gmail.com"
-# facebook: scottclowe  # eg. daattali
+  facebook: scottclowe  # eg. daattali
   github: scottclowe    # eg. daattali
   twitter: scottclowe   # eg. daattali
   linkedin: in/scottclowe  # eg. "pub/dean-attali/8/946/143"
@@ -46,7 +46,7 @@ author:
 # Select which links to show in the footer
 footer-links-active:
   rss: true
-  facebook: true
+  facebook: false
   email: true
   twitter: true
   github: true
