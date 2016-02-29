@@ -11,7 +11,7 @@ body {
   color: #404040;
   position: relative;
   min-height: 100%;
-  background: #F5F5F5;
+  background: #E0E0E0;
 }
 p {
   line-height: 1.5;
@@ -102,8 +102,8 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background: #F5F5F5;
-  border-bottom: 1px solid #EAEAEA;
+  background: #E0E0E0;
+  border-bottom: 1px solid #C0C0C0;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -194,8 +194,8 @@ img {
 
 footer {
   padding: 30px 0;
-  background: #F5F5F5;
-  border-top: 1px #EAEAEA solid;
+  background: #E0E0E0;
+  border-top: 1px #C0C0C0 solid;
   font-size: 14px;
 }
 
