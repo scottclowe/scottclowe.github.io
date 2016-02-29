@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Hello World!
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+My name is Scott C. Lowe.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+I am a PhD student studying neuroinformatics at the [Doctoral Training Centre in Computational Neuroscience and Neuroinformatics](http://www.anc.ed.ac.uk/dtc/) within the [University of Edinburgh](http://www.anc.ed.ac.uk/neuroscience).
+
+I am interested in understanding the structure of the neocortex, which seems to implement a powerful general purpose learning algorithm. In my opinion, the best test of our understanding of functioning of the cortex is to build model systems which replicate it and its abilities. Furthermore, I am interested in transferring the knowledge gained about the workings of the cortex into making artificial systems more intelligent and adaptable.
+
+My undergraduate studies were in Mathematics and Physics, and I still have a keen interest in both of these subjects.
+
+However, on this blog I expect I will mostly be posting details about my [open source coding projects](https://github.com/scottclowe).
