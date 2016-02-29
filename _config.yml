@@ -30,6 +30,7 @@ navbar-links:
   Home: ""
   About Me: "about"
   CV: cv.pdf
+  Projects: projects
 
 # --- Footer options --- #
 
