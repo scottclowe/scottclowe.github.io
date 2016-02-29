@@ -15,3 +15,5 @@ I am interested in understanding the structure of the neocortex, which seems to 
 My undergraduate studies were in Mathematics and Physics, and I still have a keen interest in both of these subjects.
 
 However, on this blog I expect I will mostly be posting details about my [open source coding projects](https://github.com/scottclowe).
+
+For more details about my qualifications and experience, read my [curriculum vitae](cv.pdf).
