@@ -417,3 +417,21 @@ table tr th :last-child,
 table tr td :last-child {
   margin-bottom: 0;
 }
+
+/* --- Misc --- */
+
+img.framed {
+  border: 2px solid #C0C0C0;
+}
+img.float-rhs {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+img.float-lhs {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}

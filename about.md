@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+<img class="framed float-rhs" src="/img/ScottLabPicOutside.jpg" width="30%" alt="Me!" />
+
 Hello World!
 
 My name is Scott C. Lowe.
