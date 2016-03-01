@@ -179,7 +179,7 @@ If you find any problems with it, please open an issue on the [GitHub repository
 
 
   [matlab-schemer]:     https://github.com/scottclowe/matlab-schemer
-  [README]:             https://github.com/scottclowe/matlab-schemer/blob/master/README.md
+  [README]:             https://github.com/scottclowe/matlab-schemer#readme
   [matlab-schemes]:     https://github.com/scottclowe/matlab-schemes
   [fex]:                http://mathworks.com/matlabcentral/fileexchange/53862-matlab-schemer
   [flattr]:             https://flattr.com/submit/auto?user_id=scottclowe&url=https://github.com/scottclowe/matlab-schemer&title=MATLAB-schemer&tags=github&category=software
