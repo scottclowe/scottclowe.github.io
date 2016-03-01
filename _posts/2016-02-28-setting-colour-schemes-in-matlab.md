@@ -158,7 +158,7 @@ I have noticed this myself when looking at the `.c` source of a MEX-file... MATL
 
 Consequently, if you've made your own theme and only set the colours for `.m` syntax highlighting, you'll find that the syntax for other languanges such as `.c` is broken.
 
-Since we don't want to be imported broken themes in this way, *MATLAB Schemer* gets around this problem by having the syntax highlighting colours in these other languages inherit their values from the colours for related `.m` syntax highlighting. The result is that you can set-up a scheme using just `.m` highlighting and it will give a consistent experience in all the languages currently supported by MATLAB.
+Since we don't want to be importing broken themes in this way, *MATLAB Schemer* gets around this problem by having the syntax highlighting colours in these other languages inherit their values from the colours for related `.m` syntax highlighting. The result is that you can set-up a scheme using just `.m` highlighting and it will give a consistent experience in all the languages currently supported by MATLAB.
 
 If you wish, you can still overwrite the inherited settings for the other languages by going to `Preferences > Editor/Debugger > Language`. This is also where you can enable more extensions to be recognised as a particular language.
 
