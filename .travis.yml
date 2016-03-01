@@ -6,7 +6,7 @@ rvm:
 # the `install` step will run `bundle install` by default.
 script:
   - jekyll build
-  - htmlproof ./_site --allow-hash-href
+  - htmlproof ./_site --allow-hash-href --only-4xx
 
 env:
   global:
