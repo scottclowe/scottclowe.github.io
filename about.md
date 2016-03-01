@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img class="framed float-rhs" src="/img/ScottLabPicOutside.jpg" width="30%" alt="Me!" />
+<img class="framed float-rhs" src="/img/ScottLabPicOutsideFacingRight.jpg" width="30%" alt="Me!" />
 
 Hello World!
 
