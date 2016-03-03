@@ -145,17 +145,14 @@ There are a few clever tricks being used behind the scenes which most users won'
 ### Non-MATLAB Language Syntax Highlighting
 
 Many users don't notice this since they only ever edit `.m` files, but MATLAB actually supports the highlighting of syntax in a selection of other languages.
-
-<ul>
-    <li>MuPAD (`.mu`), the symbolic mathematics product acquired by MathWorks</li>
-    <li>TLC (`.tlc`), for working with Arduinos</li>
-    <li>VRML (`.wrl`), for virtual reality modelling</li>
-    <li>C/C++ (`.c`, `.cpp`, `.h`, `.hpp`), the long-standing, popular and efficient programming language(s) which you may be using to make `.mex` files for MATLAB</li>
-    <li>Java (`.java`), the language in which MATLAB is written</li>
-    <li>VHDL (`.vhd`, `.vhdl`), for hardware programming with parallel processing</li>
-    <li>Verilog (`.v`), a hardware description language</li>
-    <li>XML/HTML (many extensions), the mark-up languages used for some metadata and almost all webpages</li>
-</ul>
+- MuPAD (`.mu`), the symbolic mathematics product acquired by MathWorks
+- TLC (`.tlc`), for working with Arduinos
+- VRML (`.wrl`), for virtual reality modelling
+- C/C++ (`.c`, `.cpp`, `.h`, `.hpp`), the long-standing, popular and efficient programming language(s) which you may be using to make `.mex` files for MATLAB
+- Java (`.java`), the language in which MATLAB is written
+- VHDL (`.vhd`, `.vhdl`), for hardware programming with parallel processing
+- Verilog (`.v`), a hardware description language
+- XML/HTML (many extensions), the mark-up languages used for some metadata and almost all webpages
 
 I have noticed this myself when looking at the `.c` source of a MEX-file... MATLAB offers syntax highlighting for these languages but the colours used are partially coupled to general colour settings (background and text colour) and partially set specific for the language in question.
 
