@@ -7,6 +7,8 @@ env:
     # speeds up installation of html-proofer
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
+cache: bundler
+
 install: bundle install
 
 script:
