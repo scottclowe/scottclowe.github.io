@@ -145,6 +145,7 @@ There are a few clever tricks being used behind the scenes which most users won'
 ### Non-MATLAB Language Syntax Highlighting
 
 Many users don't notice this since they only ever edit `.m` files, but MATLAB actually supports the highlighting of syntax in a selection of other languages.
+
 - MuPAD (`.mu`), the symbolic mathematics product acquired by MathWorks
 - TLC (`.tlc`), for working with Arduinos
 - VRML (`.wrl`), for virtual reality modelling
