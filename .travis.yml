@@ -7,6 +7,8 @@ env:
     # speeds up installation of html-proofer
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
+install: bundle install
+
 script:
   - jekyll build
   - htmlproof ./_site --allow-hash-href --only-4xx
