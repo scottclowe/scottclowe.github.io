@@ -47,12 +47,14 @@ hr.small {
 .main-content-container {
   background: #FFF;
 }
-.main-content {
+.main-content-top {
   padding-top: 80px;
+}
+.main-content-bottom {
   padding-bottom: 50px;
 }
 @media only screen and (min-width: 768px) {
-  .main-content {
+  .main-content-top {
     padding-top: 130px;
   }
 }
@@ -288,6 +290,9 @@ footer .theme-by {
 
 /* --- Post and page layout --- */
 
+.header-bg {
+  padding-bottom: 20px;
+}
 header.header-page {
   margin-bottom: 20px;
 }
