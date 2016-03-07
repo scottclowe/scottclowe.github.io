@@ -291,7 +291,9 @@ footer .theme-by {
 /* --- Post and page layout --- */
 
 .header-bg {
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #C0C0C0;
 }
 header.header-page {
   margin-bottom: 20px;
