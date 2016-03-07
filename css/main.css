@@ -47,12 +47,14 @@ hr.small {
 .main-content-container {
   background: #FFF;
 }
-.main-content {
+.main-content-top {
   padding-top: 80px;
+}
+.main-content-bottom {
   padding-bottom: 50px;
 }
 @media only screen and (min-width: 768px) {
-  .main-content {
+  .main-content-top {
     padding-top: 130px;
   }
 }
@@ -101,6 +103,12 @@ img {
 
 /* --- Navbar --- */
 
+nav {
+  opacity: 0.8;
+}
+nav:hover {
+  opacity: 0.9;
+}
 .navbar-custom {
   background: #E0E0E0;
   border-bottom: 1px solid #C0C0C0;
@@ -288,6 +296,11 @@ footer .theme-by {
 
 /* --- Post and page layout --- */
 
+.header-bg {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #C0C0C0;
+}
 header.header-page {
   margin-bottom: 20px;
 }
