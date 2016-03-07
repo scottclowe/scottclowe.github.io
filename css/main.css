@@ -103,6 +103,12 @@ img {
 
 /* --- Navbar --- */
 
+nav {
+  opacity: 0.8;
+}
+nav:hover {
+  opacity: 0.9;
+}
 .navbar-custom {
   background: #E0E0E0;
   border-bottom: 1px solid #C0C0C0;
