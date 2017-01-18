@@ -4,7 +4,6 @@ title: Setting Colour Schemes in Matlab
 categories: matlab project colours
 ---
 
-## Background
 
 Quite a while ago now, I was in the situation where I was moving from one MATLAB installation to another, and I wanted to transfer my custom-made GUI colour scheme settings from the old installation to the new one. Since I wanted a dark-background theme, I had long-ago customised the GUI away from the defaults, and I was happy with the settings I had.
 
