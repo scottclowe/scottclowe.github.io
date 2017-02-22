@@ -13,28 +13,29 @@ But first, some background.
 ## The need to normalise features
 
 Normalising continuous scaled features is widely considered to be a sensible data preprocessing step.
-For sparse features, scaling can be detrimental, but with continuous real-valued features rescaling the feature so it is normalised is rarely a bad idea.
+For features containing boolean values rescaling can be detrimental (because rescaling will destroy the boolean nature of the feature), but with continuous real-valued features rescaling the feature so it is normalised is rarely a bad idea and often very useful.
 
-With some training algorithms, the features are assumed to be scaled similarly.
+For some models and training algorithms, the features are assumed to have similar scalings.
 For these, normalisation of the features is an essential to ensure the algorithm performs correctly.
 
 - ***k*-means clustering**.
-  Since the *k*-means algorithm Euclidean (*L*2) distance from the cluster centre, normalisation is important to ensure it weights each feature equally.
+  Since the *k*-means algorithm uses the Euclidean (*L*2) distance from the cluster centre, normalisation is important to ensure it weights each feature equally.
 
 - ***k*-nearest neighbours**.
   For *k*-nearest neighbours, we measure the Euclidean distance of the test sample from each training sample to see which it is most similar to.
   Hence features need to have similar scaling, otherwise a single feature will dominate the distance metric.
 
 - **Gradient descent**.
-  When training with gradient descent, the algorithm will typically converge faster if the features are scaled similarly.
-  If one feature is scaled larger than another, the gradients will be larger for the parameters pertaining to the larger feature and lower for the smaller scaled feature.
-  Such differences in the gradient can cause overshooting when updating one parameter and/or undershooting for the smaller parameter.
+  When training a model with gradient descent, the algorithm will typically converge faster if the features are scaled similarly.
+  Otherwise, if one feature is scaled larger than another, the gradients will be larger for the parameters pertaining to the larger feature and lower for the smaller scaled feature.
+  Such differences in the gradient can cause overshooting when updating the larger parameter and/or undershooting for the smaller parameter.
   Gradient descent is commonly used when training linear regression, logistic regression, support vector machine (SVM/SVC), and neural network models.
 
 - **Regularising with *L*1 or *L*2 norm**.
   In order to reduce overfitting, we can use regularisation to try to minimise the *L*1 or *L*2 norm of the parameters whilst optimising the objective function.
   But this constraint only makes sense if we can expect the weights on each feature to be similar sizes when they have similar infuence on the output variable.
   Again, this is found when the features are scaled similarly to one-another.
+  Such regularisation is used for Lasso and ElasticNet models, and is often used to for neural networks (also known as weight decay).
 
 - **Principal Component Analysis** (PCA).
   Because PCA picks out the vectors which explain the most variance in the data, it is important that each feature have the same scaling.
@@ -47,15 +48,15 @@ And so, if the training algorithm is sensitive to such a simplistic rescaling of
 
 ## How to normalise features
 
-There are two main [methods][sklearn preprocessing] which are [typically used][sebastianraschka] to normalise features, and a third which is less common.
+There are two main [methods][sklearn preprocessing] which are [typically used][sebastianraschka] to normalise features (range scaling and Z-scoring), and a third (robust scaling) which is less common.
 
 ### Max-min or range scaling
 
-For max-min scaling, we subtract the minimum value from every sample and divide by the difference between the maximum and minimum.
+With max-min scaling, we subtract the minimum value from every sample and divide by the difference between the maximum and minimum.
 
 $$ x'_i = \frac{x_i - \min(x)}{\max(x) - \min(x)} $$
 
-This method is susceptible to outliers at either end of the distribution of samples.
+This method is highly influenced by outliers at either end of the distribution of samples.
 Such outliers compress the range within which the majority of samples lie.
 
 ### Z-scoring (standardisation)
@@ -64,10 +65,8 @@ Here, we subtract the mean and divide by the variance.
 
 $$ x'_i = \frac{x_i - \mu_x}{\sigma_x} $$
 
-If the feature was Gaussian, it will now be normally distributed.
-Otherwise, the feature should have zero mean and a magnitude on the unit-scale.
-
-Again, this method is susceptible to outliers, since they increase the measured standard deviation of the distribution.
+The feature will now have zero mean and a magnitude on the unit-scale, and if the feature was Gaussian distributed it will now conform to the standard normal distribution.
+This method is also susceptible to outliers, since they will increase the measured standard deviation of the distribution.
 
 ### Median and quartile range rescaling ([robust scaling])
 
@@ -81,13 +80,13 @@ This method is more robust against outliers --- since the median and interquarti
 ## The problem which remains
 
 Whichever of these normalisation techniques is employed, the distribution for the data remains unchanged beyond translation and scaling.
-So if the shape of the distribution is not suitable for either the model we want to construct or the training algorithm we will use, this problem persists.
+So if the shape of the distribution was not suitable for the model we want to construct or the training algorithm we will use, it is still not suitable now.
 
-If features are approximately uniform or Gaussian, simply rescaling the feature using one of the methods above will be sufficient.
-But if they are instead very asymmetric or heavy-tailed, this can lead to the feature being under or over-weighted for the majority of samples.
+If the features are all approximately uniform or Gaussian, simply rescaling the feature using one of the methods above will be sufficient for the data to work well with all the algorithms mentioned above.
+But if one or more of the features is instead very asymmetric or heavy-tailed, this feature may still be under- or over-weighted across the majority of samples.
 
-For instance, when a feature is known to be log-normally distributed one should take the logarithm of the feature, discarding the orignal to train on its logarithm in preference.
-This is already regarded as good practice, and helps performance because otherwise the feature changes can vary greatly in order of magnitude across samples.
+For instance, when a feature is known to be log-normally distributed one should take the logarithm of the feature, discarding the orignal and training on its logarithm instead.
+This is already regarded as good practice, and helps performance because otherwise the values obtained from a log-normally distributed feature will vary greatly in order of magnitude across our training samples.
 
 Let's consider what would happen to a **log-normally distributed** feature after normalising it with each of the techniques mentioned above.
 
@@ -98,13 +97,15 @@ Let's consider what would happen to a **log-normally distributed** feature after
   However, larger values from the log-normal distribution will fall outside the expected range and have more impact on their samples.
 
 In addition, irrespective of which of these normalisation methods was applied, the heavy-tail means it is possible for much larger samples to show up in testing or implementation than were seen in the training data.
+These unlikely data values could cause the model to make wildly inaccurate predicitons when they do turn up.
 
-All these problem would be accentuated if the feature were super-exponential, with an even longer one-sided tail on the distribution.
+All these problems would be accentuated if the feature came from a power-law distribution with high degree, or from a super-exponential distribution, in which case there will be an even longer one-sided tail on the distribution.
 
-Okay, you could identify log-normally distributed features manually and train on their log instead.
+Okay, so you could identify log-normally distributed features manually and train on their logarithm instead.
 But what if you want to have an automated system without mandating such human intervention?
 There might be so many features it is not so practical to inspect each of them and pick whether to use the log-transform.
-Furthermore, some features might have an intermediate scaling and need something in-between linear and logarithmic transformation.
+Furthermore, some features might have an intermediate scaling best handled by something in-between linear and logarithmic transformation
+Or a super-exponential distribution where taking the logarithm is not adequate.
 
 Well, one option to resolve this is to automatically Gaussian-ise the features.
 
@@ -151,19 +152,21 @@ This will shift our new distribution to have zero mean and unitary variance, acc
 
 ## Further implications
 
-Applying power transformations in this manner will certainly change the model which you construct.
+Applying power transformations in this manner to the raw features will certainly change the model which you construct.
 
 As stated before, the results of your model shouldn't change if you move from measuring money in dollars to cents.
 But after Gaussianising the same feature with the Box-Cox transformation, we've moved to measuring money in some non-linearly transformed space instead.
+This transformed space is still for building a model an though.
+In fact, it provides a representation similar to the percentile of monentary amount taken over all the samples we have for that feature.
 
-But that said, taking a power transformation of an existing feature is one way of doing feature engineering.
-Here, we're doing the same thing but taking the human out of the routine and automating the choice of power with which to transform the feature.
+Furthermore, taking a power transformation of an existing feature is one way for a data scientist to perform feature engineering and attempt to find a more accurate model of the data.
+Here, we're doing the same thing but taking the human out of the routine and automating the choice of the power with which to transform the feature.
 
 If we're fitting a linear model and have no reason to suspect that there is linear relationship between a financial feature measured in dollars and the class or regression target, why not take the Box-Cox transformation of the feature?
 Without any other information, this is no less likely to be linearly related to the target variable.
 The Box-Cox transformation is essentially giving us a measure of relative purchasing power instead of actual cash, which is not necessarily a bad thing.
 
-Furthermore, if you're doing regression you can rescale the target variable using Box-Cox too (and undo the transformation afterward generating predictions).
+Furthermore, if you're doing regression you can rescale the target variable using Box-Cox too (and undo the transformation after generating predictions so the overall model gives a salient output).
 
 Should Gaussianisation be performed before PCA, this will change the co-linearity of the features and the eigenvectors produced.
 But if the motivation for PCA is dimensionality reduction before fitting a predictive model to the data, this is not an issue.
@@ -171,7 +174,8 @@ But if the motivation for PCA is dimensionality reduction before fitting a predi
 
 ## When to Gaussianise features
 
-Honestly, I think most of the time this won't be necessary.
+Honestly, I think most of the time Gaussianisation isn't necessary.
+But it does add another pre-processing tool to your arsenal.
 
 Applying a power transformation certainly won't help if your feature is multimodal.
 If your features are sparse, or approximately uniformly or Gaussian distributed, there is no benefit to Gaussianising them.
