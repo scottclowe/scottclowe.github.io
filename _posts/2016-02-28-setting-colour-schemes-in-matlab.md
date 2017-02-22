@@ -55,7 +55,7 @@ help schemer_import
 help schemer_export
 {% endhighlight %}
 
-A general description of common usage is also available [here][README].
+A general description of common usage is also available [in the README][README].
 
 ### Enabling/Disabling optional highlighting
 
@@ -171,9 +171,10 @@ If you're using an older version of MATLAB than the most up-to-date, *MATLAB Sch
 
 ## Conclusion
 
-Hopefully you find this utility for managing colour schemes for MATLAB useful and comprehensive.
+To try out *MATLAB Schemer* head over to our [MATLAB FileExchange][fex] download page.
+Hopefully you'll find this utility for managing colour schemes for MATLAB useful and comprehensive.
 
-If this tool improves your MATLAB experience and you're interested in donating to the project, you can [send a small weekly donation with Gratipay][gratipay] or [put a bounty on an issue][bountysource] to encourage further development.
+If it improves your MATLAB experience and you're interested in donating to the project, you can [send a small weekly donation with Gratipay][gratipay] or [put a bounty on an issue][bountysource] to encourage further development.
 
 If you find any problems with it, please open an issue on the [GitHub repository][matlab-schemer].
 
@@ -193,3 +194,4 @@ If you find any problems with it, please open an issue on the [GitHub repository
   [(1)]: https://github.com/Chrismarsh/matlab-solarized
   [(2)]: http://www.mikesoltys.com/2013/02/08/matlab-tip-change-the-color-scheme-to-be-easier-on-your-eyes/
   [(3)]: https://www.mathworks.com/matlabcentral/fileexchange/50446-benhager-solarized-matlab
+  [set path]: https://mathworks.com/help/matlab/ref/path.html
