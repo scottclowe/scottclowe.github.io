@@ -99,7 +99,7 @@ Age, which would have been continuous if it had been left unchanged, has been br
 | 61 -- 65  |
 | 66+       |
 
-Knowing which bracket the individual's age falls into will still be useful to useful to us when estimating their income, but the feature is clearly longer continuously scaled.
+Knowing which bracket the individual's age falls into will still be useful to useful to us when estimating their income, but the feature is clearly no longer continuously scaled.
 As we progress through the categories in order, there is no constant rate of change in age.
 
 As we discussed for the categorical data type, we can consider the results of an dictionary encoding and a one-hot encoding of such an ordinal feature.
@@ -118,7 +118,7 @@ Each option offers different advantages and problems.
 
 If we want to train a decision tree or random forest model, we can use the rank index with no downside.
 This is because decision trees and forests of trees assume that the data they work with has the property of ordinality, but do not need to assume it possesses multiplicativity or additivity.
-Decision trees make predicitons using a series of decisions, each of which involves comparing the value of a single feature with a threshold (the threshold is optimised with training).
+Decision trees make predictions using a series of decisions, each of which involves comparing the value of a single feature with a threshold (the threshold is optimised with training).
 Whether the difference between the value and the threshold is large or small does not matter to the decision tree.
 Consequently, it does not matter that the rank index for the ordinal feature does not scale linearly.
 
