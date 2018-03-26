@@ -14,7 +14,7 @@ If you are interested in seeing what it was all about, you can look through this
 Fellow researchers may be interested in reading the [abstract (PDF)][thesis-abstract-pdf], which provides a more technical description and assumes some familiarity with the field of research (neuroinformatics).
 
 If you want to delve into some of the content from the full thing, [here is a copy of the thesis (PDF)][thesis-pdf].
-There is a also a [printer-friendly copy (PDF)][thesis-print-pdf], which uses black for all the links (which looks better as well as saving on toner).
+There is also a [printer-friendly copy (PDF)][thesis-print-pdf], which uses black for all the links (which looks better when printed, as well as saving on toner).
 
 
 [thesis-pdf]: /LoweSC_PhD_thesis.pdf
