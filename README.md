@@ -1,6 +1,6 @@
 # scottclowe.github.io
 
-This is the source for my personal website and blog.
+This is the source for my [personal website and blog](https://scottclowe.com).
 
 It is served by [GitHub Pages](https://pages.github.com/) using [Jekyll](https://jekyllrb.com), the combination of which is detailed [here by Jekyll](https://jekyllrb.com/docs/github-pages/) and [here by GitHub](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/).
 There is also a guide on making a blog with GitHub Pages and Jekyll [here](http://jmcglone.com/guides/github-pages/), amongst others.
