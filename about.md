@@ -10,9 +10,12 @@ Hello World!
 
 My name is Scott C. Lowe.
 
-I am a PhD student studying neuroinformatics at the [Doctoral Training Centre in Computational Neuroscience and Neuroinformatics](http://www.anc.ed.ac.uk/dtc/) within the [University of Edinburgh](http://www.anc.ed.ac.uk/neuroscience).
+I am a Postdoctoral Research Fellow with the [Vector Institute](https://vectorinstitute.ai/), based at [Dalhousie University](https://www.dal.ca/), Halifax, Nova Scotia Canada.
 
-I am interested in understanding the structure of the neocortex, which seems to implement a powerful general purpose learning algorithm. In my opinion, the best test of our understanding of functioning of the cortex is to build model systems which replicate it and its abilities. Furthermore, I am interested in transferring the knowledge gained about the workings of the cortex into making artificial systems more intelligent and adaptable.
+I [completed my PhD]({{ site.baseurl }}{% post_url 2017-11-30-phd-completion %})
+ in neuroinformatics at the [Doctoral Training Centre in Computational Neuroscience and Neuroinformatics](http://www.anc.ed.ac.uk/dtc/) within the [University of Edinburgh](http://www.anc.ed.ac.uk/neuroscience).
+
+My current research focus involves taking inspiration from neuroscience to develop new machine learning techniques and advance artificial intelligence.
 
 My undergraduate studies were in Mathematics and Physics, and I still have a keen interest in both of these subjects.
 
