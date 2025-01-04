@@ -17,4 +17,3 @@ Jekyll will tell you the local port at which you're serving the site, which shou
 This all assumes you've [installed Jekyll using RubyGems](https://jekyllrb.com/docs/installation/).
 
 The theme is a modified version of [*Beautiful Jekyll*](https://github.com/daattali/beautiful-jekyll) (see [demo](http://deanattali.com/beautiful-jekyll)) by [@daattali](https://github.com/daattali).
-
