@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Resize source image
-convert img/fb_profile.jpg -alpha off -resize 256x256 favicon_tmp.png
+convert img/PXL_20220603_180735988.MP_cropped.jpg -alpha off -resize 256x256 favicon_tmp.png
 # Make a mask with a white circle on a black background
 convert -size 256x256 xc:black -fill white -draw "circle 128,128 128,256" favicon_mask.png
 # Apply the mask
