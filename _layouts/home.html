@@ -1,6 +1,23 @@
 ---
-layout: page
+layout: base
 ---
+
+<div class="header-bg"
+  style="
+    background: #383739 url('/assets/img/header-banner.jpg') no-repeat center/cover;
+    color: #EAEAEA;
+  ">
+
+  <div class="header-content">
+    {% if page.title %}
+    {% include header.html type="page" %}
+    {% endif %}
+  </div>
+
+</div>
+
+<main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
+  <div role="main" class="container main-content main-content-bottom">
 
 {{ content }}
 
@@ -120,3 +137,5 @@ layout: page
   {% endif %}
 </ul>
 {% endif %}
+
+</main>

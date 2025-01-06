@@ -25,11 +25,14 @@ common-js:
 {% include head.html %}
 
 <body>
+
   {% include gtm_body.html %}
 
   {% include nav.html %}
 
+  <div role="main" class="main-content-container">
   {{ content }}
+  </div>
 
   {% include footer.html %}
 
