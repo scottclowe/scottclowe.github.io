@@ -1,7 +1,6 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-gem 'jekyll'
-gem 'html-proofer'
-gem 'execjs'
-gem 'therubyracer'
-gem 'github-pages'
+source "https://rubygems.org"
+
+gemspec
+
