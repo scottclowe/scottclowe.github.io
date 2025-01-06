@@ -2,6 +2,7 @@
 layout: post
 title: Rank-Hot Encoder for Ordinal Features
 categories: ml kaggle scikit-learn
+mathjax: true
 ---
 
 In the past, whenever I'm working with a dataset which contains ordinal features, I've never known what to do with them.

@@ -2,6 +2,7 @@
 layout: post
 title: Stratified Validation Splits for Regression Problems
 categories: ml kaggle scikit-learn regression
+mathjax: true
 ---
 
 
