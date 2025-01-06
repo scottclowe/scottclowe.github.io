@@ -20,7 +20,7 @@ author: Scott C. Lowe
 ###############################################
 
 navbar-links:
-  Home: ""
+  Home: "/"
   About Me: "about"
   CV: cv.pdf
   Projects: projects
