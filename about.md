@@ -22,4 +22,4 @@ My current research focus:
 - real-time models for interactive generation and on-the-fly forecasting
 - mitigation of existential AI safety risks
 
-For more details about my qualifications and experience, read my [curriculum vitae](../cv.pdf).
+For more details about my qualifications and experience, read my [curriculum vitae](../cv.pdf) or see my [Google Scholar](https://scholar.google.com/citations?user=ZFPhxuAAAAAJ) page.
