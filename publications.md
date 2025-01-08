@@ -44,8 +44,13 @@ title: Publications
 
   // Function to render publications
   function renderPublications() {
-    const selectedTopics = Array.from(document.querySelectorAll('.topic-filter.selected'))
+    selectedTopics = Array.from(document.querySelectorAll('.topic-filter.selected'))
       .map(el => el.dataset.topic);
+
+    if (selectedTopics.length == 0) {
+        selectedTopics = Array.from(document.querySelectorAll('.topic-filter'))
+            .map(el => el.dataset.topic);
+    }
 
     const container = document.getElementById('publications-container');
     container.innerHTML = ''; // Clear current content
