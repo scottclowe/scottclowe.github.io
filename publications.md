@@ -47,8 +47,9 @@ title: Publications
     selectedTopics = Array.from(document.querySelectorAll('.topic-filter.selected'))
       .map(el => el.dataset.topic);
 
-    if (selectedTopics.length == 0) {
-        selectedTopics = Array.from(document.querySelectorAll('.topic-filter'))
+    shownTopics = selectedTopics
+    if (shownTopics.length == 0) {
+        shownTopics = Array.from(document.querySelectorAll('.topic-filter'))
             .map(el => el.dataset.topic);
     }
 
@@ -56,7 +57,7 @@ title: Publications
     container.innerHTML = ''; // Clear current content
 
     const filteredPublications = publications.filter(pub =>
-      pub.topics.some(topic => selectedTopics.includes(topic))
+      pub.topics.some(topic => shownTopics.includes(topic))
     );
 
     filteredPublications.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -70,7 +71,8 @@ title: Publications
       }).join(' ');
 
       const topicsHTML = Object.entries(pub.topics || {}).map(([key, value]) => {
-        return `<span class="topic">${value}</span>`;
+        var extra_class = selectedTopics.includes(value) ? "selected" : "";
+        return `<span class="topic ${extra_class}">${value}</span>`;
       }).join(' ');
 
       pubDiv.innerHTML = `
@@ -203,7 +205,7 @@ title: Publications
     cursor: pointer;
   }
 
-  .topic-filter.selected {
+  .topic-filter.selected, .topic.selected {
     background-color: #1358EC;
   }
 </style>
