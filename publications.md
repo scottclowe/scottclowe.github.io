@@ -69,7 +69,6 @@ title: Publications
       pubDiv.innerHTML = `
         <div class="publication-left">
             <strong>${pub.date}</strong>
-            <img src="${pub.thumbnail || "#"}" alt="Thumbnail" class="publication-thumbnail">
         </div>
         <div class="publication-right">
             <h3><a href="${pub.main_link || '#'}" target="_blank">${pub.title}</a></h3>
