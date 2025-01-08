@@ -110,7 +110,7 @@ title: Publications
   });
 
   // Initial render with all topics selected
-  selectAllTopics();
+  deselectAllTopics();
   renderPublications();
 
 </script>
