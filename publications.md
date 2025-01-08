@@ -91,24 +91,27 @@ title: Publications
     });
   }
 
-  // Select all topics by default on page load
-  document.querySelectorAll('.topic-filter').forEach(el => el.classList.add('selected'));
-
   // Function to select all topics
   function selectAllTopics() {
     document.querySelectorAll('.topic-filter').forEach(el => el.classList.add('selected'));
-    renderPublications();
+  }
+  function deselectAllTopics() {
+    document.querySelectorAll('.topic-filter').forEach(el => el.classList.remove('selected'));
   }
 
   // Event listeners
-  document.getElementById('select-all').addEventListener('click', () => {selectAllTopics();});
+  document.getElementById('select-all').addEventListener('click', () => {
+    selectAllTopics();
+    renderPublications();
+  });
   document.getElementById('select-none').addEventListener('click', () => {
-    document.querySelectorAll('.topic-filter').forEach(el => el.classList.remove('selected'));
+    deselectAllTopics();
     renderPublications();
   });
 
   // Initial render with all topics selected
   selectAllTopics();
+  renderPublications();
 
 </script>
 
