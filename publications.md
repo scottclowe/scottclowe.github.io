@@ -5,6 +5,8 @@ title: Publications
 
 <h1>Publications</h1>
 
+<p>For a full publications list, please see my <a href="https://scholar.google.com/citations?user=ZFPhxuAAAAAJ">Google Scholar</a> page.</p>
+
 <!-- Topic Filters -->
 <div id="topic-filters">
   <p>Filter by topic:</p>
