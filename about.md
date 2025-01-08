@@ -10,6 +10,7 @@ permalink: /about/
 
 Current position: **Postdoctoral Research Fellow at [Vector Institute](https://vectorinstitute.ai/), Toronto, Canada**,
 where I am advised by Prof. [Graham Taylor](https://www.uoguelph.ca/ceps/people/graham-taylor) (University of Guelph), and Prof. [Sageev Oore](https://www.dal.ca/faculty/computerscience/faculty-staff/sageev-oore.html) (Dalhousie University).
+Additionally, I am chief scientific consultant at [NovaResp](https://novaresp.ai/).
 
 From 2018 to 2022, I was a Postdoc at Vector Institute and Dalhousie University, advised by both Prof. [Sageev Oore](https://www.dal.ca/faculty/computerscience/faculty-staff/sageev-oore.html) and Prof. [Thomas Trappenberg](https://www.dal.ca/faculty/computerscience/faculty-staff/thomas-trappenberg.html).
 In 2017, I [completed my PhD]({{ site.baseurl }}{% post_url 2017-11-30-phd-completion %}) in Neuroinformatics at the *Doctoral Training Centre in Computational Neuroscience and Neuroinformatics*, [Institute for Adaptive and Neural Computation](http://www.anc.ed.ac.uk/neuroscience), University of Edinburgh, advised by Prof. [Mark van Rossum](https://www.nottingham.ac.uk/psychology/people/mark.vanrossum) and Prof. [Stefano Panzeri](https://www.iit.it/people-details/-/people/stefano-panzeri).
