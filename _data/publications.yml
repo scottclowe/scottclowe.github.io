@@ -1,0 +1,321 @@
+- date: '2024'
+  title: System 2 Reasoning Capabilities Are Nigh
+  venue: The First Workshop on System-2 Reasoning at Scale, NeurIPS 2024
+  authors: Scott C Lowe
+  topics:
+  - reasoning
+  - LLM
+  main_link: https://arxiv.org/abs/2410.03662
+  links:
+    arXiv: https://arxiv.org/abs/2410.03662
+  thumbnail: ''
+  summary: ''
+
+- date: '2024'
+  title: 'Towards a Taxonomy Machine: A Training Set of 5.6 Million Arthropod Images'
+  venue: Data 9 (11), 122, 2024
+  authors: Dirk Steinke, Sujeevan Ratnasingham, Jireh Agda, Hamzah Ait Boutou, Isaiah CH Box, Mary Boyle, Dean Chan, Corey Feng, Scott C Lowe, Jaclyn TA McKeown
+  topics:
+  - dataset
+  - biodiversity
+  main_link: https://doi.org/10.3390/data9110122
+  links:
+    paper: https://doi.org/10.3390/data9110122
+    bioRxiv: https://doi.org/10.1101/2024.07.15.600863 
+  thumbnail: ''
+  summary: ''
+
+- date: '2024'
+  title: 'CLIBD: Bridging Vision and Genomics for Biodiversity Monitoring at Scale'
+  venue: The Eleventh Workshop on Fine-Grained Visual Categorization (FGVC11), CVPR 2024
+  authors: ZeMing Gong, Austin T Wang, Xiaoliang Huo, Joakim Bruslund Haurum, Scott C Lowe, Graham W Taylor, Angel X Chang
+  topics:
+  - self-supervised learning
+  - LLM
+  - biodiversity
+  - insect
+  main_link: https://arxiv.org/abs/2405.17537
+  links:
+    arXiv: https://arxiv.org/abs/2405.17537
+    project: https://bioscan-ml.github.io/clibd/
+    github: https://github.com/bioscan-ml/clibd
+  thumbnail: ''
+  summary: ''
+
+- date: '2024'
+  title: Hierarchical multi-label classification with missing information for benthic habitat imagery
+  venue: 2024 International Joint Conference on Neural Networks (IJCNN), 1-10, 2024
+  authors: Isaac Xu, Benjamin Misiuk, Scott C Lowe, Martin Gillis, Thomas Trappenberg, Craig J Brown
+  topics:
+  - hierarchical
+  - biodiversity
+  - ocean
+  main_link: https://doi.org/10.1109/IJCNN60899.2024.10650176
+  links:
+    paper: https://doi.org/10.1109/IJCNN60899.2024.10650176
+  thumbnail: ''
+  summary: ''
+
+- date: '2024'
+  title: 'BIOSCAN-5M: A Multimodal Dataset for Insect Biodiversity'
+  venue: Advances in Neural Information Processing Systems 37 (NeurIPS 2024)
+  authors: Zahra Gharaee, Scott C Lowe, ZeMing Gong, Pablo Millan Arias, Nicholas Pellegrino, Austin T Wang, Joakim Bruslund Haurum, Iuliia Zarubiieva, Lila Kari, Dirk Steinke
+  topics:
+  - dataset
+  - biodiversity
+  - insect
+  main_link: https://arxiv.org/abs/2406.12723
+  links:
+    arXiv: https://arxiv.org/abs/2406.12723
+    dataset: https://zenodo.org/records/11973457
+    github: https://github.com/bioscan-ml/dataset
+    pypi: https://pypi.org/project/bioscan-dataset/
+    poster: https://github.com/bioscan-ml/BIOSCAN-5M/blob/main/BIOSCAN_poster/BIOSCAN5M_NeurIPS2024_Poster.pdf
+  thumbnail: ''
+  summary: ''
+
+- date: '2024'
+  title: An Empirical Study into Clustering of Unseen Datasets with Self-Supervised Encoders
+  venue: Foundation Models in the Wild Workshop, ICML 2024
+  authors: Scott C Lowe, Joakim Bruslund Haurum, Sageev Oore, Thomas B Moeslund, Graham W Taylor
+  topics:
+  - self-supervised learning
+  main_link: https://arxiv.org/abs/2406.02465
+  links:
+    arXiv: https://arxiv.org/abs/2406.02465
+    project: https://scottclowe.com/zs-ssl-clustering/
+    github: https://github.com/scottclowe/zs-ssl-clustering/
+  thumbnail: ''
+  summary: ''
+
+- date: '2024'
+  title: 'BenthicNet: A global compilation of seafloor images for deep learning applications'
+  venue: arXiv preprint arXiv:2405.05241
+  authors: Scott C Lowe, Benjamin Misiuk, Isaac Xu, Shakhboz Abdulazizov, Amit R Baroi, Alex C Bastos, Merlin Best, Vicki Ferrini, Ariell Friedman, Deborah Hart
+  topics:
+  - self-supervised learning
+  - dataset
+  - biodiversity
+  - ocean
+  main_link: https://arxiv.org/abs/2405.05241
+  links:
+    arXiv: https://arxiv.org/abs/2405.05241
+    dataset: https://www.frdr-dfdr.ca/repo/dataset/24c6c813-d0ff-4461-8174-3f960f1edc0d
+  thumbnail: ''
+  summary: ''
+
+- date: '2023'
+  title: 'A step towards worldwide biodiversity assessment: The BIOSCAN-1M insect dataset'
+  venue: Advances in Neural Information Processing Systems 36 (NeurIPS 2023)
+  authors: Zahra Gharaee, ZeMing Gong, Nicholas Pellegrino, Iuliia Zarubiieva, Joakim Bruslund Haurum, Scott Lowe, Jaclyn McKeown, Chris Ho, Joschka McLeod, Yi-Yun Wei
+  topics:
+  - dataset
+  - biodiversity
+  - insect
+  main_link: https://proceedings.neurips.cc/paper_files/paper/2023/hash/87dbbdc3a685a97ad28489a1d57c45c1-Abstract-Datasets_and_Benchmarks.html
+  links:
+    paper: https://proceedings.neurips.cc/paper_files/paper/2023/hash/87dbbdc3a685a97ad28489a1d57c45c1-Abstract-Datasets_and_Benchmarks.html
+    arXiv: https://arxiv.org/abs/2307.10455
+    dataset: https://zenodo.org/records/8030065
+    github: https://github.com/bioscan-ml/BIOSCAN-1M
+  thumbnail: ''
+  summary: ''
+
+- date: '2023'
+  title: 'BarcodeBERT: Transformers for Biodiversity Analysis'
+  venue: Self-Supervised Learning — Theory and Practice Workshop, NeurIPS 2023
+  authors: Pablo Millan Arias, Niousha Sadjadi, Monireh Safari, ZeMing Gong, Austin T Wang, Scott C Lowe, Joakim Bruslund Haurum, Iuliia Zarubiieva, Dirk Steinke, Lila Kari
+  topics:
+  - self-supervised learning
+  - biodiversity
+  - insect
+  main_link: https://arxiv.org/abs/2311.02401
+  links:
+    arXiv: https://arxiv.org/abs/2311.02401
+    github: https://github.com/bioscan-ml/BarcodeBERT
+  thumbnail: ''
+  summary: ''
+
+- date: '2023'
+  title: Prevention of obstructive apnea events with machine learning
+  venue: European Respiratory Journal 62 (suppl 67), 2023
+  authors: Hamed Hanafi, Julia Paffile, Meagan Sinclair, Kamal El-Sankary, Scott Lowe, Sageev Oore, Stephen Driscoll, Thomas Penzel, Ingo Fietze, Sanjay Patel
+  topics:
+  - sleep apnea
+  - forecasting
+  main_link: https://doi.org/10.1183/13993003.congress-2023.PA573
+  links:
+    paper: https://doi.org/10.1183/13993003.congress-2023.PA573
+  thumbnail: ''
+  summary: ''
+
+- date: '2023'
+  title: 'The Beginning of the AI-Enabled Preventative PAP Therapy Era: A First-in-Human Proof of Concept Interventional Study'
+  venue: IEEE Transactions on Biomedical Engineering 70 (10), 2776-2787, 2023
+  authors: Meagan Sinclair, Hamed Hanafi Alamdari, Julia Paffile, Kamal El-Sankary, Scott Lowe, Stephen Driscoll, Sageev Oore, Heather Tomson, Gregory Begin, Guillermo Aristi
+  topics:
+  - sleep apnea
+  - forecasting
+  main_link: https://doi.org/10.1109/TBME.2023.3263379
+  links:
+    paper: https://doi.org/10.1109/TBME.2023.3263379
+  thumbnail: ''
+  summary: ''
+
+- date: '2022'
+  title: Label-free Monitoring of Self-Supervised Learning Progress
+  venue: IEEE Canadian Conference on Electrical and Computer Engineering (CCECE), 2022
+  authors: Isaac Xu, Scott Lowe, Thomas Trappenberg
+  topics:
+  - self-supervised learning
+  - ocean
+  main_link: https://doi.org/10.1109/CCECE49351.2022.9918377
+  links:
+    paper: https://doi.org/10.1109/CCECE49351.2022.9918377
+  thumbnail: ''
+  summary: ''
+
+- date: '2022'
+  title: 'Echofilter: A Deep Learning Segmention Model Improves the Automation, Standardization, and Timeliness for Post-Processing Echosounder Data in Tidal Energy Streams'
+  venue: Frontiers in Marine Science 9, 867857, 2022
+  authors: Scott C Lowe, Louise P McGarry, Jessica Douglas, Jason Newport, Sageev Oore, Christopher Whidden, Daniel J Hasselman
+  topics:
+  - image segmentation
+  - ocean
+  main_link: https://doi.org/10.3389/fmars.2022.867857
+  links:
+    paper: https://doi.org/10.3389/fmars.2022.867857
+    arXiv: https://arxiv.org/abs/2202.09648
+    github: https://github.com/DeepSenseCA/echofilter
+    pypi: https://pypi.org/project/echofilter/
+  thumbnail: ''
+  summary: ''
+
+- date: '2021'
+  title: 'Logical Activation Functions: Logit-space equivalents of Boolean Operators'
+  venue: Advances in Neural Information Processing Systems 35 (NeurIPS 2022)
+  authors: Scott C Lowe, Robert Earle, Jason d'Eon, Thomas Trappenberg, Sageev Oore
+  topics:
+  - architecture
+  main_link: https://arxiv.org/abs/2110.11940
+  links:
+    paper: https://proceedings.neurips.cc/paper_files/paper/2022/hash/c05144b635df16ac9bbf8246bbbd55ca-Abstract-Conference.html
+    arXiv: https://arxiv.org/abs/2110.11940
+    pypi: https://pypi.org/project/pytorch-logit-logic/
+  thumbnail: ''
+  summary: ''
+
+- date: '2021'
+  title: 'High frequency-low amplitude oscillometry: Continuous unobtrusive monitoring of respiratory function on PAP machines'
+  venue: IEEE Transactions on Biomedical Engineering 69 (7), 2202-2211, 2021
+  authors: Hamed Hanafi Alamdari, Luke Hacquebard, Stephen Driscoll, Kamal El-Sankary, David C Roach, Robin LeBlanc, Scott Lowe, Sageev Oore, Thomas Penzel, Ingo Fietze
+  topics:
+  - sleep apnea
+  - forecasting
+  main_link: https://doi.org/10.1109/TBME.2021.3138965
+  links:
+    paper: https://doi.org/10.1109/TBME.2021.3138965
+  thumbnail: ''
+  summary: ''
+
+- date: '2021'
+  title: LogAvgExp Provides a Principled and Performant Global Pooling Operator
+  venue: arXiv preprint arXiv:2111.01742
+  authors: Scott C Lowe, Thomas Trappenberg, Sageev Oore
+  topics:
+  - architecture
+  main_link: https://arxiv.org/abs/2111.01742
+  links:
+    arXiv: https://arxiv.org/abs/2111.01742
+  thumbnail: ''
+  summary: ''
+
+- date: '2019'
+  title: Exploring conditioning for generative music systems with human-interpretable controls
+  venue: 10th International Conference on Computational Creativity, 2019
+  authors: Nicholas Meade, Nicholas Barreyre, Scott C Lowe, Sageev Oore
+  topics:
+  - music
+  main_link: https://arxiv.org/abs/1907.04352
+  links:
+    arXiv: https://arxiv.org/abs/1907.04352
+    github: https://github.com/LogaNick/magenta
+  thumbnail: ''
+  summary: ''
+
+- date: '2019'
+  title: Program synthesis performance constrained by non-linear spatial relations in synthetic visual reasoning test
+  venue: arXiv preprint arXiv:1911.07721
+  authors: Lu Yihe, Scott C Lowe, Penelope A Lewis, Mark CW van Rossum
+  topics:
+  - reasoning
+  main_link: https://arxiv.org/abs/1911.07721
+  links:
+    arXiv: https://arxiv.org/abs/1911.07721
+    github: https://github.com/yihe-61wu/pySVRT
+  thumbnail: ''
+  summary: ''
+
+- date: '2018'
+  title: 'FISSA: A neuropil decontamination toolbox for calcium imaging signals'
+  venue: Scientific reports 8 (1), 3493, 2018
+  authors: Sander W Keemink, Scott C Lowe, Janelle MP Pakan, Evelyn Dylda, Mark CW Van Rossum, Nathalie L Rochefort
+  topics:
+  - neuroscience
+  - toolbox
+  main_link: https://doi.org/10.1038/s41598-018-21640-2
+  links:
+    paper: https://doi.org/10.1038/s41598-018-21640-2
+    github: https://github.com/rochefort-lab/fissa
+    pypi: https://pypi.python.org/pypi/fissa
+  thumbnail: ''
+  summary: ''
+
+- date: '2018'
+  title: Dopamine is signaled by mid-frequency oscillations and boosts output layers visual information in visual cortex
+  venue: Current Biology 28 (2), 224-235. e5, 2018
+  authors: Daniel Zaldivar, Jozien Goense, Scott C Lowe, Nikos K Logothetis, Stefano Panzeri
+  topics:
+  - neuroscience
+  main_link: https://doi.org/10.1016/j.cub.2017.12.006
+  links:
+    paper: https://doi.org/10.1016/j.cub.2017.12.006
+  thumbnail: ''
+  summary: ''
+
+- date: '2017'
+  title: Decoding information from neural populations in the visual cortex
+  venue: The University of Edinburgh, 2017
+  authors: Scott C Lowe
+  topics:
+  - neuroscience
+  main_link: 'http://hdl.handle.net/1842/28861'
+  links:
+    thesis: http://hdl.handle.net/1842/28861
+    PDF: /LoweSC_PhD_thesis.pdf
+  thumbnail: ''
+  summary: ''
+
+- date: '2016'
+  title: Behavioral-state modulation of inhibition is context-dependent and cell type specific in mouse visual cortex
+  venue: Elife 5, e14985, 2016
+  authors: Janelle MP Pakan, Scott C Lowe, Evelyn Dylda, Sander W Keemink, Stephen P Currie, Christopher A Coutts, Nathalie L Rochefort
+  topics:
+  - neuroscience
+  main_link: https://doi.org/10.7554/eLife.14985
+  links:
+    paper: https://doi.org/10.7554/eLife.14985
+  thumbnail: ''
+  summary: ''
+
+- date: '2015'
+  title: Shifts of gamma phase across primary visual cortical sites reflect dynamic stimulus-modulated information transfer
+  venue: PLoS biology 13 (9), e1002257, 2015
+  authors: "Michel Besserve, Scott C Lowe, Nikos K Logothetis, Bernhard Sch\xF6lkopf, Stefano Panzeri"
+  topics:
+  - neuroscience
+  main_link: https://doi.org/10.1371/journal.pbio.1002257
+  links:
+    paper: https://doi.org/10.1371/journal.pbio.1002257
+  thumbnail: ''
+  summary: ''

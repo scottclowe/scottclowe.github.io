@@ -23,6 +23,7 @@ navbar-links:
   Home: "/"
   About Me: "about"
   CV: cv.pdf
+  Papers: publications
   Projects: projects
 
 ################
