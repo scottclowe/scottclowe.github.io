@@ -4,7 +4,7 @@
   authors: Scott C Lowe
   topics:
   - reasoning
-  - LLM
+  - language
   main_link: https://arxiv.org/abs/2410.03662
   links:
     arXiv: https://arxiv.org/abs/2410.03662
@@ -34,7 +34,8 @@
   - self-supervised learning
   - multimodal
   - vision
-  - LLM
+  - DNA
+  - language
   - biodiversity
   - insect
   main_link: https://arxiv.org/abs/2405.17537
@@ -70,6 +71,9 @@
   - multimodal
   - biodiversity
   - insect
+  - vision
+  - DNA
+  - language
   main_link: https://arxiv.org/abs/2406.12723
   links:
     arXiv: https://arxiv.org/abs/2406.12723
@@ -119,6 +123,7 @@
   topics:
   - dataset
   - vision
+  - DNA
   - biodiversity
   - insect
   main_link: https://proceedings.neurips.cc/paper_files/paper/2023/hash/87dbbdc3a685a97ad28489a1d57c45c1-Abstract-Datasets_and_Benchmarks.html
@@ -136,6 +141,7 @@
   authors: Pablo Millan Arias, Niousha Sadjadi, Monireh Safari, ZeMing Gong, Austin T Wang, Scott C Lowe, Joakim Bruslund Haurum, Iuliia Zarubiieva, Dirk Steinke, Lila Kari, Angel X Chang, Graham W Taylor
   topics:
   - self-supervised learning
+  - DNA
   - biodiversity
   - insect
   main_link: https://arxiv.org/abs/2311.02401
@@ -246,6 +252,7 @@
   authors: Nicholas Meade, Nicholas Barreyre, Scott C Lowe, Sageev Oore
   topics:
   - music
+  - language
   main_link: https://arxiv.org/abs/1907.04352
   links:
     arXiv: https://arxiv.org/abs/1907.04352
