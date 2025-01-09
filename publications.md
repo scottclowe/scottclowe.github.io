@@ -172,10 +172,10 @@ title: Publications
     font-weight: bold;
   }
   .resource-link {
-    background-color: #817AE4;
+    background-color: #967AE4;
   }
   .resource-link:hover {
-    background-color: #6660C1;
+    background-color: #5932C3;
     color: white;
   }
   .resource-link:active {
