@@ -64,7 +64,7 @@
 - date: '2024'
   title: 'BIOSCAN-5M: A Multimodal Dataset for Insect Biodiversity'
   venue: Advances in Neural Information Processing Systems 37 (NeurIPS 2024)
-  authors: Zahra Gharaee, Scott C Lowe, ZeMing Gong, Pablo Millan Arias, Nicholas Pellegrino, Austin T Wang, Joakim Bruslund Haurum, Iuliia Zarubiieva, Lila Kari, Dirk Steinke, Graham W Taylor, Paul Fieguth, Angel X Chang
+  authors: Zahra Gharaee*, Scott C Lowe*, ZeMing Gong*, Pablo Millan Arias*, Nicholas Pellegrino, Austin T Wang, Joakim Bruslund Haurum, Iuliia Zarubiieva, Lila Kari, Dirk Steinke, Graham W Taylor, Paul Fieguth, Angel X Chang
   topics:
   - dataset
   - self-supervised learning
@@ -87,7 +87,7 @@
 - date: '2024'
   title: An Empirical Study into Clustering of Unseen Datasets with Self-Supervised Encoders
   venue: Foundation Models in the Wild Workshop, ICML 2024
-  authors: Scott C Lowe, Joakim Bruslund Haurum, Sageev Oore, Thomas B Moeslund, Graham W Taylor
+  authors: Scott C Lowe*, Joakim Bruslund Haurum*, Sageev Oore, Thomas B Moeslund, Graham W Taylor
   topics:
   - self-supervised learning
   - vision
@@ -102,7 +102,7 @@
 - date: '2024'
   title: 'BenthicNet: A global compilation of seafloor images for deep learning applications'
   venue: arXiv preprint arXiv:2405.05241
-  authors: Scott C Lowe, Benjamin Misiuk, Isaac Xu, Shakhboz Abdulazizov, Amit R Baroi, Alex C Bastos, Merlin Best, Vicki Ferrini, Ariell Friedman, Deborah Hart, Ove Hoegh-Guldberg, Daniel Ierodiaconou, Julia Mackin-McLaughlin, Kathryn Markey, Pedro S Menandro, Jacquomo Monk, Shreya Nemani, John O'Brien, Elizabeth Oh, Luba Y Reshitnyk, Katleen Robert, Chris M Roelfsema, Jessica A Sameoto, Alexandre CG Schimel, Jordan A Thomson, Brittany R Wilson, Melisa C Wong, Craig J Brown, Thomas Trappenberg
+  authors: Scott C Lowe*, Benjamin Misiuk*, Isaac Xu*, Shakhboz Abdulazizov, Amit R Baroi, Alex C Bastos, Merlin Best, Vicki Ferrini, Ariell Friedman, Deborah Hart, Ove Hoegh-Guldberg, Daniel Ierodiaconou, Julia Mackin-McLaughlin, Kathryn Markey, Pedro S Menandro, Jacquomo Monk, Shreya Nemani, John O'Brien, Elizabeth Oh, Luba Y Reshitnyk, Katleen Robert, Chris M Roelfsema, Jessica A Sameoto, Alexandre CG Schimel, Jordan A Thomson, Brittany R Wilson, Melisa C Wong, Craig J Brown, Thomas Trappenberg
   topics:
   - self-supervised learning
   - vision
@@ -138,7 +138,7 @@
 - date: '2023'
   title: 'BarcodeBERT: Transformers for Biodiversity Analysis'
   venue: Self-Supervised Learning — Theory and Practice Workshop, NeurIPS 2023
-  authors: Pablo Millan Arias, Niousha Sadjadi, Monireh Safari, ZeMing Gong, Austin T Wang, Scott C Lowe, Joakim Bruslund Haurum, Iuliia Zarubiieva, Dirk Steinke, Lila Kari, Angel X Chang, Graham W Taylor
+  authors: Pablo Millan Arias*, Niousha Sadjadi*, Monireh Safari*, ZeMing Gong, Austin T Wang, Scott C Lowe, Joakim Bruslund Haurum, Iuliia Zarubiieva, Dirk Steinke, Lila Kari, Angel X Chang, Graham W Taylor
   topics:
   - self-supervised learning
   - DNA
@@ -249,7 +249,7 @@
 - date: '2019'
   title: Exploring conditioning for generative music systems with human-interpretable controls
   venue: 10th International Conference on Computational Creativity, 2019
-  authors: Nicholas Meade, Nicholas Barreyre, Scott C Lowe, Sageev Oore
+  authors: Nicholas Meade*, Nicholas Barreyre*, Scott C Lowe, Sageev Oore
   topics:
   - music
   - language
@@ -277,7 +277,7 @@
 - date: '2018'
   title: 'FISSA: A neuropil decontamination toolbox for calcium imaging signals'
   venue: Scientific reports 8 (1), 3493, 2018
-  authors: Sander W Keemink, Scott C Lowe, Janelle MP Pakan, Evelyn Dylda, Mark CW Van Rossum, Nathalie L Rochefort
+  authors: Sander W Keemink*, Scott C Lowe*, Janelle MP Pakan, Evelyn Dylda, Mark CW Van Rossum, Nathalie L Rochefort
   topics:
   - neuroscience
   - toolbox
