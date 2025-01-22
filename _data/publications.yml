@@ -28,7 +28,7 @@
 
 - date: '2024'
   title: 'CLIBD: Bridging Vision and Genomics for Biodiversity Monitoring at Scale'
-  venue: The Eleventh Workshop on Fine-Grained Visual Categorization (FGVC11), CVPR 2024
+  venue: The Thirteenth International Conference on Learning Representations (ICLR 2025)
   authors: ZeMing Gong, Austin T Wang, Xiaoliang Huo, Joakim Bruslund Haurum, Scott C Lowe, Graham W Taylor, Angel X Chang
   topics:
   - self-supervised learning
@@ -101,7 +101,7 @@
 
 - date: '2024'
   title: 'BenthicNet: A global compilation of seafloor images for deep learning applications'
-  venue: arXiv preprint arXiv:2405.05241
+  venue: Nature Scientific Data, 2025
   authors: Scott C Lowe*, Benjamin Misiuk*, Isaac Xu*, Shakhboz Abdulazizov, Amit R Baroi, Alex C Bastos, Merlin Best, Vicki Ferrini, Ariell Friedman, Deborah Hart, Ove Hoegh-Guldberg, Daniel Ierodiaconou, Julia Mackin-McLaughlin, Kathryn Markey, Pedro S Menandro, Jacquomo Monk, Shreya Nemani, John O'Brien, Elizabeth Oh, Luba Y Reshitnyk, Katleen Robert, Chris M Roelfsema, Jessica A Sameoto, Alexandre CG Schimel, Jordan A Thomson, Brittany R Wilson, Melisa C Wong, Craig J Brown, Thomas Trappenberg
   topics:
   - self-supervised learning
@@ -138,7 +138,7 @@
 - date: '2023'
   title: 'BarcodeBERT: Transformers for Biodiversity Analysis'
   venue: Self-Supervised Learning — Theory and Practice Workshop, NeurIPS 2023
-  authors: Pablo Millan Arias*, Niousha Sadjadi*, Monireh Safari*, ZeMing Gong, Austin T Wang, Scott C Lowe, Joakim Bruslund Haurum, Iuliia Zarubiieva, Dirk Steinke, Lila Kari, Angel X Chang, Graham W Taylor
+  authors: Pablo Millan Arias*, Niousha Sadjadi*, Monireh Safari*, ZeMing Gong, Austin T Wang, Joakim Bruslund Haurum, Iuliia Zarubiieva, Dirk Steinke, Lila Kari, Angel X Chang, Scott C Lowe**, Graham W Taylor**
   topics:
   - self-supervised learning
   - DNA
