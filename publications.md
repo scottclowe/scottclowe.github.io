@@ -82,7 +82,7 @@ title: Publications
         <div class="publication-right">
             <h3><a href="${pub.main_link || '#'}" target="_blank">${pub.title}</a></h3>
             <p>${pub.authors.replace(/\s/g, '&nbsp;').replace(/,&nbsp;/g, ', ')}</p>
-            <p>${pub.venue}</p>
+            <p><i>${pub.venue}</i></p>
             <p>${pub.summary}</p>
             <div class="resource-topics">${topicsHTML}</div>
             <div class="resource-links">${linksHTML}</div>
