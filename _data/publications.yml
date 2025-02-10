@@ -1,3 +1,41 @@
+- date: '2025'
+  title: 'BenthicNet: A global compilation of seafloor images for deep learning applications'
+  venue: Scientific Data 12, 230 (2025)
+  authors: Scott C Lowe*, Benjamin Misiuk*, Isaac Xu*, Shakhboz Abdulazizov, Amit R Baroi, Alex C Bastos, Merlin Best, Vicki Ferrini, Ariell Friedman, Deborah Hart, Ove Hoegh-Guldberg, Daniel Ierodiaconou, Julia Mackin-McLaughlin, Kathryn Markey, Pedro S Menandro, Jacquomo Monk, Shreya Nemani, John O'Brien, Elizabeth Oh, Luba Y Reshitnyk, Katleen Robert, Chris M Roelfsema, Jessica A Sameoto, Alexandre CG Schimel, Jordan A Thomson, Brittany R Wilson, Melisa C Wong, Craig J Brown, Thomas Trappenberg
+  topics:
+  - self-supervised learning
+  - vision
+  - dataset
+  - biodiversity
+  - ocean
+  main_link: https://arxiv.org/abs/2405.05241
+  links:
+    paper: https://doi.org/10.1038/s41597-025-04491-1
+    arXiv: https://arxiv.org/abs/2405.05241
+    dataset: https://www.frdr-dfdr.ca/repo/dataset/24c6c813-d0ff-4461-8174-3f960f1edc0d
+  thumbnail: ''
+  summary: ''
+
+- date: '2025'
+  title: 'CLIBD: Bridging Vision and Genomics for Biodiversity Monitoring at Scale'
+  venue: The Thirteenth International Conference on Learning Representations (ICLR 2025)
+  authors: ZeMing Gong, Austin T Wang, Xiaoliang Huo, Joakim Bruslund Haurum, Scott C Lowe, Graham W Taylor, Angel X Chang
+  topics:
+  - self-supervised learning
+  - multimodal
+  - vision
+  - DNA
+  - language
+  - biodiversity
+  - insect
+  main_link: https://arxiv.org/abs/2405.17537
+  links:
+    arXiv: https://arxiv.org/abs/2405.17537
+    project: https://bioscan-ml.github.io/clibd/
+    github: https://github.com/bioscan-ml/clibd
+  thumbnail: ''
+  summary: ''
+
 - date: '2024'
   title: System 2 Reasoning Capabilities Are Nigh
   venue: The First Workshop on System-2 Reasoning at Scale, NeurIPS 2024
@@ -23,26 +61,6 @@
   links:
     paper: https://doi.org/10.3390/data9110122
     bioRxiv: https://doi.org/10.1101/2024.07.15.600863 
-  thumbnail: ''
-  summary: ''
-
-- date: '2024'
-  title: 'CLIBD: Bridging Vision and Genomics for Biodiversity Monitoring at Scale'
-  venue: The Thirteenth International Conference on Learning Representations (ICLR 2025)
-  authors: ZeMing Gong, Austin T Wang, Xiaoliang Huo, Joakim Bruslund Haurum, Scott C Lowe, Graham W Taylor, Angel X Chang
-  topics:
-  - self-supervised learning
-  - multimodal
-  - vision
-  - DNA
-  - language
-  - biodiversity
-  - insect
-  main_link: https://arxiv.org/abs/2405.17537
-  links:
-    arXiv: https://arxiv.org/abs/2405.17537
-    project: https://bioscan-ml.github.io/clibd/
-    github: https://github.com/bioscan-ml/clibd
   thumbnail: ''
   summary: ''
 
@@ -96,23 +114,6 @@
     arXiv: https://arxiv.org/abs/2406.02465
     project: https://scottclowe.com/zs-ssl-clustering/
     github: https://github.com/scottclowe/zs-ssl-clustering/
-  thumbnail: ''
-  summary: ''
-
-- date: '2024'
-  title: 'BenthicNet: A global compilation of seafloor images for deep learning applications'
-  venue: Nature Scientific Data, 2025
-  authors: Scott C Lowe*, Benjamin Misiuk*, Isaac Xu*, Shakhboz Abdulazizov, Amit R Baroi, Alex C Bastos, Merlin Best, Vicki Ferrini, Ariell Friedman, Deborah Hart, Ove Hoegh-Guldberg, Daniel Ierodiaconou, Julia Mackin-McLaughlin, Kathryn Markey, Pedro S Menandro, Jacquomo Monk, Shreya Nemani, John O'Brien, Elizabeth Oh, Luba Y Reshitnyk, Katleen Robert, Chris M Roelfsema, Jessica A Sameoto, Alexandre CG Schimel, Jordan A Thomson, Brittany R Wilson, Melisa C Wong, Craig J Brown, Thomas Trappenberg
-  topics:
-  - self-supervised learning
-  - vision
-  - dataset
-  - biodiversity
-  - ocean
-  main_link: https://arxiv.org/abs/2405.05241
-  links:
-    arXiv: https://arxiv.org/abs/2405.05241
-    dataset: https://www.frdr-dfdr.ca/repo/dataset/24c6c813-d0ff-4461-8174-3f960f1edc0d
   thumbnail: ''
   summary: ''
 
