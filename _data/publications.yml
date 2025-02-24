@@ -136,6 +136,7 @@
     arXiv: https://arxiv.org/abs/2307.10455
     dataset: https://zenodo.org/records/8030065
     github: https://github.com/bioscan-ml/BIOSCAN-1M
+    pypi: https://pypi.org/project/bioscan-dataset/
   thumbnail: ''
   summary: ''
 
