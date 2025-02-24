@@ -66,7 +66,7 @@
 
 - date: '2024'
   title: Hierarchical multi-label classification with missing information for benthic habitat imagery
-  venue: 2024 International Joint Conference on Neural Networks (IJCNN), 1-10, 2024
+  venue: 2024 International Joint Conference on Neural Networks (IJCNN), 1–10, 2024
   authors: Isaac Xu, Benjamin Misiuk, Scott C Lowe, Martin Gillis, Thomas Trappenberg, Craig J Brown
   topics:
   - vision
@@ -169,7 +169,7 @@
 
 - date: '2023'
   title: 'The Beginning of the AI-Enabled Preventative PAP Therapy Era: A First-in-Human Proof of Concept Interventional Study'
-  venue: IEEE Transactions on Biomedical Engineering 70 (10), 2776-2787, 2023
+  venue: IEEE Transactions on Biomedical Engineering 70 (10), 2776–2787, 2023
   authors: Meagan Sinclair, Hamed Hanafi Alamdari, Julia Paffile, Kamal El-Sankary, Scott Lowe, Stephen Driscoll, Sageev Oore, Heather Tomson, Gregory Begin, Guillermo Aristi, Michael Schmidt, David Roach, Thomas Penzel, Ingo Fietze, Sanjay R Patel, Reena Mehra, Debra Morrison
   topics:
   - sleep apnea
@@ -226,7 +226,7 @@
 
 - date: '2021'
   title: 'High frequency-low amplitude oscillometry: Continuous unobtrusive monitoring of respiratory function on PAP machines'
-  venue: IEEE Transactions on Biomedical Engineering 69 (7), 2202-2211, 2021
+  venue: IEEE Transactions on Biomedical Engineering 69 (7), 2202–2211, 2021
   authors: Hamed Hanafi Alamdari, Luke Hacquebard, Stephen Driscoll, Kamal El-Sankary, David C Roach, Robin LeBlanc, Scott Lowe, Sageev Oore, Thomas Penzel, Ingo Fietze, Michael Schmidt, Debra Morrison
   topics:
   - sleep apnea
@@ -294,7 +294,7 @@
 
 - date: '2018'
   title: Dopamine is signaled by mid-frequency oscillations and boosts output layers visual information in visual cortex
-  venue: Current Biology 28 (2), 224-235. e5, 2018
+  venue: Current Biology 28 (2), 224–235. e5, 2018
   authors: Daniel Zaldivar, Jozien Goense, Scott C Lowe, Nikos K Logothetis, Stefano Panzeri
   topics:
   - neuroscience
