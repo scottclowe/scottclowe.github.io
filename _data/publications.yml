@@ -316,6 +316,7 @@
   topics:
   - neuroscience
   - information theory
+  - vision
   main_link: https://doi.org/10.1016/j.cub.2017.12.006
   links:
     paper: https://doi.org/10.1016/j.cub.2017.12.006
@@ -329,6 +330,7 @@
   topics:
   - neuroscience
   - information theory
+  - vision
   main_link: 'http://hdl.handle.net/1842/28861'
   links:
     thesis: http://hdl.handle.net/1842/28861
@@ -342,6 +344,7 @@
   authors: Janelle MP Pakan, Scott C Lowe, Evelyn Dylda, Sander W Keemink, Stephen P Currie, Christopher A Coutts, Nathalie L Rochefort
   topics:
   - neuroscience
+  - vision
   main_link: https://doi.org/10.7554/eLife.14985
   links:
     paper: https://doi.org/10.7554/eLife.14985
@@ -355,6 +358,7 @@
   topics:
   - neuroscience
   - information theory
+  - vision
   main_link: https://doi.org/10.1371/journal.pbio.1002257
   links:
     paper: https://doi.org/10.1371/journal.pbio.1002257
