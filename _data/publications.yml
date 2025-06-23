@@ -2,7 +2,7 @@
   title: 'Enhancing DNA Foundation Models to Address Masking Inefficiencies'
   venue: Artificial Intelligence for Nucleic Acids (AI4NA) Workshop, ICLR 2025
   # venue: Machine Learning for Genomics Explorations (MLGenX) Workshop, ICLR 2025
-  authors: Monireh Safari*, Pablo Millan Arias*, Scott C. Lowe, Lila Kari, Angel X. Chang, Graham W. Taylor
+  authors: Monireh Safari*, Pablo Millan Arias*, Scott C Lowe, Lila Kari, Angel X Chang, Graham W Taylor
   topics:
   - self-supervised learning
   - DNA
