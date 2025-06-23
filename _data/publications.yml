@@ -32,6 +32,8 @@
     arXiv: https://arxiv.org/abs/2405.17537
     project: https://bioscan-ml.github.io/clibd/
     github: https://github.com/bioscan-ml/clibd
+    model: https://huggingface.co/bioscan-ml/clibd
+    # OpenReview: https://openreview.net/forum?id=d5HUnyByAI
   thumbnail: ''
   summary: ''
 
