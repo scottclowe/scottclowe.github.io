@@ -14,6 +14,8 @@ title: Publications
 <button id="select-all">Select all topics</button>
 <button id="select-none">Deselect all topics</button>
 
+<div id="publication-counter"></div>
+
 <!-- Container for Publications -->
 <div id="publications-container">
   <!-- Publications will be dynamically inserted here -->
@@ -52,6 +54,21 @@ title: Publications
     topicFilters.appendChild(topicElement);
   });
 
+  // Function to update publication counter
+  function updatePublicationCounter(displayedCount, numFilters) {
+    const totalCount = publications.length;
+    const counterElement = document.getElementById('publication-counter');
+
+    if (counterElement) {
+      if (numFilters == 0) {
+        counterElement.textContent = '';
+      }
+      else {
+        counterElement.textContent = `Showing ${displayedCount} of ${totalCount} publications`;
+      }
+    }
+  }
+
   // Function to render publications
   function renderPublications() {
     selectedTopics = Array.from(document.querySelectorAll('.topic-filter.selected'))
@@ -71,6 +88,9 @@ title: Publications
     );
 
     filteredPublications.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    // Update the counter
+    updatePublicationCounter(filteredPublications.length, selectedTopics.length);
 
     filteredPublications.forEach(pub => {
       const pubDiv = document.createElement('div');
