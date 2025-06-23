@@ -24,14 +24,24 @@ title: Publications
   // Publications data from YAML (inserted by Jekyll)
   const publications = {{ site.data.publications | jsonify }};
 
+  // Count topic occurrences
+  const topicCounts = {};
+  publications.forEach(pub => {
+    pub.topics.forEach(topic => {
+      topicCounts[topic] = (topicCounts[topic] || 0) + 1;
+    });
+  });
+
+  // Sort topics by frequency (most to least)
+  const sortedTopics = Object.keys(topicCounts).sort((a, b) => topicCounts[b] - topicCounts[a]);
+
   // Populate the topic filters
-  const topics = new Set(publications.flatMap(pub => pub.topics));
   const topicFilters = document.getElementById('topic-filters');
 
-  topics.forEach(topic => {
+  sortedTopics.forEach(topic => {
     const topicElement = document.createElement('div');
     topicElement.className = 'topic-filter selected';
-    topicElement.textContent = topic;
+    topicElement.textContent = `${topic} (${topicCounts[topic]})`;
     topicElement.dataset.topic = topic;
 
     topicElement.addEventListener('click', () => {
