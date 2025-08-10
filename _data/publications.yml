@@ -1,4 +1,23 @@
-- date: '2025'
+- date: '2025'  # July
+  title: 'Hyperbolic Multimodal Representation Learning for Biological Taxonomies'
+  venue: '2nd Beyond Euclidean Workshop: Hyperbolic and Hyperspherical Learning for Computer Vision Workshop, ICCV 2025'
+  authors: ZeMing Gong, Chuanqi Tang, Xiaoliang Huo, Nicholas Pellegrino, Austin Wang, Graham W. Taylor, Angel X Chang, Scott C. Lowe†, Joakim Bruslund Haurum†
+  topics:
+  - self-supervised learning
+  - hierarchical
+  - multimodal
+  - vision
+  - DNA
+  - language
+  - biodiversity
+  - insect
+  main_link: https://openreview.net/pdf?id=N8gq83vDnr
+  links:
+    OpenReview: https://openreview.net/forum?id=N8gq83vDnr
+  thumbnail: ''
+  summary: ''
+
+- date: '2025'  # July
   title: 'A multi-modal dataset for insect biodiversity with imagery and DNA at the trap and individual level'
   venue: arXiv preprint arXiv:2507.06972
   authors: Johanna Orsholm*, John Quinto*, Hannu Autto, Gaia Banelyte, Nicolas Chazot, Jeremy deWaard, Stephanie deWaard, Arielle Farrell, Brendan Furneaux, Bess Hardwick, Nao Ito, Amlan Kar, Oula Kalttopää, Deirdre Kerdraon, Erik Kristensen, Jaclyn McKeown, Tommi Mononen, Ellen Nein, Hanna Rogers, Tomas Roslin, Paula Schmitz, Jayme Sones, Maija Sujala, Amy Thompson, Evgeny V. Zakharov, Iuliia Zarubiieva, Akshita Gupta, Scott C. Lowe, Graham W. Taylor
