@@ -1,3 +1,16 @@
+- date: '2025'  # Sept
+  title: 'Understanding and Improving the Shampoo Optimizer via Kullback-Leibler Minimization'
+  venue: 'arXiv preprint arXiv:2509.03378'
+  authors: Wu Lin, Scott C. Lowe, Felix Dangel, Runa Eschenhagen, Zikun Xu, Roger B. Grosse
+  topics:
+  - optimization
+  - language
+  main_link: https://arxiv.org/abs/2509.03378
+  links:
+    arXiv: https://arxiv.org/abs/2509.03378
+  thumbnail: ''
+  summary: ''
+
 - date: '2025'  # July
   title: 'Hyperbolic Multimodal Representation Learning for Biological Taxonomies'
   venue: '2nd Beyond Euclidean Workshop: Hyperbolic and Hyperspherical Learning for Computer Vision Workshop, ICCV 2025'
@@ -124,6 +137,7 @@
   links:
     paper: https://proceedings.neurips.cc/paper_files/paper/2024/hash/3fdbb472813041c9ecef04c20c2b1e5a-Abstract-Datasets_and_Benchmarks_Track.html
     arXiv: https://arxiv.org/abs/2406.12723
+    openreview: https://openreview.net/forum?id=A33u66KmYf
     dataset: https://zenodo.org/records/11973457
     github: https://github.com/bioscan-ml/dataset
     pypi: https://pypi.org/project/bioscan-dataset/
@@ -142,6 +156,7 @@
   main_link: https://arxiv.org/abs/2410.03662
   links:
     arXiv: https://arxiv.org/abs/2410.03662
+    openreview: https://openreview.net/forum?id=ZxaipE6f62
   thumbnail: ''
   summary: ''
 
