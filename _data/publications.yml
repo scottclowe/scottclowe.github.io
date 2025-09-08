@@ -51,14 +51,15 @@
 
 - date: '2025'  # May
   title: 'Optimizing Image Capture for Computer Vision-Powered Taxonomic Identification and Trait Recognition of Biodiversity Specimens'
-  venue: arXiv preprint arXiv:2505.17317
+  venue: Methods in Ecology and Evolution, 00, 1–16, 2025
   authors: Alyson East, Elizabeth G Campolongo, Luke Meyers, S M Rayeed, Samuel Stevens, Iuliia Zarubiieva, Isadora E Fluck, Jennifer C Girón, Maximiliane Jousse, Scott Lowe, Kayla I Perry, Isabelle Betancourt, Noah Charney, Evan Donoso, Nathan Fox, Kim J Landsbergen, Ekaterina Nepovinnykh, Michelle Ramirez, Parkash Singh, Khum Thapa-Magar, Matthew Thompson, Evan Waite, Tanya Berger-Wolf, Hilmar Lapp, Paula Mabee, Graham Taylor, Sydne Record
   topics:
   - biodiversity
   - insect
   - vision
-  main_link: https://arxiv.org/abs/2505.17317
+  main_link: https://doi.org/10.1111/2041-210X.70140
   links:
+    paper: https://doi.org/10.1111/2041-210X.70140
     arXiv: https://arxiv.org/abs/2505.17317
   thumbnail: ''
   summary: ''
