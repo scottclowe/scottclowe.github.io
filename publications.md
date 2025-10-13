@@ -148,6 +148,11 @@ title: Publications
 </script>
 
 <style>
+  button {
+    padding: 0.4em 0.8em;
+    border-radius: 100vw;
+  }
+
   .publication {
     margin: 1rem 0;
     padding: 1rem;
