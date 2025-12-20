@@ -1,6 +1,48 @@
+- date: '2025'  # Dec
+  title: 'A Loopy Framework and Tool for Real-time Human-AI Music Collaboration'
+  venue: 'Artificial Intelligence for Music: Where Creativity Meets Computation Workshop, NeurIPS 2025'
+  authors: Sageev Oore*, Finlay Miller*, Chandramouli Shama Sastry, Sri Harsha Dumpala, Marvin F. da Silva, Daniel Oore, Scott C. Lowe
+  topics:
+  - music
+  main_link: https://openreview.net/forum?id=nXHczMetxK
+  links:
+    openreview: https://openreview.net/forum?id=nXHczMetxK
+  thumbnail: ''
+  summary: ''
+
+- date: '2025'  # Dec
+  title: 'BugSR: Improving Tiny Instance Segmentation on the MassID45 Dataset'
+  venue: 'Imageomics: Discovering Biological Knowledge from Images Using AI Workshop, NeurIPS 2025'
+  authors: John Quinto, Scott C. Lowe, Akshita Gupta, Johanna Orsholm, Prajakta Darade, Iuliia Zarubiieva, Brendan Furneaux, Tommi Mononen, Tomas Roslin, Graham W. Taylor
+  topics:
+  - image segmentation
+  - biodiversity
+  - insect
+  - vision
+  main_link: https://openreview.net/forum?id=OYK7psfeNe
+  links:
+    openreview: https://openreview.net/forum?id=OYK7psfeNe
+  thumbnail: ''
+  summary: ''
+
+- date: '2025'  # Dec
+  title: 'BarcodeMamba+: Advancing State-Space Models for Fungal Biodiversity Research'
+  venue: 'Imageomics: Discovering Biological Knowledge from Images Using AI Workshop, NeurIPS 2025'
+  authors: Tiancheng Gao, Scott C. Lowe, Brendan Furneaux, Angel X. Chang, Graham W. Taylor
+  topics:
+  - DNA
+  - biodiversity
+  - self-supervised learning
+  main_link: https://arxiv.org/abs/2512.15931
+  links:
+    arXiv: https://arxiv.org/abs/2512.15931
+    openreview: https://openreview.net/forum?id=wOgcLKq1Hg
+  thumbnail: ''
+  summary: ''
+
 - date: '2025'  # Sept
   title: 'Understanding and Improving the Shampoo Optimizer via Kullback-Leibler Minimization'
-  venue: 'arXiv preprint arXiv:2509.03378'
+  venue: 'OPT 2025: Optimization for Machine Learning Workshop, NeurIPS 2025'
   authors: Wu Lin, Scott C. Lowe, Felix Dangel, Runa Eschenhagen, Zikun Xu, Roger B. Grosse
   topics:
   - optimization
@@ -8,6 +50,7 @@
   main_link: https://arxiv.org/abs/2509.03378
   links:
     arXiv: https://arxiv.org/abs/2509.03378
+    openreview: https://openreview.net/forum?id=MmZjegW8NK
   thumbnail: ''
   summary: ''
 
@@ -46,6 +89,7 @@
   links:
     arXiv: https://arxiv.org/abs/2507.06972
     github: https://github.com/uoguelph-mlrg/MassID45
+    openreview: https://openreview.net/forum?id=Kn8bz1ZPvE
   thumbnail: ''
   summary: ''
 
