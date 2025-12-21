@@ -329,7 +329,7 @@ title: Publications
     left: 0;
     right: 0;
     bottom: -0.5rem; /* Position it halfway in the margin space */
-    height: 1px;
+    height: 0px;
     background-color: #ddd;
   }
   .publication.with-border:last-child::after {
