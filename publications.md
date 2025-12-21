@@ -53,7 +53,7 @@ title: Publications
       <div class="publication-right">
         <h3><a href="{{ pub.main_link | default: '#' }}" target="_blank">{{ pub.title }}</a></h3>
         <p>{{ pub.authors | replace: ' ', '&nbsp;' | replace: ',&nbsp;', ', ' }}</p>
-        <p><i>{{ pub.venue }}</i></p>
+        <p><i class="venue">{{ pub.venue }}</i></p>
         <p>{{ pub.summary }}</p>
 
         <div class="resource-topics">
@@ -202,7 +202,7 @@ title: Publications
       <div class="publication-right">
           <h3><a href="${pub.main_link || '#'}" target="_blank">${pub.title}</a></h3>
           <p>${pub.authors.replace(/\s/g, '&nbsp;').replace(/,&nbsp;/g, ', ').replace(/†/g, '<sup>†</sup>')}</p>
-          <p><i>${pub.venue}</i></p>
+          <p><i class="venue">${pub.venue}</i></p>
           <p>${pub.summary || ''}</p>
           <div class="resource-topics">${topicsHTML}</div>
           <div class="resource-links">
@@ -438,6 +438,10 @@ title: Publications
 
   .publication p, h3 {
     margin: 0px;
+  }
+
+  .venue {
+    margin-left: 0.5rem;
   }
 
   .resource-links, .resource-topics {
