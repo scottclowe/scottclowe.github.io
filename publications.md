@@ -114,7 +114,8 @@ title: Publications
 
   // Show/hide BibTeX for an entry
   function toggleBibtex(btn) {
-    const box = btn.parentElement.nextElementSibling;
+    // Finds the .bibtex-box which is a sibling of the .resource-links container
+    const box = btn.closest('.publication-right').querySelector('.bibtex-box');
     const arrow = btn.querySelector('.arrow');
     const isHidden = box.classList.toggle('hidden');
     arrow.textContent = isHidden ? '▼' : '▲';
@@ -152,6 +153,7 @@ title: Publications
 
     const bibtexBox = pub.bibtex ? `
       <div class="bibtex-box hidden">
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
         <pre>${pub.bibtex}</pre>
       </div>
     ` : '';
@@ -251,6 +253,27 @@ title: Publications
   }
   function deselectAllTopics() {
     document.querySelectorAll('.topic-filter').forEach(el => el.classList.remove('selected'));
+  }
+
+  // Copy BibTeX to clipboard
+  function copyToClipboard(btn) {
+    // Since the button and <pre> are siblings, use nextElementSibling
+    const pre = btn.nextElementSibling;
+    const text = pre.textContent;
+
+    navigator.clipboard.writeText(text).then(() => {
+      const originalText = btn.textContent;
+      btn.textContent = 'Copied!';
+      btn.classList.add('copy-success');
+
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.classList.remove('copy-success');
+      }, 2000);
+    }).catch(err => {
+      console.error('Failed to copy: ', err);
+      alert('Failed to copy text.');
+    });
   }
 
   function downloadFilteredBibtex() {
@@ -527,6 +550,7 @@ title: Publications
   }
 
   .bibtex-box {
+    position: relative; /* This is the anchor for the button */
     margin-top: 10px;
     padding: 12px;
     background-color: #f8f9fa;
@@ -534,7 +558,6 @@ title: Publications
     border-radius: 4px;
     font-family: monospace;
     font-size: 0.75rem;
-
     /* Constraints to prevent overflow */
     width: 100%;
     box-sizing: border-box;  /* Ensures padding doesn't add to width */
@@ -548,5 +571,38 @@ title: Publications
     white-space: -pre-wrap;  /* Opera 4-6 */
     white-space: -o-pre-wrap;  /* Opera 7 */
     word-wrap: break-word;  /* Internet Explorer 5.5+ */
+  }
+
+  .copy-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 10;
+    transition: all 0.2s;
+  }
+
+  .copy-button:hover {
+    background-color: #e0e0e0;
+  }
+
+  .copy-button.copy-success {
+    background-color: #28a745;
+    color: white;
+    border-color: #218838;
+  }
+
+  /* Ensure the text doesn't hide behind the button */
+  .bibtex-box pre {
+    padding-right: 50px;
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
   }
 </style>
