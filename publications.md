@@ -149,10 +149,8 @@ title: Publications
 
   // Show/hide BibTeX for an entry
   function toggleBibtex(btn) {
-    // Find the container for this specific publication
-    const pubRight = btn.closest('.publication-right');
-    // Find the box within that container
-    const box = pubRight.querySelector('.bibtex-box');
+    const container = btn.closest('.publication-right');
+    const box = container.querySelector('.bibtex-box');
     const arrow = btn.querySelector('.arrow');
     if (box) {
       const isHidden = box.classList.toggle('hidden');
@@ -420,6 +418,7 @@ title: Publications
     align-items: center;
     justify-content: flex-start;
     flex-shrink: 0;
+    width: 80px;
     max-width: 150px;
   }
 
@@ -427,6 +426,7 @@ title: Publications
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    min-width: 0;
   }
 
   .publication-thumbnail {
@@ -592,41 +592,46 @@ title: Publications
     position: relative;
     margin-top: 10px;
     padding: 12px;
-    background-color: #f8f9fa; /* Restore background */
+    background-color: #f8f9fa;
     border: 1px solid #dee2e6;
     border-radius: 4px;
     font-family: monospace;
     font-size: 0.75rem;
-
-    /* Prevent horizontal overflow of the container itself */
     width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
-    overflow: hidden; /* Container stays fixed width */
+    overflow-x: auto; /* Forces the horizontal scrollbar */
+    display: block;
+    -webkit-overflow-scrolling: touch;
   }
 
   .bibtex-box pre {
     margin: 0;
-    padding-right: 50px; /* Space for the button */
-
-    /* Wrap text so it fits on mobile screens */
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    word-break: break-all;      /* Forces long URLs to wrap to next line */
+    padding-right: 60px; /* Space for Copy button */
+    white-space: pre;    /* Prevents text wrapping to force the scrollbar */
+    word-wrap: normal;
+    overflow-wrap: normal;
     color: #333;
   }
 
+  /* Make the scrollbar always visible on mobile/web-kit */
+  .bibtex-box::-webkit-scrollbar {
+    height: 6px;
+  }
+  .bibtex-box::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+
+  /* Ensure the Copy button stays pinned while the text scrolls underneath */
   .copy-button {
     position: absolute;
     top: 8px;
     right: 8px;
-    background-color: #fff;
+    background-color: white;
     border: 1px solid #ccc;
-    color: #333;
-    font-size: 0.65rem;
-    padding: 2px 6px;
-    cursor: pointer;
-    border-radius: 4px;
     z-index: 10;
+    padding: 4px 8px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   }
 
@@ -638,13 +643,5 @@ title: Publications
     background-color: #28a745;
     color: white;
     border-color: #218838;
-  }
-
-  /* Ensure the text doesn't hide behind the button */
-  .bibtex-box pre {
-    padding-right: 50px;
-    margin: 0;
-    white-space: pre-wrap;
-    word-wrap: break-word;
   }
 </style>
