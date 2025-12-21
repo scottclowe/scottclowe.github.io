@@ -7,6 +7,8 @@ title: Publications
 
 <p>For a full publications list with citation counts, please see my <a href="https://scholar.google.com/citations?user=ZFPhxuAAAAAJ">Google Scholar</a> page.</p>
 
+<!-- JavaScript controls -->
+<div id="js-control-panel" style="display: none;">
 <!-- Topic Filters -->
 <div id="topic-filters">
   <p>Filter by topic:</p>
@@ -36,17 +38,50 @@ title: Publications
     <!-- Highlighted publications will be dynamically inserted here -->
   </div>
 </div>
+</div>
+<!-- End of JavaScript controls -->
 
 <!-- Container for All Publications -->
 <div id="all-publications-section">
   <h2 id="all-publications-header">Publications</h2>
   <div id="publications-container">
-    <!-- Publications will be dynamically inserted here -->
+    {% for pub in site.data.publications %}
+    <div class="publication with-border {% if pub.highlighted %}highlighted-publication{% endif %}">
+      <div class="publication-left">
+        <strong>{{ pub.date }}</strong>
+      </div>
+      <div class="publication-right">
+        <h3><a href="{{ pub.main_link | default: '#' }}" target="_blank">{{ pub.title }}</a></h3>
+        <p>{{ pub.authors | replace: ' ', '&nbsp;' | replace: ',&nbsp;', ', ' }}</p>
+        <p><i>{{ pub.venue }}</i></p>
+        <p>{{ pub.summary }}</p>
+
+        <div class="resource-topics">
+          {% for topic in pub.topics %}
+          <span class="topic">{{ topic }}</span>
+          {% endfor %}
+        </div>
+
+        <div class="resource-links">
+          {% for link in pub.links %}
+            <a href="{{ link[1] }}" target="_blank" class="resource-link">{{ link[0] }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </div>
 
 <!-- JavaScript for Interactivity -->
 <script>
+  // Hide the static list immediately to prevent "flicker"
+  const container = document.getElementById('publications-container');
+  container.innerHTML = ''; // Clear the Liquid-generated list for JS users
+
+  // Show the JS-only controls
+  document.getElementById('js-control-panel').style.display = 'block';
+
   // Publications data from YAML (inserted by Jekyll)
   const publicationsRaw = {{ site.data.publications | jsonify }};
 
@@ -114,8 +149,9 @@ title: Publications
 
   // Show/hide BibTeX for an entry
   function toggleBibtex(btn) {
-    // Finds the .bibtex-box which is a sibling of the .resource-links container
-    const box = btn.closest('.publication-right').querySelector('.bibtex-box');
+    // Finds the .bibtex-box within the same publication entry
+    const pubRight = btn.closest('.publication-right');
+    const box = pubRight.querySelector('.bibtex-box');
     const arrow = btn.querySelector('.arrow');
     const isHidden = box.classList.toggle('hidden');
     arrow.textContent = isHidden ? '▼' : '▲';
