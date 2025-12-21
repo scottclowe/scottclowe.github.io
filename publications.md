@@ -149,12 +149,15 @@ title: Publications
 
   // Show/hide BibTeX for an entry
   function toggleBibtex(btn) {
-    // Finds the .bibtex-box within the same publication entry
+    // Find the container for this specific publication
     const pubRight = btn.closest('.publication-right');
+    // Find the box within that container
     const box = pubRight.querySelector('.bibtex-box');
     const arrow = btn.querySelector('.arrow');
-    const isHidden = box.classList.toggle('hidden');
-    arrow.textContent = isHidden ? '▼' : '▲';
+    if (box) {
+      const isHidden = box.classList.toggle('hidden');
+      arrow.textContent = isHidden ? '▼' : '▲';
+    }
   }
 
   // Function to render a single publication
@@ -582,38 +585,41 @@ title: Publications
 
   /* Hidden state for the dropdown */
   .hidden {
-    display: none;
+    display: none !important;
   }
 
   .bibtex-box {
-    position: relative; /* This is the anchor for the button */
+    position: relative;
     margin-top: 10px;
     padding: 12px;
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; /* Restore background */
     border: 1px solid #dee2e6;
     border-radius: 4px;
     font-family: monospace;
     font-size: 0.75rem;
-    /* Constraints to prevent overflow */
+
+    /* Prevent horizontal overflow of the container itself */
     width: 100%;
-    box-sizing: border-box;  /* Ensures padding doesn't add to width */
-    overflow-x: auto;  /* Adds a scrollbar only if absolutely necessary */
+    box-sizing: border-box;
+    overflow: hidden; /* Container stays fixed width */
   }
 
   .bibtex-box pre {
     margin: 0;
-    white-space: pre-wrap;  /* CSS3 - preserves spaces and wraps lines */
-    white-space: -moz-pre-wrap;  /* Firefox */
-    white-space: -pre-wrap;  /* Opera 4-6 */
-    white-space: -o-pre-wrap;  /* Opera 7 */
-    word-wrap: break-word;  /* Internet Explorer 5.5+ */
+    padding-right: 50px; /* Space for the button */
+
+    /* Wrap text so it fits on mobile screens */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;      /* Forces long URLs to wrap to next line */
+    color: #333;
   }
 
   .copy-button {
     position: absolute;
-    top: 5px;
-    right: 5px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+    top: 8px;
+    right: 8px;
+    background-color: #fff;
     border: 1px solid #ccc;
     color: #333;
     font-size: 0.65rem;
@@ -621,7 +627,7 @@ title: Publications
     cursor: pointer;
     border-radius: 4px;
     z-index: 10;
-    transition: all 0.2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   }
 
   .copy-button:hover {
