@@ -53,6 +53,7 @@
     openreview: https://openreview.net/forum?id=MmZjegW8NK
   thumbnail: ''
   summary: ''
+  highlighted: 6
 
 - date: '2025'  # July
   title: 'Hyperbolic Multimodal Representation Learning for Biological Taxonomies'
@@ -147,6 +148,7 @@
     model: https://huggingface.co/bioscan-ml/clibd
   thumbnail: ''
   summary: ''
+  highlighted: 2
 
 - date: '2025'  # Feb
   title: 'BenthicNet: A global compilation of seafloor images for deep learning applications'
@@ -191,6 +193,7 @@
     talk: https://www.youtube.com/watch?v=_JFw4ntJhLg
   thumbnail: ''
   summary: ''
+  highlighted: 3
 
 - date: '2024'  # Oct
   title: System 2 Reasoning Capabilities Are Nigh
@@ -205,6 +208,7 @@
     openreview: https://openreview.net/forum?id=ZxaipE6f62
   thumbnail: ''
   summary: ''
+  highlighted: 5
 
 - date: '2024'  # Oct
   title: 'Towards a Taxonomy Machine: A Training Set of 5.6 Million Arthropod Images'
@@ -251,6 +255,7 @@
     github: https://github.com/scottclowe/zs-ssl-clustering/
   thumbnail: ''
   summary: ''
+  highlighted: 4
 
 - date: '2023'  # Dec
   title: 'A step towards worldwide biodiversity assessment: The BIOSCAN-1M insect dataset'
@@ -327,6 +332,7 @@
     pypi: https://pypi.org/project/pytorch-logit-logic/
   thumbnail: ''
   summary: ''
+  highlighted: 1
 
 - date: '2022'  # Sep
   title: Label-free Monitoring of Self-Supervised Learning Progress
