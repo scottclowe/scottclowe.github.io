@@ -14,17 +14,51 @@ title: Publications
 <button id="select-all">Select all topics</button>
 <button id="select-none">Deselect all topics</button>
 
+<!-- Highlight Controls -->
+<div id="highlight-controls">
+  <label class="toggle-switch">
+    <input type="checkbox" id="group-highlights" checked>
+    <span class="slider-toggle"></span>
+    <span class="toggle-label">Group highlighted papers separately</span>
+  </label>
+</div>
+
 <div id="publication-counter"></div>
 
-<!-- Container for Publications -->
-<div id="publications-container">
-  <!-- Publications will be dynamically inserted here -->
+<!-- Container for Highlighted Publications (when grouped) -->
+<div id="highlighted-publications-section" style="display: none;">
+  <h2>Highlighted Publications</h2>
+  <div id="highlighted-publications-container">
+    <!-- Highlighted publications will be dynamically inserted here -->
+  </div>
+</div>
+
+<!-- Container for All Publications -->
+<div id="all-publications-section">
+  <h2 id="all-publications-header">Publications</h2>
+  <div id="publications-container">
+    <!-- Publications will be dynamically inserted here -->
+  </div>
 </div>
 
 <!-- JavaScript for Interactivity -->
 <script>
   // Publications data from YAML (inserted by Jekyll)
-  const publications = {{ site.data.publications | jsonify }};
+  const publicationsRaw = {{ site.data.publications | jsonify }};
+
+  // Add original index to each publication for sorting
+  const publications = publicationsRaw.map((pub, index) => ({
+    ...pub,
+    originalIndex: index
+  }));
+
+  // Separate highlighted and non-highlighted publications
+  const highlightedPublications = publications
+    .filter(pub => pub.highlighted !== undefined && pub.highlighted !== null)
+    .sort((a, b) => a.highlighted - b.highlighted); // Sort by highlighted value (ascending)
+
+  const otherPublications = publications
+    .filter(pub => pub.highlighted === undefined || pub.highlighted === null);
 
   // Count topic occurrences
   const topicCounts = {};
@@ -55,7 +89,7 @@ title: Publications
   });
 
   // Function to update publication counter
-  function updatePublicationCounter(displayedCount, numFilters) {
+  function updatePublicationCounter(displayedCount, highlightedCount, numFilters, isGrouped) {
     const totalCount = publications.length;
     const counterElement = document.getElementById('publication-counter');
 
@@ -64,63 +98,140 @@ title: Publications
         counterElement.textContent = '';
       }
       else {
-        counterElement.textContent = `Showing ${displayedCount} of ${totalCount} publications`;
+        const parts = [];
+        if (highlightedCount > 0 && isGrouped) {
+          parts.push(`${highlightedCount} highlighted`);
+        }
+        parts.push(`${displayedCount} of ${totalCount} total`);
+        counterElement.textContent = `Showing ${parts.join(', ')}`;
       }
     }
   }
 
-  // Function to render publications
-  function renderPublications() {
-    selectedTopics = Array.from(document.querySelectorAll('.topic-filter.selected'))
+  // Function to render a single publication
+  function renderPublication(pub, isHighlighted = false, showBorder = true) {
+    const selectedTopics = Array.from(document.querySelectorAll('.topic-filter.selected'))
       .map(el => el.dataset.topic);
 
-    shownTopics = selectedTopics
+    const pubDiv = document.createElement('div');
+    let className = 'publication';
+    if (isHighlighted) {
+      className += ' highlighted-publication';
+    }
+    if (showBorder) {
+      className += ' with-border';
+    }
+    pubDiv.className = className;
+
+    const linksHTML = Object.entries(pub.links || {}).map(([key, url]) => {
+      return `<a href="${url}" target="_blank" class="resource-link">${key}</a>`;
+    }).join(' ');
+
+    const topicsHTML = Object.entries(pub.topics || {}).map(([key, value]) => {
+      var extra_class = selectedTopics.includes(value) ? "selected" : "";
+      return `<span class="topic ${extra_class}">${value}</span>`;
+    }).join(' ');
+
+    pubDiv.innerHTML = `
+      <div class="publication-left">
+          <strong>${pub.date}</strong>
+      </div>
+      <div class="publication-right">
+          <h3><a href="${pub.main_link || '#'}" target="_blank">${pub.title}</a></h3>
+          <p>${pub.authors.replace(/\s/g, '&nbsp;').replace(/,&nbsp;/g, ', ').replace(/†/g, '<sup>†</sup>')}</p>
+          <p><i>${pub.venue}</i></p>
+          <p>${pub.summary}</p>
+          <div class="resource-topics">${topicsHTML}</div>
+          <div class="resource-links">${linksHTML}</div>
+      </div>
+    `;
+
+    return pubDiv;
+  }
+
+  // Function to render publications
+  function renderPublications() {
+    const selectedTopics = Array.from(document.querySelectorAll('.topic-filter.selected'))
+      .map(el => el.dataset.topic);
+
+    let shownTopics = selectedTopics;
     if (shownTopics.length == 0) {
         shownTopics = Array.from(document.querySelectorAll('.topic-filter'))
             .map(el => el.dataset.topic);
     }
 
-    const container = document.getElementById('publications-container');
-    container.innerHTML = ''; // Clear current content
+    const isGrouped = document.getElementById('group-highlights').checked;
 
-    const filteredPublications = publications.filter(pub =>
+    // Filter highlighted publications
+    const filteredHighlightedPublications = highlightedPublications.filter(pub =>
       pub.topics.some(topic => shownTopics.includes(topic))
     );
 
-    filteredPublications.sort((a, b) => new Date(b.date) - new Date(a.date));
+    // Filter other publications
+    const filteredOtherPublications = otherPublications.filter(pub =>
+      pub.topics.some(topic => shownTopics.includes(topic))
+    );
+
+    if (isGrouped) {
+      // Render highlighted publications section
+      const highlightedContainer = document.getElementById('highlighted-publications-container');
+      const highlightedSection = document.getElementById('highlighted-publications-section');
+      highlightedContainer.innerHTML = '';
+
+      if (filteredHighlightedPublications.length > 0) {
+        highlightedSection.style.display = 'block';
+        filteredHighlightedPublications.forEach(pub => {
+          highlightedContainer.appendChild(renderPublication(pub, true, false));
+        });
+      } else {
+        highlightedSection.style.display = 'none';
+      }
+
+      // Render other publications sorted by date
+      const container = document.getElementById('publications-container');
+      container.innerHTML = '';
+
+      filteredOtherPublications.sort((a, b) => new Date(b.date) - new Date(a.date));
+      filteredOtherPublications.forEach(pub => {
+        container.appendChild(renderPublication(pub, false, true));
+      });
+
+      // Update header text
+      const allPubsHeader = document.getElementById('all-publications-header');
+      if (filteredHighlightedPublications.length > 0) {
+        allPubsHeader.textContent = 'All Publications';
+      } else {
+        allPubsHeader.textContent = 'Publications';
+      }
+    } else {
+      // Hide the separate highlighted section
+      document.getElementById('highlighted-publications-section').style.display = 'none';
+
+      // Merge all publications and sort: highlighted by original order, others by date, then interleave by original index
+      const allFilteredPublications = [
+        ...filteredHighlightedPublications,
+        ...filteredOtherPublications
+      ].sort((a, b) => {
+        // Sort by original document order (which is chronological)
+        return a.originalIndex - b.originalIndex;
+      });
+
+      // Render all publications together
+      const container = document.getElementById('publications-container');
+      container.innerHTML = '';
+
+      allFilteredPublications.forEach(pub => {
+        const isHighlighted = pub.highlighted !== undefined && pub.highlighted !== null;
+        container.appendChild(renderPublication(pub, isHighlighted, true));
+      });
+
+      // Update header text
+      document.getElementById('all-publications-header').textContent = 'Publications';
+    }
 
     // Update the counter
-    updatePublicationCounter(filteredPublications.length, selectedTopics.length);
-
-    filteredPublications.forEach(pub => {
-      const pubDiv = document.createElement('div');
-      pubDiv.className = 'publication';
-
-      const linksHTML = Object.entries(pub.links || {}).map(([key, url]) => {
-        return `<a href="${url}" target="_blank" class="resource-link">${key}</a>`;
-      }).join(' ');
-
-      const topicsHTML = Object.entries(pub.topics || {}).map(([key, value]) => {
-        var extra_class = selectedTopics.includes(value) ? "selected" : "";
-        return `<span class="topic ${extra_class}">${value}</span>`;
-      }).join(' ');
-
-      pubDiv.innerHTML = `
-        <div class="publication-left">
-            <strong>${pub.date}</strong>
-        </div>
-        <div class="publication-right">
-            <h3><a href="${pub.main_link || '#'}" target="_blank">${pub.title}</a></h3>
-            <p>${pub.authors.replace(/\s/g, '&nbsp;').replace(/,&nbsp;/g, ', ').replace(/†/g, '<sup>†</sup>')}</p>
-            <p><i>${pub.venue}</i></p>
-            <p>${pub.summary}</p>
-            <div class="resource-topics">${topicsHTML}</div>
-            <div class="resource-links">${linksHTML}</div>
-        </div>
-      `;
-
-      container.appendChild(pubDiv);
-    });
+    const totalDisplayed = filteredHighlightedPublications.length + filteredOtherPublications.length;
+    updatePublicationCounter(totalDisplayed, filteredHighlightedPublications.length, selectedTopics.length, isGrouped);
   }
 
   // Function to select all topics
@@ -140,6 +251,7 @@ title: Publications
     deselectAllTopics();
     renderPublications();
   });
+  document.getElementById('group-highlights').addEventListener('change', renderPublications);
 
   // Initial render with all topics selected
   deselectAllTopics();
@@ -154,15 +266,46 @@ title: Publications
   }
 
   .publication {
-    margin: 1rem 0;
-    padding: 1rem;
-    border-bottom: 1px solid #ddd;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     display: flex;
     align-items: flex-start;
     gap: 1rem;
+    position: relative;
   }
-  .publication:last-child {
-    border-bottom: 0px;
+
+  /* Add separator line below highlighted publications in grouped together mode */
+  .publication.with-border::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.5rem; /* Position it halfway in the margin space */
+    height: 1px;
+    background-color: #ddd;
+  }
+  .publication.with-border:last-child::after {
+    height: 0px;
+  }
+
+  .highlighted-publication {
+    background-color: #f0f8ff; /* Pale blue background */
+    border-radius: 8px;
+  }
+
+  /* Highlighted publications without border get margin for spacing */
+  .highlighted-publication:not(.with-border) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  /* Highlighted publications with border (grouped together mode) */
+  .highlighted-publication.with-border {
+    margin-top: 1rem;
   }
 
   .publication-left {
@@ -242,5 +385,67 @@ title: Publications
 
   .topic-filter.selected, .topic.selected {
     background-color: #1358EC;
+  }
+
+  #highlighted-publications-section {
+    margin-bottom: 2rem;
+  }
+
+  #highlighted-publications-section h2,
+  #all-publications-section h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Toggle switch styles */
+  #highlight-controls {
+    margin: 1rem 0;
+  }
+
+  .toggle-switch {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .toggle-switch input[type="checkbox"] {
+    display: none;
+  }
+
+  .slider-toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    background-color: #ccc;
+    border-radius: 24px;
+    transition: background-color 0.3s;
+    margin-right: 0.5rem;
+  }
+
+  .slider-toggle::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 3px;
+    top: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+
+  .toggle-switch input[type="checkbox"]:checked + .slider-toggle {
+    background-color: #1358EC;
+  }
+
+  .toggle-switch input[type="checkbox"]:checked + .slider-toggle::before {
+    transform: translateX(26px);
+  }
+
+  .toggle-label {
+    font-size: 0.95rem;
+    font-weight: 500;
   }
 </style>
