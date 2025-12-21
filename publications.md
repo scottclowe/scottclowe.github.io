@@ -450,7 +450,7 @@ title: Publications
 
   .resource-link, .topic, .bibtex-button {
     display: inline-block;
-    margin: 0 0.2rem 0 0;
+    margin: 0;
     padding: 0.2rem 0.5rem;
     color: white;
     border-radius: 10px;
