@@ -13,6 +13,10 @@ title: Publications
 </div>
 <button id="select-all">Select all topics</button>
 <button id="select-none">Deselect all topics</button>
+<!-- Download BibTeX button -->
+<button id="download-bibtex" onclick="downloadFilteredBibtex()">
+  <span><u>⬇</u></span> <span id="download-bibtex-text">Download BibTeX</span>
+</button>
 
 <!-- Highlight Controls -->
 <div id="highlight-controls">
@@ -108,6 +112,14 @@ title: Publications
     }
   }
 
+  // Show/hide BibTeX for an entry
+  function toggleBibtex(btn) {
+    const box = btn.parentElement.nextElementSibling;
+    const arrow = btn.querySelector('.arrow');
+    const isHidden = box.classList.toggle('hidden');
+    arrow.textContent = isHidden ? '▼' : '▲';
+  }
+
   // Function to render a single publication
   function renderPublication(pub, isHighlighted = false, showBorder = true) {
     const selectedTopics = Array.from(document.querySelectorAll('.topic-filter.selected'))
@@ -127,10 +139,22 @@ title: Publications
       return `<a href="${url}" target="_blank" class="resource-link">${key}</a>`;
     }).join(' ');
 
-    const topicsHTML = Object.entries(pub.topics || {}).map(([key, value]) => {
-      var extra_class = selectedTopics.includes(value) ? "selected" : "";
-      return `<span class="topic ${extra_class}">${value}</span>`;
+    const topicsHTML = pub.topics.map(topic => {
+      const extraClass = selectedTopics.includes(topic) ? "selected" : "";
+      return `<span class="topic ${extraClass}">${topic}</span>`;
     }).join(' ');
+
+    const bibtexHTML = pub.bibtex ? `
+      <button class="bibtex-button" onclick="toggleBibtex(this)">
+        BibTeX <span class="arrow">▼</span>
+      </button>
+    ` : '';
+
+    const bibtexBox = pub.bibtex ? `
+      <div class="bibtex-box hidden">
+        <pre>${pub.bibtex}</pre>
+      </div>
+    ` : '';
 
     pubDiv.innerHTML = `
       <div class="publication-left">
@@ -140,9 +164,13 @@ title: Publications
           <h3><a href="${pub.main_link || '#'}" target="_blank">${pub.title}</a></h3>
           <p>${pub.authors.replace(/\s/g, '&nbsp;').replace(/,&nbsp;/g, ', ').replace(/†/g, '<sup>†</sup>')}</p>
           <p><i>${pub.venue}</i></p>
-          <p>${pub.summary}</p>
+          <p>${pub.summary || ''}</p>
           <div class="resource-topics">${topicsHTML}</div>
-          <div class="resource-links">${linksHTML}</div>
+          <div class="resource-links">
+            ${linksHTML}
+            ${bibtexHTML}
+          </div>
+          ${bibtexBox}
       </div>
     `;
 
@@ -158,6 +186,9 @@ title: Publications
     if (shownTopics.length == 0) {
         shownTopics = Array.from(document.querySelectorAll('.topic-filter'))
             .map(el => el.dataset.topic);
+        document.getElementById('download-bibtex-text').textContent = 'Download all BibTeX';
+    } else {
+        document.getElementById('download-bibtex-text').textContent = 'Download filtered BibTeX';
     }
 
     const isGrouped = document.getElementById('group-highlights').checked;
@@ -173,54 +204,34 @@ title: Publications
     );
 
     if (isGrouped) {
-      // Render highlighted publications section
-      const highlightedContainer = document.getElementById('highlighted-publications-container');
-      const highlightedSection = document.getElementById('highlighted-publications-section');
-      highlightedContainer.innerHTML = '';
+      const hContainer = document.getElementById('highlighted-publications-container');
+      const hSection = document.getElementById('highlighted-publications-section');
+      hContainer.innerHTML = '';
 
       if (filteredHighlightedPublications.length > 0) {
-        highlightedSection.style.display = 'block';
-        filteredHighlightedPublications.forEach(pub => {
-          highlightedContainer.appendChild(renderPublication(pub, true, false));
-        });
+        hSection.style.display = 'block';
+        filteredHighlightedPublications.forEach(pub => hContainer.appendChild(renderPublication(pub, true, false)));
       } else {
-        highlightedSection.style.display = 'none';
+        hSection.style.display = 'none';
       }
 
       // Render other publications sorted by date
       const container = document.getElementById('publications-container');
       container.innerHTML = '';
-
       filteredOtherPublications.sort((a, b) => new Date(b.date) - new Date(a.date));
-      filteredOtherPublications.forEach(pub => {
-        container.appendChild(renderPublication(pub, false, true));
-      });
+      filteredOtherPublications.forEach(pub => container.appendChild(renderPublication(pub, false, true)));
 
       // Update header text
-      const allPubsHeader = document.getElementById('all-publications-header');
-      if (filteredHighlightedPublications.length > 0) {
-        allPubsHeader.textContent = 'All Publications';
-      } else {
-        allPubsHeader.textContent = 'Publications';
-      }
+      document.getElementById('all-publications-header').textContent = filteredHighlightedPublications.length > 0 ? 'All Publications' : 'Publications';
     } else {
       // Hide the separate highlighted section
       document.getElementById('highlighted-publications-section').style.display = 'none';
 
       // Merge all publications and sort: highlighted by original order, others by date, then interleave by original index
-      const allFilteredPublications = [
-        ...filteredHighlightedPublications,
-        ...filteredOtherPublications
-      ].sort((a, b) => {
-        // Sort by original document order (which is chronological)
-        return a.originalIndex - b.originalIndex;
-      });
-
-      // Render all publications together
+      const allFiltered = [...filteredHighlightedPublications, ...filteredOtherPublications].sort((a, b) => a.originalIndex - b.originalIndex);
       const container = document.getElementById('publications-container');
       container.innerHTML = '';
-
-      allFilteredPublications.forEach(pub => {
+      allFiltered.forEach(pub => {
         const isHighlighted = pub.highlighted !== undefined && pub.highlighted !== null;
         container.appendChild(renderPublication(pub, isHighlighted, true));
       });
@@ -242,6 +253,40 @@ title: Publications
     document.querySelectorAll('.topic-filter').forEach(el => el.classList.remove('selected'));
   }
 
+  function downloadFilteredBibtex() {
+    const selectedTopics = Array.from(document.querySelectorAll('.topic-filter.selected'))
+      .map(el => el.dataset.topic);
+
+    let filtered;
+    // If no topics are selected, download everything
+    if (selectedTopics.length === 0) {
+      filtered = publications;
+    } else {
+      // Otherwise, filter by selected topics
+      filtered = publications.filter(pub => pub.topics.some(t => selectedTopics.includes(t)));
+    }
+
+    const bibtexContent = filtered
+      .filter(pub => pub.bibtex)
+      .map(pub => pub.bibtex)
+      .join('\n');
+
+    if (!bibtexContent) {
+      alert("No BibTeX entries found.");
+      return;
+    }
+
+    const blob = new Blob([bibtexContent], { type: 'text/plain' });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'publications.bib';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  }
+
   // Event listeners
   document.getElementById('select-all').addEventListener('click', () => {
     selectAllTopics();
@@ -253,10 +298,9 @@ title: Publications
   });
   document.getElementById('group-highlights').addEventListener('change', renderPublications);
 
-  // Initial render with all topics selected
+  // Initial render with all topics deselected
   deselectAllTopics();
   renderPublications();
-
 </script>
 
 <style>
@@ -338,7 +382,7 @@ title: Publications
     margin: 0px;
   }
 
-  .resource-link, .topic {
+  .resource-link, .topic, .bibtex-button {
     display: inline-block;
     margin: 0 0.2rem 0 0;
     padding: 0.2rem 0.5rem;
@@ -375,7 +419,7 @@ title: Publications
     background-color: #6791EC;
     color: white;
   }
-  .topic-filter {
+  .topic-filter, #download-bibtex {
     padding: 0.5rem 1rem;
     border-radius: 10px;
     font-size: 0.9rem;
@@ -447,5 +491,62 @@ title: Publications
   .toggle-label {
     font-size: 0.95rem;
     font-weight: 500;
+  }
+
+  /* Button styling */
+  .bibtex-button, #download-bibtex {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  #download-bibtex {
+    background-color: #28a745;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  #download-bibtex:hover {
+    background-color: #218838;
+  }
+
+  .bibtex-button {
+    border: 0px;
+    background-color: #6c757d;
+    color: white;
+  }
+  .bibtex-button:hover {
+    background-color: #3f4449;
+  }
+
+  /* Hidden state for the dropdown */
+  .hidden {
+    display: none;
+  }
+
+  .bibtex-box {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.75rem;
+
+    /* Constraints to prevent overflow */
+    width: 100%;
+    box-sizing: border-box;  /* Ensures padding doesn't add to width */
+    overflow-x: auto;  /* Adds a scrollbar only if absolutely necessary */
+  }
+
+  .bibtex-box pre {
+    margin: 0;
+    white-space: pre-wrap;  /* CSS3 - preserves spaces and wraps lines */
+    white-space: -moz-pre-wrap;  /* Firefox */
+    white-space: -pre-wrap;  /* Opera 4-6 */
+    white-space: -o-pre-wrap;  /* Opera 7 */
+    word-wrap: break-word;  /* Internet Explorer 5.5+ */
   }
 </style>

@@ -10,6 +10,14 @@
     openreview: https://openreview.net/forum?id=nXHczMetxK
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @inproceedings{Oore2025_LoopyFramework,
+        title = {A loopy framework and tool for real-time human-{AI} music collaboration},
+        author = {Sageev Oore and Finlay Miller and Chandramouli Shama Sastry and Sri Harsha Dumpala and Marvin F. da Silva and Daniel Oore and Scott C. Lowe},
+        booktitle = {AI for Music Workshop},
+        year = {2025},
+        url = {https://openreview.net/forum?id=nXHczMetxK},
+    }
 
 - date: '2025'  # Dec
   title: 'BugSR: Improving Tiny Instance Segmentation on the MassID45 Dataset'
@@ -25,6 +33,14 @@
     openreview: https://openreview.net/forum?id=OYK7psfeNe
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @inproceedings{Quinto2025_BugSR,
+        title = {Bug{SR}: Improving tiny instance segmentation on the {MassID45} dataset},
+        author = {John Quinto and Scott C. Lowe and Akshita Gupta and Johanna Orsholm and Prajakta Darade and Iuliia Zarubiieva and Brendan Furneaux and Tommi Mononen and Tomas Roslin and Graham W. Taylor},
+        booktitle = {NeurIPS 2025 Workshop for Imageomics: Discovering Biological Knowledge from Images Using AI},
+        year = {2025},
+        url = {https://openreview.net/forum?id=OYK7psfeNe},
+    }
 
 - date: '2025'  # Dec
   title: 'BarcodeMamba+: Advancing State-Space Models for Fungal Biodiversity Research'
@@ -40,6 +56,18 @@
     openreview: https://openreview.net/forum?id=wOgcLKq1Hg
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @inproceedings{Gao2025_BarcodeMambaPlus,
+        title = {{BarcodeMamba+}: Supervised advances for state-space models in fungal biodiversity research},
+        author = {Tiancheng Gao and Scott C. Lowe and Brendan Furneaux and Angel X Chang and Graham W. Taylor},
+        booktitle = {NeurIPS 2025 Workshop for Imageomics: Discovering Biological Knowledge from Images Using AI},
+        year = {2025},
+        url = {https://openreview.net/forum?id=wOgcLKq1Hg},
+        eprint = {2512.15931},
+        archivePrefix = {arXiv},
+        primaryClass = {cs.LG},
+        doi = {10.48550/arxiv.2512.15931},
+    }
 
 - date: '2025'  # Sept
   title: 'Understanding and Improving the Shampoo Optimizer via Kullback-Leibler Minimization'
@@ -55,6 +83,17 @@
   thumbnail: ''
   summary: ''
   highlighted: 6
+  bibtex: |
+    @article{Lin2025_KLShampoo,
+        title = {Understanding and improving {S}hampoo and {SOAP} via {K}ullback-{L}eibler minimization},
+        author = {Wu Lin and Scott C. Lowe and Felix Dangel and Runa Eschenhagen and Zikun Xu and Roger B. Grosse},
+        year = {2025},
+        eprint = {2509.03378},
+        archivePrefix = {arXiv},
+        primaryClass = {stat.ML},
+        doi = {10.48550/arxiv.2509.03378},
+        journal = {arXiv preprint arXiv:2509.03378},
+    }
 
 - date: '2025'  # July
   title: 'Hyperbolic Multimodal Representation Learning for Biological Taxonomies'
@@ -74,6 +113,18 @@
     arXiv: https://arxiv.org/abs/2508.16744
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @inproceedings{Gong2025_HyperbolicCLIBD,
+        title = {Hyperbolic multimodal representation learning for biological taxonomies},
+        author = {ZeMing Gong and Chuanqi Tang and Xiaoliang Huo and Nicholas Pellegrino and Austin Wang and Graham W. Taylor and Angel X Chang and Scott C. Lowe and Joakim Bruslund Haurum},
+        booktitle = {2nd Beyond Euclidean Workshop: Hyperbolic and Hyperspherical Learning for Computer Vision},
+        year = {2025},
+        url = {https://openreview.net/forum?id=N8gq83vDnr},
+        eprint = {2508.16744},
+        archivePrefix = {arXiv},
+        primaryClass = {cs.LG},
+        doi = {10.48550/arxiv.2508.16744},
+    }
 
 - date: '2025'  # July
   title: 'A multi-modal dataset for insect biodiversity with imagery and DNA at the trap and individual level'
@@ -95,6 +146,17 @@
     openreview: https://openreview.net/forum?id=Kn8bz1ZPvE
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @inproceedings{Orsholm2025_MassID45,
+        title = {A multi-modal dataset for insect biodiversity with imagery and {DNA} at the trap and individual level},
+        author = {Johanna Orsholm and John Quinto and Hannu Autto and Gaia Banelyte and Nicolas Chazot and Jeremy deWaard and Stephanie deWaard and Arielle Farrell and Brendan Furneaux and Bess Hardwick and Nao Ito and Amlan Kar and Oula Kalttopää and Deirdre Kerdraon and Erik Kristensen and Jaclyn McKeown and Tommi Mononen and Ellen Nein and Hanna Rogers and Tomas Roslin and Paula Schmitz and Jayme Sones and Maija Sujala and Amy Thompson and Evgeny V. Zakharov and Iuliia Zarubiieva and Akshita Gupta and Scott C. Lowe and Graham W. Taylor},
+        booktitle = {NeurIPS 2025 Workshop for Imageomics: Discovering Biological Knowledge from Images Using AI},
+        year = {2025},
+        eprint = {2507.06972},
+        archivePrefix = {arXiv},
+        primaryClass = {cs.CV},
+        doi = {10.48550/arxiv.2507.06972},
+    }
 
 - date: '2025'  # May
   title: 'Optimizing Image Capture for Computer Vision-Powered Taxonomic Identification and Trait Recognition of Biodiversity Specimens'
@@ -110,6 +172,20 @@
     arXiv: https://arxiv.org/abs/2505.17317
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @article{East2025_RulesForBioCV,
+        title = {Optimizing image capture for computer vision‐powered taxonomic identification and trait recognition of biodiversity specimens},
+        author = {East, Alyson and Campolongo, Elizabeth G. and Meyers, Luke and Rayeed, S. M. and Stevens, Samuel and Zarubiieva, Iuliia and Fluck, Isadora E. and Girón, Jennifer C. and Jousse, Maximiliane. and Lowe, Scott and Perry, Kayla I. and Betancourt, Isabelle and Charney, Noah and Donoso, Evan and Fox, Nathan and Landsbergen, Kim J. and Nepovinnykh, Ekaterina and Ramirez, Michelle and Singh, Parkash and Thapa‐Magar, Khum and Thompson, Matthew and Waite, Evan and Berger‐Wolf, Tanya and Lapp, Hilmar and Mabee, Paula and Stewart, Charles and Taylor, Graham and Record, Sydne},
+        volume = {16},
+        issn = {2041-210X},
+        doi = {10.1111/2041-210x.70140},
+        number = {10},
+        journal = {Methods in Ecology and Evolution},
+        publisher = {Wiley},
+        year = {2025},
+        month=sep,
+        pages = {2260–2275},
+    }
 
 - date: '2025'  # Feb
   title: 'Enhancing DNA Foundation Models to Address Masking Inefficiencies'
@@ -127,6 +203,17 @@
     github: https://github.com/bioscan-ml/BarcodeMAE
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @inproceedings{Safari2025_BarcodeMAE,
+        title = {Enhancing {DNA} foundation models to address masking inefficiencies},
+        author = {Monireh Safari and Pablo Millan Arias and Scott C. Lowe and Lila Kari and Angel X. Chang and Graham W. Taylor},
+        booktitle = {ICLR 2025 Workshop on AI for Nucleic Acids},
+        year = {2025},
+        url = {https://openreview.net/forum?id=DGs7lmqkkU},
+        eprint = {2502.18405},
+        archivePrefix = {arXiv},
+        doi = {10.48550/arxiv.2502.18405},
+    }
 
 - date: '2025'  # Apr
   title: 'CLIBD: Bridging Vision and Genomics for Biodiversity Monitoring at Scale'
@@ -150,6 +237,14 @@
   thumbnail: ''
   summary: ''
   highlighted: 2
+  bibtex: |
+    @inproceedings{Gong2025_CLIBD,
+        title = {{CLIBD}: Bridging vision and genomics for biodiversity monitoring at scale},
+        author = {ZeMing Gong and Austin Wang and Xiaoliang Huo and Joakim Bruslund Haurum and Scott C. Lowe and Graham W. Taylor and Angel X Chang},
+        booktitle = {International Conference on Learning Representations},
+        year = {2025},
+        url = {https://openreview.net/forum?id=d5HUnyByAI}
+    }
 
 - date: '2025'  # Feb
   title: 'BenthicNet: A global compilation of seafloor images for deep learning applications'
@@ -168,6 +263,20 @@
     dataset: https://www.frdr-dfdr.ca/repo/dataset/24c6c813-d0ff-4461-8174-3f960f1edc0d
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @article{Lowe2025_BenthicNet,
+        title = {{BenthicNet}: A global compilation of seafloor images for deep learning applications},
+        author = {Lowe, Scott C. and Misiuk, Benjamin and Xu, Isaac and Abdulazizov, Shakhboz and Baroi, Amit R. and Bastos, Alex C. and Best, Merlin and Ferrini, Vicki and Friedman, Ariell and Hart, Deborah and Hoegh-Guldberg, Ove and Ierodiaconou, Daniel and Mackin-McLaughlin, Julia and Markey, Kathryn and Menandro, Pedro S. and Monk, Jacquomo and Nemani, Shreya and O'Brien, John and Oh, Elizabeth and Reshitnyk, Luba Y. and Robert, Katleen and Roelfsema, Chris M. and Sameoto, Jessica A. and Schimel, Alexandre C. G. and Thomson, Jordan A. and Wilson, Brittany R. and Wong, Melisa C. and Brown, Craig J. and Trappenberg, Thomas},
+        journal = {Scientific Data},
+        year = {2025},
+        month = {Feb},
+        day = {07},
+        volume = {12},
+        number = {1},
+        pages = {230},
+        issn = {2052-4463},
+        doi = {10.1038/s41597-025-04491-1},
+    }
 
 - date: '2024'  # Dec
   title: 'BIOSCAN-5M: A Multimodal Dataset for Insect Biodiversity'
@@ -195,6 +304,17 @@
   thumbnail: ''
   summary: ''
   highlighted: 3
+  bibtex: |
+    @inproceedings{Gharaee2024_BIOSCAN5M,
+        title = {{BIOSCAN-5M}: A multimodal dataset for insect biodiversity},
+        author = {Gharaee, Zahra and Lowe, Scott C. and Gong, ZeMing and Arias, Pablo Millan and Pellegrino, Nicholas and Wang, Austin T. and Haurum, Joakim Bruslund and Zarubiieva, Iuliia and Kari, Lila and Steinke, Dirk and Taylor, Graham W. and Fieguth, Paul and Chang, Angel X.},
+        booktitle = {Advances in Neural Information Processing Systems},
+        publisher = {Curran Associates, Inc.},
+        volume = {37},
+        year = {2024},
+        doi = {10.52202/079017-1144},
+        url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/3fdbb472813041c9ecef04c20c2b1e5a-Paper-Datasets_and_Benchmarks_Track.pdf},
+    }
 
 - date: '2024'  # Oct
   title: System 2 Reasoning Capabilities Are Nigh
@@ -210,6 +330,18 @@
   thumbnail: ''
   summary: ''
   highlighted: 5
+  bibtex: |
+    @inproceedings{Lowe2024_System2Nigh,
+        title = {System 2 reasoning capabilities are nigh},
+        author = {Scott C. Lowe},
+        booktitle = {The First Workshop on System-2 Reasoning at Scale, NeurIPS'24},
+        year = {2024},
+        url = {https://openreview.net/forum?id=ZxaipE6f62},
+        eprint = {2410.03662},
+        archivePrefix = {arXiv},
+        primaryClass = {cs.AI},
+        doi = {10.48550/arxiv.2410.03662},
+    }
 
 - date: '2024'  # Oct
   title: 'Towards a Taxonomy Machine: A Training Set of 5.6 Million Arthropod Images'
@@ -222,9 +354,22 @@
   main_link: https://doi.org/10.3390/data9110122
   links:
     paper: https://doi.org/10.3390/data9110122
-    bioRxiv: https://doi.org/10.1101/2024.07.15.600863 
+    bioRxiv: https://doi.org/10.1101/2024.07.15.600863
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @article{Steinke2024_TowardsTaxonomy,
+        author = {Steinke, Dirk and Ratnasingham, Sujeevan and Agda, Jireh and Ait Boutou, Hamzah and Box, Isaiah C. H. and Boyle, Mary and Chan, Dean and Feng, Corey and Lowe, Scott C. and McKeown, Jaclyn T. A. and McLeod, Joschka and Sanchez, Alan and Smith, Ian and Walker, Spencer and Wei, Catherine Y.-Y. and Hebert, Paul D. N.},
+        title = {Towards a taxonomy machine: A training set of 5.6 million arthropod images},
+        journal = {Data},
+        volume = {9},
+        year = {2024},
+        number = {11},
+        article-number = {122},
+        issn = {2306-5729},
+        doi = {10.3390/data9110122},
+        url = {https://www.mdpi.com/2306-5729/9/11/122},
+    }
 
 - date: '2024'  # Jun
   title: Hierarchical multi-label classification with missing information for benthic habitat imagery
@@ -241,6 +386,18 @@
     arXiv: https://arxiv.org/abs/2409.06618
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @inproceedings{Xu2024_HierarchicalMultiLabel,
+        title = {Hierarchical multi-label classification with missing information for benthic habitat imagery},
+        author = {Xu, Isaac and Misiuk, Benjamin and Lowe, Scott C. and Gillis, Martin and Trappenberg, Thomas and Brown, Craig J.},
+        booktitle = {2024 International Joint Conference on Neural Networks (IJCNN)},
+        year = {2024},
+        pages = {1-10},
+        doi = {10.1109/IJCNN60899.2024.10650176},
+        eprint = {2409.06618},
+        archivePrefix = {arXiv},
+        primaryClass = {cs.CV},
+    }
 
 - date: '2024'  # Jun
   title: An Empirical Study into Clustering of Unseen Datasets with Self-Supervised Encoders
@@ -257,6 +414,17 @@
   thumbnail: ''
   summary: ''
   highlighted: 4
+  bibtex: |
+    @inproceedings{Lowe2024_ZeroShotClustering,
+        title = {An empirical study into clustering of unseen datasets with self-supervised foundation models},
+        author = {Scott C. Lowe and Joakim Bruslund Haurum and Sageev Oore and Thomas B. Moeslund and Graham W. Taylor},
+        booktitle = {ICML 2024 Workshop on Foundation Models in the Wild},
+        year = {2024},
+        url = {https://openreview.net/forum?id=kcgf3istoO},
+        eprint = {2406.02465},
+        archivePrefix = {arXiv},
+        primaryClass = {cs.LG},
+    }
 
 - date: '2023'  # Dec
   title: 'A step towards worldwide biodiversity assessment: The BIOSCAN-1M insect dataset'
@@ -277,6 +445,17 @@
     pypi: https://pypi.org/project/bioscan-dataset/
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @inproceedings{Gharaee2023_BIOSCAN1M,
+        title = {A step towards worldwide biodiversity assessment: The {BIOSCAN-1M} insect dataset},
+        author = {Zahra Gharaee and ZeMing Gong and Nicholas Pellegrino and Iuliia Zarubiieva and Joakim Bruslund Haurum and Scott C. Lowe and Jaclyn T. A. McKeown and Chris C. Y. Ho and Joschka McLeod and Yi-Yun C Wei and Jireh Agda and Sujeevan Ratnasingham and Dirk Steinke and Angel X. Chang and Graham W. Taylor and Paul Fieguth},
+        booktitle = {Advances in Neural Information Processing Systems},
+        pages = {43593--43619},
+        publisher = {Curran Associates, Inc.},
+        year = {2023},
+        volume = {36},
+        url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/87dbbdc3a685a97ad28489a1d57c45c1-Paper-Datasets_and_Benchmarks.pdf},
+    }
 
 - date: '2023'  # Nov
   title: 'BarcodeBERT: Transformers for Biodiversity Analysis'
@@ -293,6 +472,17 @@
     github: https://github.com/bioscan-ml/BarcodeBERT
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @inproceedings{Arias2023_BarcodeBERT,
+        title = {Barcode{BERT}: transformers for biodiversity analysis},
+        author = {Pablo Millan Arias and Niousha Sadjadi and Monireh Safari and ZeMing Gong and Austin T. Wang and Joakim Bruslund Haurum and Iuliia Zarubiieva and Dirk Steinke and Lila Kari and Angel X. Chang and Scott C. Lowe and Graham W. Taylor},
+        booktitle = {NeurIPS 2023 Workshop: Self-Supervised Learning - Theory and Practice},
+        year = {2023},
+        url = {https://openreview.net/forum?id=0nRednHa2h},
+        eprint = {2311.02401},
+        archivePrefix = {arXiv},
+        primaryClass = {cs.LG},
+    }
 
 - date: '2023'  # Sep
   title: Prevention of obstructive apnea events with machine learning
@@ -306,6 +496,18 @@
     paper: https://doi.org/10.1183/13993003.congress-2023.PA573
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @article{Hanafi2023_PreventionObstructiveApnea,
+        title = {Prevention of obstructive apnea events with machine learning},
+        author = {Hanafi, Hamed and Paffile, Julia and Sinclair, Meagan and El-Sankary, Kamal and Lowe, Scott and Oore, Sageev and Driscoll, Stephen and Penzel, Thomas and Fietze, Ingo and Patel, Sanjay and Mehra, Reena and Morrison, Debra},
+        volume = {62},
+        number = {suppl 67},
+        elocation-id = {PA573},
+        year = {2023},
+        publisher = {European Respiratory Society},
+        journal = {European Respiratory Journal},
+        doi = {10.1183/13993003.congress-2023.PA573},
+    }
 
 - date: '2023'  # Oct
   title: 'The Beginning of the AI-Enabled Preventative PAP Therapy Era: A First-in-Human Proof of Concept Interventional Study'
@@ -319,6 +521,17 @@
     paper: https://doi.org/10.1109/TBME.2023.3263379
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @article{Sinclair2023_BeginningAIPreventativePAP,
+        title = {The Beginning of the AI-Enabled Preventative PAP Therapy Era: A First-in-Human Proof of Concept Interventional Study},
+        author = {Sinclair, Meagan and Alamdari, Hamed Hanafi and Paffile, Julia and El-Sankary, Kamal and Lowe, Scott and Driscoll, Stephen and Oore, Sageev and Tomson, Heather and Begin, Gregory and Aristi, Guillermo and Schmidt, Michael and Roach, David and Penzel, Thomas and Fietze, Ingo and Patel, Sanjay R and Mehra, Reena and Morrison, Debra},
+        journal = {IEEE Transactions on Biomedical Engineering},
+        year = {2023},
+        volume = {70},
+        number = {10},
+        pages = {2776-2787},
+        doi = {10.1109/TBME.2023.3263379},
+    }
 
 - date: '2022'  # Dec
   title: 'Logical Activation Functions: Logit-space equivalents of Boolean Operators'
@@ -334,6 +547,17 @@
   thumbnail: ''
   summary: ''
   highlighted: 1
+  bibtex: |
+    @inproceedings{Lowe2022_LogicalActivationFunctions,
+        title = {Logical activation functions: Logit-space equivalents of probabilistic boolean operators},
+        author = {Lowe, Scott and Earle, Robert and d\textquotesingle Eon, Jason and Trappenberg, Thomas and Oore, Sageev},
+        booktitle = {Advances in Neural Information Processing Systems},
+        pages = {29733--29747},
+        publisher = {Curran Associates, Inc.},
+        volume = {35},
+        year = {2022},
+        url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/c05144b635df16ac9bbf8246bbbd55ca-Paper-Conference.pdf},
+    }
 
 - date: '2022'  # Sep
   title: Label-free Monitoring of Self-Supervised Learning Progress
@@ -348,6 +572,15 @@
     paper: https://doi.org/10.1109/CCECE49351.2022.9918377
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @inproceedings{Xu2022_LabelFreeMonitoring,
+        title = {Label-free monitoring of self-supervised learning progress},
+        author = {Xu, Isaac and Lowe, Scott and Trappenberg, Thomas},
+        booktitle = {2022 IEEE Canadian Conference on Electrical and Computer Engineering (CCECE)},
+        year = {2022},
+        pages = {78-84},
+        doi = {10.1109/CCECE49351.2022.9918377},
+    }
 
 - date: '2022'  # Aug
   title: 'Echofilter: A Deep Learning Segmention Model Improves the Automation, Standardization, and Timeliness for Post-Processing Echosounder Data in Tidal Energy Streams'
@@ -364,6 +597,16 @@
     pypi: https://pypi.org/project/echofilter/
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @article{Lowe2022_Echofilter,
+        title = {Echofilter: A deep learning segmentation model improves the automation, standardization, and timeliness for post-processing echosounder data in tidal energy streams},
+        author = {Lowe, Scott C. and McGarry, Louise P. and Douglas, Jessica and Newport, Jason and Oore, Sageev and Whidden, Christopher and Hasselman, Daniel J.},
+        journal = {Frontiers in Marine Science},
+        volume = {Volume 9 - 2022},
+        year = {2022},
+        issn = {2296-7745},
+        doi = {10.3389/fmars.2022.867857},
+    }
 
 - date: '2022'  # Jul
   title: 'High frequency-low amplitude oscillometry: Continuous unobtrusive monitoring of respiratory function on PAP machines'
@@ -377,6 +620,17 @@
     paper: https://doi.org/10.1109/TBME.2021.3138965
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @article{Hanafi2022_HighFreqLowAmpOscillometry,
+        title = {High frequency-Low amplitude oscillometry: Continuous unobtrusive monitoring of respiratory function on {PAP} machines},
+        author = {Alamdari, Hamed Hanafi and Hacquebard, Luke and Driscoll, Stephen and El-Sankary, Kamal and Roach, David C and LeBlanc, Robin and Lowe, Scott and Oore, Sageev and Penzel, Thomas and Fietze, Ingo and Schmidt, Michael and Morrison, Debra},
+        journal = {IEEE Transactions on Biomedical Engineering},
+        year = {2022},
+        volume = {69},
+        number = {7},
+        pages = {2202-2211},
+        doi = {10.1109/TBME.2021.3138965},
+    }
 
 - date: '2021'  # Nov
   title: LogAvgExp Provides a Principled and Performant Global Pooling Operator
@@ -389,6 +643,17 @@
     arXiv: https://arxiv.org/abs/2111.01742
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @article{Lowe2021_LogAvgExp,
+        title = {{LogAvgExp} provides a principled and performant global pooling operator},
+        author = {Lowe, Scott C. and Trappenberg, Thomas and Oore, Sageev},
+        year = {2021},
+        eprint = {2111.01742},
+        archivePrefix = {arXiv},
+        primaryClass = {cs.LG},
+        journal = {arXiv preprint arXiv:2111.01742},
+        doi = {10.48550/arXiv.2111.01742},
+    }
 
 - date: '2019'  # Nov
   title: Program synthesis performance constrained by non-linear spatial relations in synthetic visual reasoning test
@@ -403,6 +668,17 @@
     github: https://github.com/yihe-61wu/pySVRT
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @article{Yihe2019_ProgramSynthesis,
+        title = {Program synthesis performance constrained by non-linear spatial relations in {S}ynthetic {V}isual {R}easoning Test},
+        author = {Lu Yihe and Scott C. Lowe and Penelope A. Lewis and Mark C. W. van Rossum},
+        year = {2019},
+        eprint = {1911.07721},
+        archivePrefix = {arXiv},
+        primaryClass = {cs.LG},
+        journal = {arXiv preprint arXiv:1911.07721},
+        doi = {10.48550/arXiv.1911.07721},
+    }
 
 - date: '2019'  # Jun
   title: Exploring conditioning for generative music systems with human-interpretable controls
@@ -417,6 +693,18 @@
     github: https://github.com/LogaNick/magenta
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @inproceedings{Meade2019_ExploringConditioning,
+        title = {Exploring conditioning for generative music systems with human-interpretable controls},
+        author = {Nicholas Meade and Nicholas Barreyre and Scott C. Lowe and Sageev Oore},
+        booktitle = {International Conference on Computational Creativity (ICCC)},
+        year = {2019},
+        url = {https://computationalcreativity.net/iccc2019/papers/iccc19-paper-57.pdf},
+        eprint = {1907.04352},
+        archivePrefix = {arXiv},
+        primaryClass = {cs.SD},
+        doi = {10.48550/arXiv.1907.04352},
+    }
 
 - date: '2018'  # Feb
   title: 'FISSA: A neuropil decontamination toolbox for calcium imaging signals'
@@ -432,6 +720,18 @@
     pypi: https://pypi.python.org/pypi/fissa
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @article{Keemink2018_FISSA,
+      title = {{FISSA}: {A} neuropil decontamination toolbox for calcium imaging signals},
+      author = {Keemink, Sander W. and Lowe, Scott C. and Pakan, Janelle M. P. and Dylda, Evelyn and van Rossum, Mark C. W. and Rochefort, Nathalie L.},
+      journal = {Scientific Reports},
+      year = {2018},
+      volume = {8},
+      number = {1},
+      pages = {3493},
+      issn = {2045-2322},
+      doi = {10.1038/s41598-018-21640-2},
+    }
 
 - date: '2018'  # Jan
   title: Dopamine is signaled by mid-frequency oscillations and boosts output layers visual information in visual cortex
@@ -446,6 +746,21 @@
     paper: https://doi.org/10.1016/j.cub.2017.12.006
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @article{Zaldivar2018_DopamineMidFreqOsc,
+        title = {Dopamine is signaled by mid-frequency oscillations and boosts output layers visual information in visual cortex},
+        author = {Zaldivar, Daniel and Goense, Jozien and Lowe, Scott C. and Logothetis, Nikos K. and Panzeri, Stefano},
+        journal = {Current Biology},
+        publisher = {Elsevier},
+        year = {2018},
+        month = {01},
+        day = {22},
+        volume = {28},
+        number = {2},
+        pages = {224-235.e5},
+        issn = {0960-9822},
+        doi = {10.1016/j.cub.2017.12.006},
+    }
 
 - date: '2017'
   title: Decoding information from neural populations in the visual cortex
@@ -461,6 +776,14 @@
     PDF: /LoweSC_PhD_thesis.pdf
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @phdthesis{Lowe2017_DecodingInfoNeural,
+        title = {Decoding information from neural populations in the visual cortex},
+        author = {Lowe, Scott C.},
+        school = {The University of Edinburgh},
+        year = {2017},
+        url = {http://hdl.handle.net/1842/28861},
+    }
 
 - date: '2016'  # Aug
   title: Behavioral-state modulation of inhibition is context-dependent and cell type specific in mouse visual cortex
@@ -474,6 +797,19 @@
     paper: https://doi.org/10.7554/eLife.14985
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @article{Pakan2016_BehavioralStateModulation,
+        title = {Behavioral-state modulation of inhibition is context-dependent and cell type specific in mouse visual cortex},
+        author = {Pakan, Janelle M. P. and Lowe, Scott C. and Dylda, Evelyn and Keemink, Sander W. and Currie, Stephen P. and Coutts, Christopher A. and Rochefort, Nathalie L.},
+        journal = {eLife},
+        publisher = {eLife Sciences Publications, Ltd},
+        year = {2016},
+        month = {08},
+        day = {09},
+        volume = {5},
+        pages = {e14985},
+        doi = {10.7554/eLife.14985},
+    }
 
 - date: '2015'  # Sep
   title: Shifts of gamma phase across primary visual cortical sites reflect dynamic stimulus-modulated information transfer
@@ -488,3 +824,16 @@
     paper: https://doi.org/10.1371/journal.pbio.1002257
   thumbnail: ''
   summary: ''
+  bibtex: |
+    @article{Besserve2015_ShiftsGammaPhase,
+        title = {Shifts of gamma phase across primary visual cortical sites reflect dynamic stimulus-modulated information transfer},
+        author = {Besserve, Michel and Lowe, Scott C. and Logothetis, Nikos K. and Schölkopf, Bernhard and Panzeri, Stefano},
+        journal = {PLOS Biology},
+        publisher = {Public Library of Science},
+        year = {2015},
+        month = {09},
+        volume = {13},
+        pages = {1-29},
+        number = {9},
+        doi = {10.1371/journal.pbio.1002257},
+    }
