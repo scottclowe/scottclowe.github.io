@@ -59,7 +59,7 @@
   bibtex: |
     @inproceedings{Gao2025_BarcodeMambaPlus,
         title = {{BarcodeMamba+}: Supervised advances for state-space models in fungal biodiversity research},
-        author = {Tiancheng Gao and Scott C. Lowe and Brendan Furneaux and Angel X Chang and Graham W. Taylor},
+        author = {Tiancheng Gao and Scott C. Lowe and Brendan Furneaux and Angel X. Chang and Graham W. Taylor},
         booktitle = {NeurIPS 2025 Workshop for Imageomics: Discovering Biological Knowledge from Images Using AI},
         year = {2025},
         url = {https://openreview.net/forum?id=wOgcLKq1Hg},
@@ -116,7 +116,7 @@
   bibtex: |
     @inproceedings{Gong2025_HyperbolicCLIBD,
         title = {Hyperbolic multimodal representation learning for biological taxonomies},
-        author = {ZeMing Gong and Chuanqi Tang and Xiaoliang Huo and Nicholas Pellegrino and Austin Wang and Graham W. Taylor and Angel X Chang and Scott C. Lowe and Joakim Bruslund Haurum},
+        author = {ZeMing Gong and Chuanqi Tang and Xiaoliang Huo and Nicholas Pellegrino and Austin Wang and Graham W. Taylor and Angel X. Chang and Scott C. Lowe and Joakim Bruslund Haurum},
         booktitle = {2nd Beyond Euclidean Workshop: Hyperbolic and Hyperspherical Learning for Computer Vision},
         year = {2025},
         url = {https://openreview.net/forum?id=N8gq83vDnr},
@@ -240,7 +240,7 @@
   bibtex: |
     @inproceedings{Gong2025_CLIBD,
         title = {{CLIBD}: Bridging vision and genomics for biodiversity monitoring at scale},
-        author = {ZeMing Gong and Austin Wang and Xiaoliang Huo and Joakim Bruslund Haurum and Scott C. Lowe and Graham W. Taylor and Angel X Chang},
+        author = {ZeMing Gong and Austin Wang and Xiaoliang Huo and Joakim Bruslund Haurum and Scott C. Lowe and Graham W. Taylor and Angel X. Chang},
         booktitle = {International Conference on Learning Representations},
         year = {2025},
         url = {https://openreview.net/forum?id=d5HUnyByAI}
