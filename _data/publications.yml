@@ -8,6 +8,7 @@
   links:
     project: https://osageev.github.io/projects/looper/
     openreview: https://openreview.net/forum?id=nXHczMetxK
+    poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/123765.png?t=1765930069.7650115
   thumbnail: ''
   summary: ''
   bibtex: |
@@ -54,6 +55,7 @@
   links:
     arXiv: https://arxiv.org/abs/2512.15931
     openreview: https://openreview.net/forum?id=wOgcLKq1Hg
+    poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/128739.png?t=1765885701.4723227
   thumbnail: ''
   summary: ''
   bibtex: |
@@ -80,6 +82,7 @@
   links:
     arXiv: https://arxiv.org/abs/2509.03378
     openreview: https://openreview.net/forum?id=MmZjegW8NK
+    poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/124345.png?t=1765885233.0748246
   thumbnail: ''
   summary: ''
   highlighted: 6
@@ -261,6 +264,7 @@
     paper: https://doi.org/10.1038/s41597-025-04491-1
     arXiv: https://arxiv.org/abs/2405.05241
     dataset: https://www.frdr-dfdr.ca/repo/dataset/24c6c813-d0ff-4461-8174-3f960f1edc0d
+    poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/128782.png?t=1765885775.1308475
   thumbnail: ''
   summary: ''
   bibtex: |
