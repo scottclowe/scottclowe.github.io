@@ -1,3 +1,31 @@
+- date: '2026'  # Jan
+  title: 'A continental-scale dataset of ground beetles with high-resolution images and validated morphological trait measurements'
+  venue: arXiv preprint arXiv:2601.10687
+  authors: S. M. Rayeed*, Mridul Khurana*, Alyson East*, Isadora E. Fluck, Elizabeth G. Campolongo, Samuel Stevens, Iuliia Zarubiieva, Scott C. Lowe, Michael W. Denslow, Evan D. Donoso, Jiaman Wu, Michelle Ramirez, Benjamin Baiser, Charles V. Stewart, Paula Mabee, Tanya Berger-Wolf, Anuj Karpatne, Hilmar Lapp, Robert P. Guralnick, Graham W. Taylor†, Sydne Record†
+  topics:
+  - dataset
+  - biodiversity
+  - insect
+  - vision
+  main_link: https://arxiv.org/abs/2601.10687
+  links:
+    arXiv: https://arxiv.org/abs/2601.10687
+    dataset (pinned): https://huggingface.co/datasets/imageomics/Hawaii-beetles
+    dataset (vial): https://huggingface.co/datasets/imageomics/2018-NEON-beetles
+  thumbnail: ''
+  summary: ''
+  bibtex: |
+    @article{Rayeed2026_GroundBeetles,
+        title = {A continental-scale dataset of ground beetles with high-resolution images and validated morphological trait measurements},
+        author = {S M Rayeed and Mridul Khurana and Alyson East and Isadora E. Fluck and Elizabeth G. Campolongo and Samuel Stevens and Iuliia Zarubiieva and Scott C. Lowe and Michael W. Denslow and Evan D. Donoso and Jiaman Wu and Michelle Ramirez and Benjamin Baiser and Charles V. Stewart and Paula Mabee and Tanya Berger-Wolf and Anuj Karpatne and Hilmar Lapp and Robert P. Guralnick and Graham W. Taylor and Sydne Record},
+        year = {2026},
+        eprint = {2601.10687},
+        archivePrefix = {arXiv},
+        primaryClass = {cs.CV},
+        doi = {10.48550/arxiv.2601.10687},
+        journal = {arXiv preprint arXiv:2601.10687},
+    }
+
 - date: '2025'  # Dec
   title: 'A Loopy Framework and Tool for Real-time Human-AI Music Collaboration'
   venue: 'Artificial Intelligence for Music: Where Creativity Meets Computation Workshop, NeurIPS 2025'
