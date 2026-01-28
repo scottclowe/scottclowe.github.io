@@ -1,3 +1,27 @@
+- date: '2026'  # arXiv 2025 Sept; ICLR 2026 Apr
+  title: 'Understanding and Improving Shampoo and SOAP via Kullback-Leibler Minimization'
+  venue: The Fourteenth International Conference on Learning Representations (ICLR 2026)
+  authors: Wu Lin, Scott C. Lowe, Felix Dangel, Runa Eschenhagen, Zikun Xu, Roger B. Grosse
+  topics:
+  - optimization
+  - language
+  main_link: https://arxiv.org/abs/2509.03378
+  links:
+    arXiv: https://arxiv.org/abs/2509.03378
+    openreview: https://openreview.net/forum?id=pQQuC1nIQq
+    poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/124345.png?t=1765885233.0748246
+  thumbnail: ''
+  summary: ''
+  highlighted: 6
+  bibtex: |
+    @inproceedings{Lin2026_KLShampoo,
+        title = {Understanding and improving {S}hampoo and {SOAP} via {K}ullback-{L}eibler minimization},
+        author = {Wu Lin and Scott C. Lowe and Felix Dangel and Runa Eschenhagen and Zikun Xu and Roger B. Grosse},
+        year = {2026},
+        booktitle = {The Fourteenth International Conference on Learning Representations},
+        url = {https://openreview.net/forum?id=pQQuC1nIQq},
+    }
+
 - date: '2026'  # Jan
   title: 'A continental-scale dataset of ground beetles with high-resolution images and validated morphological trait measurements'
   venue: arXiv preprint arXiv:2601.10687
@@ -97,33 +121,6 @@
         archivePrefix = {arXiv},
         primaryClass = {cs.LG},
         doi = {10.48550/arxiv.2512.15931},
-    }
-
-- date: '2025'  # Sept
-  title: 'Understanding and Improving Shampoo and SOAP via Kullback-Leibler Minimization'
-  venue: 'OPT 2025: Optimization for Machine Learning Workshop, NeurIPS 2025'
-  authors: Wu Lin, Scott C. Lowe, Felix Dangel, Runa Eschenhagen, Zikun Xu, Roger B. Grosse
-  topics:
-  - optimization
-  - language
-  main_link: https://arxiv.org/abs/2509.03378
-  links:
-    arXiv: https://arxiv.org/abs/2509.03378
-    openreview: https://openreview.net/forum?id=MmZjegW8NK
-    poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/124345.png?t=1765885233.0748246
-  thumbnail: ''
-  summary: ''
-  highlighted: 6
-  bibtex: |
-    @article{Lin2025_KLShampoo,
-        title = {Understanding and improving {S}hampoo and {SOAP} via {K}ullback-{L}eibler minimization},
-        author = {Wu Lin and Scott C. Lowe and Felix Dangel and Runa Eschenhagen and Zikun Xu and Roger B. Grosse},
-        year = {2025},
-        eprint = {2509.03378},
-        archivePrefix = {arXiv},
-        primaryClass = {stat.ML},
-        doi = {10.48550/arxiv.2509.03378},
-        journal = {arXiv preprint arXiv:2509.03378},
     }
 
 - date: '2025'  # July
