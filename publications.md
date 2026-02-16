@@ -27,6 +27,11 @@ title: Publications
     <span class="slider-toggle"></span>
     <span class="toggle-label">Group highlighted papers separately</span>
   </label>
+  <label class="toggle-switch">
+    <input type="checkbox" id="filter-mode" checked>
+    <span class="slider-toggle"></span>
+    <span class="toggle-label">Filter selects papers matching <i>any</i> selected topic</span>
+  </label>
 </div>
 
 <div id="publication-counter"></div>
@@ -222,25 +227,36 @@ title: Publications
       .map(el => el.dataset.topic);
 
     let shownTopics = selectedTopics;
+    let showAll = false;
     if (shownTopics.length == 0) {
-        shownTopics = Array.from(document.querySelectorAll('.topic-filter'))
-            .map(el => el.dataset.topic);
+        showAll = true;
         document.getElementById('download-bibtex-text').textContent = 'Download all BibTeX';
     } else {
         document.getElementById('download-bibtex-text').textContent = 'Download filtered BibTeX';
     }
 
+    const filterModeElement = document.getElementById('filter-mode');
+    filterModeElement.closest('.toggle-switch').style.display = showAll ? 'none' : '';
+
     const isGrouped = document.getElementById('group-highlights').checked;
+    const isAnyMode = filterModeElement.checked;
+    const filterModeLabel = filterModeElement.closest('.toggle-switch').querySelector('.toggle-label');
+    filterModeLabel.innerHTML = isAnyMode
+        ? 'Filter selects papers matching <i>any</i> selected topic'
+        : 'Filter selects papers matching <s><i>any</i></s> <i>all</i> selected topics';
+
+    function matchesFilter(pub) {
+        if (showAll) return true;
+        return isAnyMode
+            ? pub.topics.some(topic => shownTopics.includes(topic))
+            : shownTopics.every(topic => pub.topics.includes(topic));
+    }
 
     // Filter highlighted publications
-    const filteredHighlightedPublications = highlightedPublications.filter(pub =>
-      pub.topics.some(topic => shownTopics.includes(topic))
-    );
+    const filteredHighlightedPublications = highlightedPublications.filter(matchesFilter);
 
     // Filter other publications
-    const filteredOtherPublications = otherPublications.filter(pub =>
-      pub.topics.some(topic => shownTopics.includes(topic))
-    );
+    const filteredOtherPublications = otherPublications.filter(matchesFilter);
 
     if (isGrouped) {
       const hContainer = document.getElementById('highlighted-publications-container');
@@ -279,8 +295,17 @@ title: Publications
       document.getElementById('all-publications-header').textContent = 'Publications';
     }
 
-    // Update the counter
+    // Show empty-results message when AND mode filters out everything
     const totalDisplayed = filteredHighlightedPublications.length + filteredOtherPublications.length;
+    if (totalDisplayed === 0 && !showAll && !isAnyMode) {
+      const container = document.getElementById('publications-container');
+      const msg = document.createElement('p');
+      msg.className = 'no-results-message';
+      msg.textContent = 'No papers match all selected topics.';
+      container.appendChild(msg);
+    }
+
+    // Update the counter
     updatePublicationCounter(totalDisplayed, filteredHighlightedPublications.length, selectedTopics.length, isGrouped);
   }
 
@@ -318,12 +343,14 @@ title: Publications
       .map(el => el.dataset.topic);
 
     let filtered;
+    const isAnyMode = document.getElementById('filter-mode').checked;
     // If no topics are selected, download everything
     if (selectedTopics.length === 0) {
       filtered = publications;
-    } else {
-      // Otherwise, filter by selected topics
+    } else if (isAnyMode) {
       filtered = publications.filter(pub => pub.topics.some(t => selectedTopics.includes(t)));
+    } else {
+      filtered = publications.filter(pub => selectedTopics.every(t => pub.topics.includes(t)));
     }
 
     const bibtexContent = filtered
@@ -357,6 +384,7 @@ title: Publications
     renderPublications();
   });
   document.getElementById('group-highlights').addEventListener('change', renderPublications);
+  document.getElementById('filter-mode').addEventListener('change', renderPublications);
 
   // Initial render with all topics deselected
   deselectAllTopics();
@@ -497,6 +525,12 @@ title: Publications
     background-color: #1358EC;
   }
 
+  .no-results-message {
+    color: #666;
+    font-style: italic;
+    padding: 1rem;
+  }
+
   #highlighted-publications-section {
     margin-bottom: 2rem;
   }
@@ -517,6 +551,7 @@ title: Publications
     align-items: center;
     cursor: pointer;
     user-select: none;
+    margin-right: 2rem;
   }
 
   .toggle-switch input[type="checkbox"] {
