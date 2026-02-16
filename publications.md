@@ -272,15 +272,22 @@ title: Publications
 
       // Render other publications sorted by date
       const container = document.getElementById('publications-container');
+      const allSection = document.getElementById('all-publications-section');
       container.innerHTML = '';
       filteredOtherPublications.sort((a, b) => new Date(b.date) - new Date(a.date));
       filteredOtherPublications.forEach(pub => container.appendChild(renderPublication(pub, false, true)));
 
-      // Update header text
-      document.getElementById('all-publications-header').textContent = filteredHighlightedPublications.length > 0 ? 'All Publications' : 'Publications';
+      // Hide the "All Publications" section if there are no non-highlighted papers to show
+      if (filteredOtherPublications.length > 0) {
+        allSection.style.display = '';
+        document.getElementById('all-publications-header').textContent = filteredHighlightedPublications.length > 0 ? 'All Publications' : 'Publications';
+      } else {
+        allSection.style.display = 'none';
+      }
     } else {
       // Hide the separate highlighted section
       document.getElementById('highlighted-publications-section').style.display = 'none';
+      document.getElementById('all-publications-section').style.display = '';
 
       // Merge all publications and sort: highlighted by original order, others by date, then interleave by original index
       const allFiltered = [...filteredHighlightedPublications, ...filteredOtherPublications].sort((a, b) => a.originalIndex - b.originalIndex);
@@ -298,6 +305,9 @@ title: Publications
     // Show empty-results message when AND mode filters out everything
     const totalDisplayed = filteredHighlightedPublications.length + filteredOtherPublications.length;
     if (totalDisplayed === 0 && !showAll && !isAnyMode) {
+      const allSection = document.getElementById('all-publications-section');
+      allSection.style.display = '';
+      document.getElementById('all-publications-header').textContent = 'Publications';
       const container = document.getElementById('publications-container');
       const msg = document.createElement('p');
       msg.className = 'no-results-message';
