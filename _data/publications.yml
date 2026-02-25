@@ -1,3 +1,33 @@
+- date: '2026'  # arXiv 2023 Nov; Journal 2026 Feb
+  title: 'BarcodeBERT: Transformers for Biodiversity Analysis'
+  # venue: Self-Supervised Learning — Theory and Practice Workshop, NeurIPS 2023
+  venue: Bioinformatics Advances, vbag054, 2026
+  authors: Pablo Millan Arias*, Niousha Sadjadi*, Monireh Safari*, ZeMing Gong, Austin T. Wang, Joakim Bruslund Haurum, Iuliia Zarubiieva, Dirk Steinke, Lila Kari, Angel X. Chang, Scott C. Lowe†, Graham W. Taylor†
+  topics:
+  - self-supervised learning
+  - DNA
+  - biodiversity
+  - insect
+  main_link: https://doi.org/10.1093/bioadv/vbag054
+  links:
+    paper: https://doi.org/10.1093/bioadv/vbag054
+    arXiv: https://arxiv.org/abs/2311.02401
+    github: https://github.com/bioscan-ml/BarcodeBERT
+  thumbnail: ''
+  summary: ''
+  bibtex: |
+    @article{Arias2026_BarcodeBERT,
+        title = {Barcode{BERT}: transformers for biodiversity analysis},
+        author = {Pablo Millan Arias and Niousha Sadjadi and Monireh Safari and ZeMing Gong and Austin T. Wang and Joakim Bruslund Haurum and Iuliia Zarubiieva and Dirk Steinke and Lila Kari and Angel X. Chang and Scott C. Lowe and Graham W. Taylor},
+        journal = {Bioinformatics Advances},
+        pages = {vbag054},
+        year = {2026},
+        month = {02},
+        issn = {2635-0041},
+        doi = {10.1093/bioadv/vbag054},
+        eprint = {https://academic.oup.com/bioinformaticsadvances/advance-article-pdf/doi/10.1093/bioadv/vbag054/66993631/vbag054.pdf},
+    }
+
 - date: '2026'  # arXiv 2025 Sept; ICLR 2026 Apr
   title: 'Understanding and Improving Shampoo and SOAP via Kullback-Leibler Minimization'
   venue: The Fourteenth International Conference on Learning Representations (ICLR 2026)
@@ -484,33 +514,6 @@
         year = {2023},
         volume = {36},
         url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/87dbbdc3a685a97ad28489a1d57c45c1-Paper-Datasets_and_Benchmarks.pdf},
-    }
-
-- date: '2023'  # Nov
-  title: 'BarcodeBERT: Transformers for Biodiversity Analysis'
-  venue: Self-Supervised Learning — Theory and Practice Workshop, NeurIPS 2023
-  authors: Pablo Millan Arias*, Niousha Sadjadi*, Monireh Safari*, ZeMing Gong, Austin T. Wang, Joakim Bruslund Haurum, Iuliia Zarubiieva, Dirk Steinke, Lila Kari, Angel X. Chang, Scott C. Lowe†, Graham W. Taylor†
-  topics:
-  - self-supervised learning
-  - DNA
-  - biodiversity
-  - insect
-  main_link: https://arxiv.org/abs/2311.02401
-  links:
-    arXiv: https://arxiv.org/abs/2311.02401
-    github: https://github.com/bioscan-ml/BarcodeBERT
-  thumbnail: ''
-  summary: ''
-  bibtex: |
-    @inproceedings{Arias2023_BarcodeBERT,
-        title = {Barcode{BERT}: transformers for biodiversity analysis},
-        author = {Pablo Millan Arias and Niousha Sadjadi and Monireh Safari and ZeMing Gong and Austin T. Wang and Joakim Bruslund Haurum and Iuliia Zarubiieva and Dirk Steinke and Lila Kari and Angel X. Chang and Scott C. Lowe and Graham W. Taylor},
-        booktitle = {NeurIPS 2023 Workshop: Self-Supervised Learning - Theory and Practice},
-        year = {2023},
-        url = {https://openreview.net/forum?id=0nRednHa2h},
-        eprint = {2311.02401},
-        archivePrefix = {arXiv},
-        primaryClass = {cs.LG},
     }
 
 - date: '2023'  # Sep
