@@ -1,3 +1,28 @@
+- date: '2026'  # Mar
+  title: 'Self-Distillation of Hidden Layers for Self-Supervised Representation Learning'
+  venue: arXiv preprint arXiv:2601.10687
+  authors: Scott C. Lowe, Anthony Fuller, Sageev Oore, Evan Shelhamer, Graham W. Taylor
+  topics:
+  - self-supervised learning
+  - vision
+  main_link: https://arxiv.org/abs/2603.15553
+  links:
+    arXiv: https://arxiv.org/abs/2603.15553
+  thumbnail: ''
+  summary: ''
+  highlighted: 0
+  bibtex: |
+    @article{Lowe2026_Bootleg,
+        title = {Self-Distillation of Hidden Layers for Self-Supervised Representation Learning},
+        author = {Scott C. Lowe and Anthony Fuller and Sageev Oore and Evan Shelhamer and Graham W. Taylor},
+        year = {2026},
+        eprint = {2603.15553},
+        archivePrefix = {arXiv},
+        primaryClass = {cs.CV},
+        doi = {10.48550/arxiv.2603.15553},
+        journal = {arXiv preprint arXiv:2603.15553},
+    }
+
 - date: '2026'  # arXiv 2023 Nov; Journal 2026 Feb
   title: 'BarcodeBERT: Transformers for Biodiversity Analysis'
   # venue: Self-Supervised Learning — Theory and Practice Workshop, NeurIPS 2023
