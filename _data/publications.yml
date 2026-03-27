@@ -43,7 +43,7 @@
 
 - date: '2026'  # Mar
   title: 'Self-Distillation of Hidden Layers for Self-Supervised Representation Learning'
-  venue: arXiv preprint arXiv:2601.10687
+  venue: arXiv preprint arXiv:2603.15553
   authors: Scott C. Lowe, Anthony Fuller, Sageev Oore, Evan Shelhamer, Graham W. Taylor
   topics:
   - self-supervised learning
