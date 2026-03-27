@@ -1,3 +1,46 @@
+- date: '2026'  # Feb (workshop in Apr)
+  title: 'Hidden-Layer Self-Distillation Yields Drift-Resilient Visual Representations'
+  venue: 'Catch, Adapt, and Operate: Monitoring ML Models Under Drift Workshop, ICLR 2026'
+  authors: Scott C. Lowe, Anthony Fuller, Sageev Oore, Graham W. Taylor, Evan Shelhamer
+  topics:
+  - self-supervised learning
+  - vision
+  - robustness
+  main_link: https://openreview.net/forum?id=pa3zBGDMAd
+  links:
+    openreview: https://openreview.net/forum?id=pa3zBGDMAd
+  thumbnail: ''
+  summary: ''
+  bibtex: |
+    @inproceedings{Lowe2026_HiddenDriftResilient,
+        title = {Hidden-Layer Self-Distillation Yields Drift-Resilient Visual Representations},
+        author = {Scott C. Lowe and Anthony Fuller and Sageev Oore and Graham W. Taylor and Evan Shelhamer},
+        booktitle = {Catch, Adapt, and Operate: Monitoring ML Models Under Drift Workshop},
+        year = {2026},
+        url = {https://openreview.net/forum?id=pa3zBGDMAd},
+    }
+
+- date: '2026'  # Mar (workshop in Apr)
+  title: 'Bridging Generative and Predictive Paradigms via Hidden-Self-Distillation'
+  venue: 'Multimodal Intelligence: Next Token Prediction & Beyond Workshop, ICLR 2026'
+  authors: Scott C. Lowe, Anthony Fuller, Sageev Oore, Evan Shelhamer, Graham W. Taylor
+  topics:
+  - self-supervised learning
+  - vision
+  main_link: https://openreview.net/forum?id=YkMrN90inE
+  links:
+    openreview: https://openreview.net/forum?id=YkMrN90inE
+  thumbnail: ''
+  summary: ''
+  bibtex: |
+    @inproceedings{Lowe2026_Bridging,
+        title = {Bridging Generative and Predictive Paradigms via Hidden-Self-Distillation},
+        author = {Scott C. Lowe and Anthony Fuller and Sageev Oore and Evan Shelhamer and Graham W. Taylor},
+        booktitle = {Multimodal Intelligence: Next Token Prediction & Beyond Workshop, ICLR 2026},
+        year = {2026},
+        url = {https://openreview.net/forum?id=YkMrN90inE},
+    }
+
 - date: '2026'  # Mar
   title: 'Self-Distillation of Hidden Layers for Self-Supervised Representation Learning'
   venue: arXiv preprint arXiv:2601.10687
