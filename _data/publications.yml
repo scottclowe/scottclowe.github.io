@@ -69,7 +69,7 @@
 - date: '2026'  # arXiv 2023 Nov; Journal 2026 Feb
   title: 'BarcodeBERT: Transformers for Biodiversity Analysis'
   # venue: Self-Supervised Learning — Theory and Practice Workshop, NeurIPS 2023
-  venue: Bioinformatics Advances, vbag054, 2026
+  venue: Bioinformatics Advances, 6(1), vbag054, 2026
   authors: Pablo Millan Arias*, Niousha Sadjadi*, Monireh Safari*, ZeMing Gong, Austin T. Wang, Joakim Bruslund Haurum, Iuliia Zarubiieva, Dirk Steinke, Lila Kari, Angel X. Chang, Scott C. Lowe†, Graham W. Taylor†
   topics:
   - self-supervised learning
