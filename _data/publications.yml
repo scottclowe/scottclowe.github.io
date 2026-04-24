@@ -1,3 +1,39 @@
+- date: '2026'  # Apr
+  title: 'A multi-modal dataset for insect biodiversity with imagery and DNA at the trap and individual level'
+  venue: Scientific Data 13, 630, (2026)
+  authors: Johanna Orsholm*, John Quinto*, Hannu Autto, Gaia Banelyte, Nicolas Chazot, Jeremy deWaard, Stephanie deWaard, Arielle Farrell, Brendan Furneaux, Bess Hardwick, Nao Ito, Amlan Kar, Oula Kalttopää, Deirdre Kerdraon, Erik Kristensen, Jaclyn McKeown, Tommi Mononen, Ellen Nein, Hanna Rogers, Tomas Roslin, Paula Schmitz, Jayme Sones, Maija Sujala, Amy Thompson, Evgeny V. Zakharov, Iuliia Zarubiieva, Akshita Gupta, Scott C. Lowe, Graham W. Taylor
+  topics:
+  - dataset
+  - biodiversity
+  - insect
+  - vision
+  - image segmentation
+  - DNA
+  - multimodal
+  main_link: https://doi.org/10.1038/s41597-026-07251-x
+  links:
+    paper: https://doi.org/10.1038/s41597-026-07251-x
+    arXiv: https://arxiv.org/abs/2507.06972
+    github: https://github.com/uoguelph-mlrg/MassID45
+    dataset: https://doi.org/10.5281/zenodo.15479861
+    openreview: https://openreview.net/forum?id=Kn8bz1ZPvE
+  thumbnail: ''
+  summary: ''
+  bibtex: |
+    @article{Orsholm2026_MassID45,
+        title = {A multi-modal dataset for insect biodiversity with imagery and {DNA} at the trap and individual level},
+        author = {Johanna Orsholm and John Quinto and Hannu Autto and Gaia Banelyte and Nicolas Chazot and Jeremy deWaard and Stephanie deWaard and Arielle Farrell and Brendan Furneaux and Bess Hardwick and Nao Ito and Amlan Kar and Oula Kalttopää and Deirdre Kerdraon and Erik Kristensen and Jaclyn McKeown and Tommi Mononen and Ellen Nein and Hanna Rogers and Tomas Roslin and Paula Schmitz and Jayme Sones and Maija Sujala and Amy Thompson and Evgeny V. Zakharov and Iuliia Zarubiieva and Akshita Gupta and Scott C. Lowe and Graham W. Taylor},
+        journal={Scientific Data},
+        year={2026},
+        month={Apr},
+        day={21},
+        volume={13},
+        number={1},
+        pages={630},
+        issn={2052-4463},
+        doi={10.1038/s41597-026-07251-x},
+    }
+
 - date: '2026'  # Feb (workshop in Apr)
   title: 'Hidden-Layer Self-Distillation Yields Drift-Resilient Visual Representations'
   venue: 'Catch, Adapt, and Operate: Monitoring ML Models Under Drift Workshop, ICLR 2026'
@@ -252,38 +288,6 @@
         doi = {10.48550/arxiv.2508.16744},
     }
 
-- date: '2025'  # July
-  title: 'A multi-modal dataset for insect biodiversity with imagery and DNA at the trap and individual level'
-  venue: 'Imageomics: Discovering Biological Knowledge from Images Using AI Workshop, NeurIPS 2025'
-  authors: Johanna Orsholm*, John Quinto*, Hannu Autto, Gaia Banelyte, Nicolas Chazot, Jeremy deWaard, Stephanie deWaard, Arielle Farrell, Brendan Furneaux, Bess Hardwick, Nao Ito, Amlan Kar, Oula Kalttopää, Deirdre Kerdraon, Erik Kristensen, Jaclyn McKeown, Tommi Mononen, Ellen Nein, Hanna Rogers, Tomas Roslin, Paula Schmitz, Jayme Sones, Maija Sujala, Amy Thompson, Evgeny V. Zakharov, Iuliia Zarubiieva, Akshita Gupta, Scott C. Lowe, Graham W. Taylor
-  topics:
-  - dataset
-  - biodiversity
-  - insect
-  - vision
-  - image segmentation
-  - DNA
-  - multimodal
-  main_link: https://arxiv.org/abs/2507.06972
-  links:
-    arXiv: https://arxiv.org/abs/2507.06972
-    github: https://github.com/uoguelph-mlrg/MassID45
-    dataset: https://doi.org/10.5281/zenodo.15479861
-    openreview: https://openreview.net/forum?id=Kn8bz1ZPvE
-  thumbnail: ''
-  summary: ''
-  bibtex: |
-    @inproceedings{Orsholm2025_MassID45,
-        title = {A multi-modal dataset for insect biodiversity with imagery and {DNA} at the trap and individual level},
-        author = {Johanna Orsholm and John Quinto and Hannu Autto and Gaia Banelyte and Nicolas Chazot and Jeremy deWaard and Stephanie deWaard and Arielle Farrell and Brendan Furneaux and Bess Hardwick and Nao Ito and Amlan Kar and Oula Kalttopää and Deirdre Kerdraon and Erik Kristensen and Jaclyn McKeown and Tommi Mononen and Ellen Nein and Hanna Rogers and Tomas Roslin and Paula Schmitz and Jayme Sones and Maija Sujala and Amy Thompson and Evgeny V. Zakharov and Iuliia Zarubiieva and Akshita Gupta and Scott C. Lowe and Graham W. Taylor},
-        booktitle = {NeurIPS 2025 Workshop for Imageomics: Discovering Biological Knowledge from Images Using AI},
-        year = {2025},
-        eprint = {2507.06972},
-        archivePrefix = {arXiv},
-        primaryClass = {cs.CV},
-        doi = {10.48550/arxiv.2507.06972},
-    }
-
 - date: '2025'  # May
   title: 'Optimizing Image Capture for Computer Vision-Powered Taxonomic Identification and Trait Recognition of Biodiversity Specimens'
   venue: Methods in Ecology and Evolution, 00, 1–16, 2025
@@ -374,7 +378,7 @@
 
 - date: '2025'  # Feb
   title: 'BenthicNet: A global compilation of seafloor images for deep learning applications'
-  venue: Scientific Data 12 (1), 230, 2025
+  venue: Scientific Data 12, 230, (2025)
   authors: Scott C. Lowe*, Benjamin Misiuk*, Isaac Xu*, Shakhboz Abdulazizov, Amit R. Baroi, Alex C. Bastos, Merlin Best, Vicki Ferrini, Ariell Friedman, Deborah Hart, Ove Hoegh-Guldberg, Daniel Ierodiaconou, Julia Mackin-McLaughlin, Kathryn Markey, Pedro S. Menandro, Jacquomo Monk, Shreya Nemani, John O'Brien, Elizabeth Oh, Luba Y. Reshitnyk, Katleen Robert, Chris M. Roelfsema, Jessica A. Sameoto, Alexandre C.G. Schimel, Jordan A. Thomson, Brittany R. Wilson, Melisa C. Wong, Craig J. Brown†, Thomas Trappenberg†
   topics:
   - self-supervised learning
