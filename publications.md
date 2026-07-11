@@ -322,6 +322,26 @@ title: Publications
 
     // Update the counter
     updatePublicationCounter(totalDisplayed, filteredHighlightedPublications.length, selectedTopics.length, isGrouped);
+
+    // Reflect the current filter state in the URL so filtered views can be shared
+    updateFilterURL(selectedTopics, isAnyMode);
+  }
+
+  function updateFilterURL(selectedTopics, isAnyMode) {
+    const params = new URLSearchParams(window.location.search);
+    if (selectedTopics.length > 0) {
+      params.set('topics', selectedTopics.join(','));
+    } else {
+      params.delete('topics');
+    }
+    if (selectedTopics.length > 0 && !isAnyMode) {
+      params.set('match', 'all');
+    } else {
+      params.delete('match');
+    }
+    const query = params.toString();
+    const newURL = window.location.pathname + (query ? '?' + query : '') + window.location.hash;
+    history.replaceState(null, '', newURL);
   }
 
   // Function to select all topics
@@ -407,9 +427,25 @@ title: Publications
   document.getElementById('group-highlights').addEventListener('change', renderPublications);
   document.getElementById('filter-mode').addEventListener('change', renderPublications);
 
-  // Initial render with all topics deselected
-  deselectAllTopics();
-  renderPublications();
+  // Initial render, restoring any filter state shared via the URL
+  (function applyFiltersFromURL() {
+    deselectAllTopics();
+    const params = new URLSearchParams(window.location.search);
+    const topicsParam = params.get('topics');
+    if (topicsParam) {
+      const topics = topicsParam.split(',');
+      document.querySelectorAll('.topic-filter').forEach(el => {
+        if (topics.includes(el.dataset.topic)) {
+          el.classList.add('selected');
+          el.setAttribute('aria-pressed', 'true');
+        }
+      });
+    }
+    if (params.get('match') === 'all') {
+      document.getElementById('filter-mode').checked = false;
+    }
+    renderPublications();
+  })();
 </script>
 
 <style>
