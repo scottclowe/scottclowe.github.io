@@ -593,6 +593,12 @@ title: Publications
     font-family: inherit;
   }
 
+  /* Visible focus ring when navigating buttons with the keyboard */
+  button:focus-visible {
+    outline: 3px solid #222;
+    outline-offset: 2px;
+  }
+
   .topic-filter.selected, .topic.selected {
     background-color: #1358EC;
   }
