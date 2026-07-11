@@ -56,7 +56,7 @@ title: Publications
         <strong>{{ pub.date }}</strong>
       </div>
       <div class="publication-right">
-        <h3><a href="{{ pub.main_link | default: '#' }}" target="_blank">{{ pub.title }}</a></h3>
+        <h3>{% if pub.main_link %}<a href="{{ pub.main_link }}" target="_blank">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h3>
         <p>{{ pub.authors | replace: ' ', '&nbsp;' | replace: ',&nbsp;', ', ' }}</p>
         <p><i class="venue">{{ pub.venue }}</i></p>
         <p>{{ pub.summary }}</p>
@@ -205,7 +205,7 @@ title: Publications
           <strong>${pub.date}</strong>
       </div>
       <div class="publication-right">
-          <h3><a href="${pub.main_link || '#'}" target="_blank">${pub.title}</a></h3>
+          <h3>${pub.main_link ? `<a href="${pub.main_link}" target="_blank">${pub.title}</a>` : pub.title}</h3>
           <p>${pub.authors.replace(/\s/g, '&nbsp;').replace(/,&nbsp;/g, ', ').replace(/†/g, '<sup>†</sup>')}</p>
           <p><i class="venue">${pub.venue}</i></p>
           <p>${pub.summary || ''}</p>
