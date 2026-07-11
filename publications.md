@@ -58,7 +58,7 @@ title: Publications
         <strong>{{ pub.date }}</strong>
       </div>
       <div class="publication-right">
-        <h3>{% if pub.main_link %}<a href="{{ pub.main_link | escape }}" target="_blank">{{ pub.title | escape }}</a>{% else %}{{ pub.title | escape }}{% endif %}</h3>
+        <h3>{% if pub.main_link %}<a href="{{ pub.main_link | escape }}" target="_blank" rel="noopener">{{ pub.title | escape }}</a>{% else %}{{ pub.title | escape }}{% endif %}</h3>
         <p>{{ pub.authors | escape | replace: 'Scott C. Lowe', '<strong>Scott C. Lowe</strong>' | replace: 'Scott C Lowe', '<strong>Scott C Lowe</strong>' | replace: 'Scott Lowe', '<strong>Scott Lowe</strong>' | replace: 'S. Lowe', '<strong>S. Lowe</strong>' | replace: 'S Lowe', '<strong>S Lowe</strong>' | replace: ' ', '&nbsp;' | replace: ',&nbsp;', ', ' }}</p>
         <p><i class="venue">{{ pub.venue | escape }}</i></p>
         <p>{{ pub.summary | escape }}</p>
@@ -71,7 +71,7 @@ title: Publications
 
         <div class="resource-links">
           {% for link in pub.links %}
-            <a href="{{ link[1] | escape }}" target="_blank" class="resource-link">{{ link[0] | escape }}</a>
+            <a href="{{ link[1] | escape }}" target="_blank" rel="noopener" class="resource-link">{{ link[0] | escape }}</a>
           {% endfor %}
         </div>
       </div>
@@ -194,7 +194,7 @@ title: Publications
     pubDiv.className = className;
 
     const linksHTML = Object.entries(pub.links || {}).map(([key, url]) => {
-      return `<a href="${escapeHtml(url)}" target="_blank" class="resource-link">${escapeHtml(key)}</a>`;
+      return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener" class="resource-link">${escapeHtml(key)}</a>`;
     }).join(' ');
 
     const topicsHTML = pub.topics.map(topic => {
@@ -220,7 +220,7 @@ title: Publications
           <strong>${pub.date}</strong>
       </div>
       <div class="publication-right">
-          <h3>${pub.main_link ? `<a href="${escapeHtml(pub.main_link)}" target="_blank">${escapeHtml(pub.title)}</a>` : escapeHtml(pub.title)}</h3>
+          <h3>${pub.main_link ? `<a href="${escapeHtml(pub.main_link)}" target="_blank" rel="noopener">${escapeHtml(pub.title)}</a>` : escapeHtml(pub.title)}</h3>
           <p>${escapeHtml(pub.authors).replace(/\b(Scott C\. Lowe|Scott C Lowe|Scott Lowe|S\. Lowe|S Lowe)\b/g, '<strong>$1</strong>').replace(/\s/g, '&nbsp;').replace(/,&nbsp;/g, ', ').replace(/†/g, '<sup>†</sup>')}</p>
           <p><i class="venue">${escapeHtml(pub.venue)}</i></p>
           <p>${pub.summary ? escapeHtml(pub.summary) : ''}</p>
