@@ -60,7 +60,8 @@ title: Publications
       <div class="publication-right">
         <h3>{% if pub.main_link %}<a href="{{ pub.main_link | escape }}" target="_blank" rel="noopener">{{ pub.title | escape }}</a>{% else %}{{ pub.title | escape }}{% endif %}</h3>
         <p>{{ pub.authors | escape | replace: 'Scott C. Lowe', '<strong>Scott C. Lowe</strong>' | replace: 'Scott C Lowe', '<strong>Scott C Lowe</strong>' | replace: 'Scott Lowe', '<strong>Scott Lowe</strong>' | replace: 'S. Lowe', '<strong>S. Lowe</strong>' | replace: 'S Lowe', '<strong>S Lowe</strong>' | replace: ' ', '&nbsp;' | replace: ',&nbsp;', ', ' }}</p>
-        <p><i class="venue">{{ pub.venue | escape }}</i></p>
+        {% assign venue_lc = pub.venue | downcase %}
+        <p><i class="venue">{{ pub.venue | escape }}</i>{% if venue_lc contains 'arxiv preprint' or venue_lc contains 'biorxiv' or venue_lc contains 'under review' %} <span class="preprint-badge">preprint</span>{% endif %}</p>
         <p>{{ pub.summary | escape }}</p>
 
         <div class="resource-topics">
@@ -222,7 +223,7 @@ title: Publications
       <div class="publication-right">
           <h3>${pub.main_link ? `<a href="${escapeHtml(pub.main_link)}" target="_blank" rel="noopener">${escapeHtml(pub.title)}</a>` : escapeHtml(pub.title)}</h3>
           <p>${escapeHtml(pub.authors).replace(/\b(Scott C\. Lowe|Scott C Lowe|Scott Lowe|S\. Lowe|S Lowe)\b/g, '<strong>$1</strong>').replace(/\s/g, '&nbsp;').replace(/,&nbsp;/g, ', ').replace(/†/g, '<sup>†</sup>')}</p>
-          <p><i class="venue">${escapeHtml(pub.venue)}</i></p>
+          <p><i class="venue">${escapeHtml(pub.venue)}</i>${/arxiv preprint|biorxiv|under review/i.test(pub.venue) ? ' <span class="preprint-badge">preprint</span>' : ''}</p>
           <p>${pub.summary ? escapeHtml(pub.summary) : ''}</p>
           <div class="resource-topics">${topicsHTML}</div>
           <div class="resource-links">
@@ -594,6 +595,19 @@ title: Publications
 
   .topic-filter.selected, .topic.selected {
     background-color: #1358EC;
+  }
+
+  .preprint-badge {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    background-color: #e9ecef;
+    color: #555;
+    font-size: 0.75rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
   }
 
   .author-legend {
