@@ -59,7 +59,7 @@ title: Publications
       </div>
       <div class="publication-right">
         <h3>{% if pub.main_link %}<a href="{{ pub.main_link | escape }}" target="_blank" rel="noopener">{{ pub.title | escape }}</a>{% else %}{{ pub.title | escape }}{% endif %}</h3>
-        <p>{{ pub.authors | escape | replace: 'Scott C. Lowe', '<strong>Scott C. Lowe</strong>' | replace: 'Scott C Lowe', '<strong>Scott C Lowe</strong>' | replace: 'Scott Lowe', '<strong>Scott Lowe</strong>' | replace: 'S. Lowe', '<strong>S. Lowe</strong>' | replace: 'S Lowe', '<strong>S Lowe</strong>' | replace: ' ', '&nbsp;' | replace: ',&nbsp;', ', ' }}</p>
+        <p>{{ pub.authors | escape | replace: 'Scott C. Lowe', '<strong>Scott C. Lowe</strong>' | replace: 'Scott C Lowe', '<strong>Scott C Lowe</strong>' | replace: 'Scott Lowe', '<strong>Scott Lowe</strong>' | replace: 'S. Lowe', '<strong>S. Lowe</strong>' | replace: 'S Lowe', '<strong>S Lowe</strong>' | replace: ' ', '&nbsp;' | replace: ',&nbsp;', ', ' | replace: '†', '<sup>†</sup>' }}</p>
         {% assign venue_lc = pub.venue | downcase %}
         <p><i class="venue">{{ pub.venue | escape }}</i>{% if venue_lc contains 'arxiv preprint' or venue_lc contains 'biorxiv' or venue_lc contains 'under review' %} <span class="preprint-badge">preprint</span>{% endif %}</p>
         <p>{{ pub.summary | escape }}</p>
