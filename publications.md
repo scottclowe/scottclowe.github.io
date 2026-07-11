@@ -57,7 +57,7 @@ title: Publications
       </div>
       <div class="publication-right">
         <h3>{% if pub.main_link %}<a href="{{ pub.main_link }}" target="_blank">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h3>
-        <p>{{ pub.authors | replace: ' ', '&nbsp;' | replace: ',&nbsp;', ', ' }}</p>
+        <p>{{ pub.authors | replace: 'Scott C. Lowe', '<strong>Scott C. Lowe</strong>' | replace: 'Scott C Lowe', '<strong>Scott C Lowe</strong>' | replace: 'Scott Lowe', '<strong>Scott Lowe</strong>' | replace: 'S. Lowe', '<strong>S. Lowe</strong>' | replace: 'S Lowe', '<strong>S Lowe</strong>' | replace: ' ', '&nbsp;' | replace: ',&nbsp;', ', ' }}</p>
         <p><i class="venue">{{ pub.venue }}</i></p>
         <p>{{ pub.summary }}</p>
 
@@ -206,7 +206,7 @@ title: Publications
       </div>
       <div class="publication-right">
           <h3>${pub.main_link ? `<a href="${pub.main_link}" target="_blank">${pub.title}</a>` : pub.title}</h3>
-          <p>${pub.authors.replace(/\s/g, '&nbsp;').replace(/,&nbsp;/g, ', ').replace(/†/g, '<sup>†</sup>')}</p>
+          <p>${pub.authors.replace(/\b(Scott C\. Lowe|Scott C Lowe|Scott Lowe|S\. Lowe|S Lowe)\b/g, '<strong>$1</strong>').replace(/\s/g, '&nbsp;').replace(/,&nbsp;/g, ', ').replace(/†/g, '<sup>†</sup>')}</p>
           <p><i class="venue">${pub.venue}</i></p>
           <p>${pub.summary || ''}</p>
           <div class="resource-topics">${topicsHTML}</div>
