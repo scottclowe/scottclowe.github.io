@@ -121,13 +121,16 @@ title: Publications
   const topicFilters = document.getElementById('topic-filters');
 
   sortedTopics.forEach(topic => {
-    const topicElement = document.createElement('div');
+    const topicElement = document.createElement('button');
+    topicElement.type = 'button';
     topicElement.className = 'topic-filter selected';
     topicElement.textContent = `${topic} (${topicCounts[topic]})`;
     topicElement.dataset.topic = topic;
+    topicElement.setAttribute('aria-pressed', 'true');
 
     topicElement.addEventListener('click', () => {
-      topicElement.classList.toggle('selected');
+      const isSelected = topicElement.classList.toggle('selected');
+      topicElement.setAttribute('aria-pressed', isSelected);
       renderPublications();
     });
 
@@ -323,10 +326,16 @@ title: Publications
 
   // Function to select all topics
   function selectAllTopics() {
-    document.querySelectorAll('.topic-filter').forEach(el => el.classList.add('selected'));
+    document.querySelectorAll('.topic-filter').forEach(el => {
+      el.classList.add('selected');
+      el.setAttribute('aria-pressed', 'true');
+    });
   }
   function deselectAllTopics() {
-    document.querySelectorAll('.topic-filter').forEach(el => el.classList.remove('selected'));
+    document.querySelectorAll('.topic-filter').forEach(el => {
+      el.classList.remove('selected');
+      el.setAttribute('aria-pressed', 'false');
+    });
   }
 
   // Copy BibTeX to clipboard
@@ -531,6 +540,10 @@ title: Publications
     font-size: 0.9rem;
     font-weight: bold;
     cursor: pointer;
+  }
+  .topic-filter {
+    border: none;
+    font-family: inherit;
   }
 
   .topic-filter.selected, .topic.selected {
