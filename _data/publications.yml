@@ -1,3 +1,19 @@
+- date: '2026'  # Nov
+  title: 'SmartLooper: a Framework for Personalized Human-AI Musical Improvisation'
+  venue: 'The 27th International Society for Music Information Retrieval Conference (ISMIR 2026)'
+  authors: Finlay Miller*, Sageev Oore*, Chandramouli Shama Sastry, Marvin F. da Silva, Sri Harsha Dumpala, Daniel Oore, Scott C. Lowe
+  topics:
+  - music
+  thumbnail: ''
+  summary: ''
+  bibtex: |
+    @inproceedings{Miller2026_SmartLooper,
+        title = {{SmartLooper}: a Framework for Personalized Human-{AI} Musical Improvisation},
+        author = {Finlay Miller and Sageev Oore and Chandramouli Shama Sastry and Marvin F. da Silva and Sri Harsha Dumpala and Daniel Oore and Scott C. Lowe},
+        booktitle = {The 27th International Society for Music Information Retrieval Conference},
+        year = {2026},
+    }
+
 - date: '2026'  # Apr
   title: 'A multi-modal dataset for insect biodiversity with imagery and DNA at the trap and individual level'
   venue: Scientific Data 13, 630, (2026)
