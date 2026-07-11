@@ -7,6 +7,8 @@ title: Publications
 
 <p>For a full publications list with citation counts, please see my <a href="https://scholar.google.com/citations?user=ZFPhxuAAAAAJ">Google Scholar</a> page.</p>
 
+<p class="author-legend">In author lists, * indicates equal contribution and &dagger; indicates equal senior authorship.</p>
+
 <!-- JavaScript controls -->
 <div id="js-control-panel" style="display: none;">
 <!-- Topic Filters -->
@@ -533,6 +535,12 @@ title: Publications
 
   .topic-filter.selected, .topic.selected {
     background-color: #1358EC;
+  }
+
+  .author-legend {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
   }
 
   .no-results-message {
