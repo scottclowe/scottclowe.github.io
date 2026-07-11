@@ -58,20 +58,20 @@ title: Publications
         <strong>{{ pub.date }}</strong>
       </div>
       <div class="publication-right">
-        <h3>{% if pub.main_link %}<a href="{{ pub.main_link }}" target="_blank">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h3>
-        <p>{{ pub.authors | replace: 'Scott C. Lowe', '<strong>Scott C. Lowe</strong>' | replace: 'Scott C Lowe', '<strong>Scott C Lowe</strong>' | replace: 'Scott Lowe', '<strong>Scott Lowe</strong>' | replace: 'S. Lowe', '<strong>S. Lowe</strong>' | replace: 'S Lowe', '<strong>S Lowe</strong>' | replace: ' ', '&nbsp;' | replace: ',&nbsp;', ', ' }}</p>
-        <p><i class="venue">{{ pub.venue }}</i></p>
-        <p>{{ pub.summary }}</p>
+        <h3>{% if pub.main_link %}<a href="{{ pub.main_link | escape }}" target="_blank">{{ pub.title | escape }}</a>{% else %}{{ pub.title | escape }}{% endif %}</h3>
+        <p>{{ pub.authors | escape | replace: 'Scott C. Lowe', '<strong>Scott C. Lowe</strong>' | replace: 'Scott C Lowe', '<strong>Scott C Lowe</strong>' | replace: 'Scott Lowe', '<strong>Scott Lowe</strong>' | replace: 'S. Lowe', '<strong>S. Lowe</strong>' | replace: 'S Lowe', '<strong>S Lowe</strong>' | replace: ' ', '&nbsp;' | replace: ',&nbsp;', ', ' }}</p>
+        <p><i class="venue">{{ pub.venue | escape }}</i></p>
+        <p>{{ pub.summary | escape }}</p>
 
         <div class="resource-topics">
           {% for topic in pub.topics %}
-          <span class="topic">{{ topic }}</span>
+          <span class="topic">{{ topic | escape }}</span>
           {% endfor %}
         </div>
 
         <div class="resource-links">
           {% for link in pub.links %}
-            <a href="{{ link[1] }}" target="_blank" class="resource-link">{{ link[0] }}</a>
+            <a href="{{ link[1] | escape }}" target="_blank" class="resource-link">{{ link[0] | escape }}</a>
           {% endfor %}
         </div>
       </div>
@@ -168,6 +168,16 @@ title: Publications
     }
   }
 
+  // Escape HTML special characters before inserting data into innerHTML
+  function escapeHtml(text) {
+    return String(text)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
   // Function to render a single publication
   function renderPublication(pub, isHighlighted = false, showBorder = true) {
     const selectedTopics = Array.from(document.querySelectorAll('.topic-filter.selected'))
@@ -184,12 +194,12 @@ title: Publications
     pubDiv.className = className;
 
     const linksHTML = Object.entries(pub.links || {}).map(([key, url]) => {
-      return `<a href="${url}" target="_blank" class="resource-link">${key}</a>`;
+      return `<a href="${escapeHtml(url)}" target="_blank" class="resource-link">${escapeHtml(key)}</a>`;
     }).join(' ');
 
     const topicsHTML = pub.topics.map(topic => {
       const extraClass = selectedTopics.includes(topic) ? "selected" : "";
-      return `<span class="topic ${extraClass}">${topic}</span>`;
+      return `<span class="topic ${extraClass}">${escapeHtml(topic)}</span>`;
     }).join(' ');
 
     const bibtexHTML = pub.bibtex ? `
@@ -201,7 +211,7 @@ title: Publications
     const bibtexBox = pub.bibtex ? `
       <div class="bibtex-box hidden">
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
-        <pre>${pub.bibtex}</pre>
+        <pre>${escapeHtml(pub.bibtex)}</pre>
       </div>
     ` : '';
 
@@ -210,10 +220,10 @@ title: Publications
           <strong>${pub.date}</strong>
       </div>
       <div class="publication-right">
-          <h3>${pub.main_link ? `<a href="${pub.main_link}" target="_blank">${pub.title}</a>` : pub.title}</h3>
-          <p>${pub.authors.replace(/\b(Scott C\. Lowe|Scott C Lowe|Scott Lowe|S\. Lowe|S Lowe)\b/g, '<strong>$1</strong>').replace(/\s/g, '&nbsp;').replace(/,&nbsp;/g, ', ').replace(/†/g, '<sup>†</sup>')}</p>
-          <p><i class="venue">${pub.venue}</i></p>
-          <p>${pub.summary || ''}</p>
+          <h3>${pub.main_link ? `<a href="${escapeHtml(pub.main_link)}" target="_blank">${escapeHtml(pub.title)}</a>` : escapeHtml(pub.title)}</h3>
+          <p>${escapeHtml(pub.authors).replace(/\b(Scott C\. Lowe|Scott C Lowe|Scott Lowe|S\. Lowe|S Lowe)\b/g, '<strong>$1</strong>').replace(/\s/g, '&nbsp;').replace(/,&nbsp;/g, ', ').replace(/†/g, '<sup>†</sup>')}</p>
+          <p><i class="venue">${escapeHtml(pub.venue)}</i></p>
+          <p>${pub.summary ? escapeHtml(pub.summary) : ''}</p>
           <div class="resource-topics">${topicsHTML}</div>
           <div class="resource-links">
             ${linksHTML}
