@@ -7,7 +7,7 @@ title: Publications
 
 <p>For a full publications list with citation counts, please see my <a href="https://scholar.google.com/citations?user=ZFPhxuAAAAAJ">Google Scholar</a> page.</p>
 
-<p class="author-legend">In author lists, * indicates equal contribution and † indicates equal senior authorship.</p>
+<p class="author-legend">In author lists, * indicates equal contribution and <sup>†</sup> indicates equal senior authorship.</p>
 
 <!-- JavaScript controls -->
 <div id="js-control-panel" style="display: none;">
