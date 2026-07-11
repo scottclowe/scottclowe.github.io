@@ -510,14 +510,15 @@ title: Publications
     margin-top: 1rem;
   }
 
+  /* Fixed width for every entry so the text column always starts at the same
+     place: entries without a thumbnail reserve the space one would occupy */
   .publication-left {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     flex-shrink: 0;
-    width: 80px;
-    max-width: 150px;
+    width: 150px;
   }
 
   .publication-right {
@@ -525,12 +526,6 @@ title: Publications
     flex-direction: column;
     flex-grow: 1;
     min-width: 0;
-  }
-
-  /* Widen the left column when it holds a thumbnail (falls back to 80px-wide
-     thumbnails in browsers without :has() support) */
-  .publication-left:has(.publication-thumbnail) {
-    width: 150px;
   }
 
   .publication-thumbnail {
