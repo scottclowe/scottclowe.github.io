@@ -56,6 +56,7 @@ title: Publications
     <div class="publication with-border {% if pub.highlighted %}highlighted-publication{% endif %}">
       <div class="publication-left">
         <strong>{{ pub.date }}</strong>
+        {% if pub.thumbnail and pub.thumbnail != '' %}<img class="publication-thumbnail" src="{{ pub.thumbnail | escape }}" alt="">{% endif %}
       </div>
       <div class="publication-right">
         <h3>{% if pub.main_link %}<a href="{{ pub.main_link | escape }}" target="_blank" rel="noopener">{{ pub.title | escape }}</a>{% else %}{{ pub.title | escape }}{% endif %}</h3>
@@ -219,6 +220,7 @@ title: Publications
     pubDiv.innerHTML = `
       <div class="publication-left">
           <strong>${pub.date}</strong>
+          ${pub.thumbnail ? `<img class="publication-thumbnail" src="${escapeHtml(pub.thumbnail)}" alt="">` : ''}
       </div>
       <div class="publication-right">
           <h3>${pub.main_link ? `<a href="${escapeHtml(pub.main_link)}" target="_blank" rel="noopener">${escapeHtml(pub.title)}</a>` : escapeHtml(pub.title)}</h3>
@@ -525,11 +527,19 @@ title: Publications
     min-width: 0;
   }
 
-  .publication-thumbnail {
+  /* Widen the left column when it holds a thumbnail (falls back to 80px-wide
+     thumbnails in browsers without :has() support) */
+  .publication-left:has(.publication-thumbnail) {
     width: 150px;
+  }
+
+  .publication-thumbnail {
+    width: 100%;
+    max-width: 150px;
     max-height: 150px;
     object-fit: cover;
     border-radius: 10px;
+    margin-top: 0.5rem;
   }
 
   .publication p, h3 {
