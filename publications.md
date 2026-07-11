@@ -651,8 +651,18 @@ title: Publications
     margin-right: 2rem;
   }
 
+  /* Visually hidden but still focusable, so the toggles work by keyboard */
   .toggle-switch input[type="checkbox"] {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .toggle-switch input[type="checkbox"]:focus-visible + .slider-toggle {
+    outline: 3px solid #222;
+    outline-offset: 2px;
   }
 
   .slider-toggle {
