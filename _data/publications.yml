@@ -4,7 +4,7 @@
   authors: Finlay Miller*, Sageev Oore*, Chandramouli Shama Sastry, Marvin F. da Silva, Sri Harsha Dumpala, Daniel Oore, Scott C. Lowe
   topics:
   - music
-  thumbnail: ''
+  thumbnail: /img/publications/Miller2026_SmartLooper.png
   summary: ''
   bibtex: |
     @inproceedings{Miller2026_SmartLooper,
@@ -33,7 +33,7 @@
     github: https://github.com/uoguelph-mlrg/MassID45
     dataset: https://doi.org/10.5281/zenodo.15479861
     openreview: https://openreview.net/forum?id=Kn8bz1ZPvE
-  thumbnail: ''
+  thumbnail: /img/publications/Orsholm2026_MassID45.png
   summary: ''
   bibtex: |
     @article{Orsholm2026_MassID45,
@@ -82,7 +82,7 @@
   main_link: https://arxiv.org/abs/2603.15553
   links:
     arXiv: https://arxiv.org/abs/2603.15553
-  thumbnail: ''
+  thumbnail: /img/publications/Lowe2026_Bootleg.png
   summary: ''
   highlighted: 0
   bibtex: |
@@ -107,7 +107,7 @@
   main_link: https://openreview.net/forum?id=YkMrN90inE
   links:
     openreview: https://openreview.net/forum?id=YkMrN90inE
-  thumbnail: ''
+  thumbnail: /img/publications/Lowe2026_Bridging.png
   summary: ''
   bibtex: |
     @inproceedings{Lowe2026_Bridging,
@@ -133,7 +133,7 @@
     paper: https://doi.org/10.1093/bioadv/vbag054
     arXiv: https://arxiv.org/abs/2311.02401
     github: https://github.com/bioscan-ml/BarcodeBERT
-  thumbnail: ''
+  thumbnail: /img/publications/Arias2026_BarcodeBERT.png
   summary: ''
   bibtex: |
     @article{Arias2026_BarcodeBERT,
@@ -160,7 +160,7 @@
     arXiv: https://arxiv.org/abs/2509.03378
     openreview: https://openreview.net/forum?id=pQQuC1nIQq
     poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/124345.png?t=1765885233.0748246
-  thumbnail: ''
+  thumbnail: /img/publications/Lin2026_KLShampoo.png
   summary: ''
   highlighted: 6
   bibtex: |
@@ -186,7 +186,7 @@
     arXiv: https://arxiv.org/abs/2601.10687
     dataset (pinned): https://huggingface.co/datasets/imageomics/Hawaii-beetles
     dataset (vial): https://huggingface.co/datasets/imageomics/2018-NEON-beetles
-  thumbnail: ''
+  thumbnail: /img/publications/Rayeed2026_GroundBeetles.jpg
   summary: ''
   bibtex: |
     @article{Rayeed2026_GroundBeetles,
@@ -211,7 +211,7 @@
     project: https://osageev.github.io/projects/looper/
     openreview: https://openreview.net/forum?id=nXHczMetxK
     poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/123765.png?t=1765930069.7650115
-  thumbnail: ''
+  thumbnail: /img/publications/Oore2025_LoopyFramework.png
   summary: ''
   bibtex: |
     @inproceedings{Oore2025_LoopyFramework,
@@ -234,7 +234,7 @@
   main_link: https://openreview.net/forum?id=OYK7psfeNe
   links:
     openreview: https://openreview.net/forum?id=OYK7psfeNe
-  thumbnail: ''
+  thumbnail: /img/publications/Quinto2025_BugSR.png
   summary: ''
   bibtex: |
     @inproceedings{Quinto2025_BugSR,
@@ -289,7 +289,7 @@
   main_link: https://arxiv.org/abs/2508.16744
   links:
     arXiv: https://arxiv.org/abs/2508.16744
-  thumbnail: ''
+  thumbnail: /img/publications/Gong2025_HyperbolicCLIBD.png
   summary: ''
   bibtex: |
     @inproceedings{Gong2025_HyperbolicCLIBD,
@@ -316,7 +316,7 @@
   links:
     paper: https://doi.org/10.1111/2041-210X.70140
     arXiv: https://arxiv.org/abs/2505.17317
-  thumbnail: ''
+  thumbnail: /img/publications/East2025_RulesForBioCV.png
   summary: ''
   bibtex: |
     @article{East2025_RulesForBioCV,
@@ -347,7 +347,7 @@
   links:
     arXiv: https://arxiv.org/abs/2502.18405
     github: https://github.com/bioscan-ml/BarcodeMAE
-  thumbnail: ''
+  thumbnail: /img/publications/Safari2025_BarcodeMAE.png
   summary: ''
   bibtex: |
     @inproceedings{Safari2025_BarcodeMAE,
@@ -380,7 +380,7 @@
     project: https://bioscan-ml.github.io/clibd/
     github: https://github.com/bioscan-ml/clibd
     model: https://huggingface.co/bioscan-ml/clibd
-  thumbnail: ''
+  thumbnail: /img/publications/Gong2025_CLIBD.png
   summary: ''
   highlighted: 2
   bibtex: |
@@ -408,7 +408,7 @@
     arXiv: https://arxiv.org/abs/2405.05241
     dataset: https://www.frdr-dfdr.ca/repo/dataset/24c6c813-d0ff-4461-8174-3f960f1edc0d
     poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/128782.png?t=1765885775.1308475
-  thumbnail: ''
+  thumbnail: /img/publications/Lowe2025_BenthicNet.png
   summary: ''
   bibtex: |
     @article{Lowe2025_BenthicNet,
@@ -448,7 +448,7 @@
     pypi: https://pypi.org/project/bioscan-dataset/
     poster: https://github.com/bioscan-ml/BIOSCAN-5M/blob/main/BIOSCAN_poster/BIOSCAN5M_NeurIPS2024_Poster.pdf
     talk: https://www.youtube.com/watch?v=_JFw4ntJhLg
-  thumbnail: ''
+  thumbnail: /img/publications/Gharaee2024_BIOSCAN5M.png
   summary: ''
   highlighted: 3
   bibtex: |
@@ -474,7 +474,7 @@
   links:
     arXiv: https://arxiv.org/abs/2410.03662
     openreview: https://openreview.net/forum?id=ZxaipE6f62
-  thumbnail: ''
+  thumbnail: /img/publications/Lowe2024_System2Nigh.png
   summary: ''
   highlighted: 5
   bibtex: |
@@ -502,7 +502,7 @@
   links:
     paper: https://doi.org/10.3390/data9110122
     bioRxiv: https://doi.org/10.1101/2024.07.15.600863
-  thumbnail: ''
+  thumbnail: /img/publications/Steinke2024_TowardsTaxonomy.png
   summary: ''
   bibtex: |
     @article{Steinke2024_TowardsTaxonomy,
@@ -531,7 +531,7 @@
   links:
     paper: https://doi.org/10.1109/IJCNN60899.2024.10650176
     arXiv: https://arxiv.org/abs/2409.06618
-  thumbnail: ''
+  thumbnail: /img/publications/Xu2024_HierarchicalMultiLabel.png
   summary: ''
   bibtex: |
     @inproceedings{Xu2024_HierarchicalMultiLabel,
@@ -558,7 +558,7 @@
     arXiv: https://arxiv.org/abs/2406.02465
     project: https://scottclowe.com/zs-ssl-clustering/
     github: https://github.com/scottclowe/zs-ssl-clustering/
-  thumbnail: ''
+  thumbnail: /img/publications/Lowe2024_ZeroShotClustering.png
   summary: ''
   highlighted: 4
   bibtex: |
@@ -590,7 +590,7 @@
     dataset: https://zenodo.org/records/8030065
     github: https://github.com/bioscan-ml/BIOSCAN-1M
     pypi: https://pypi.org/project/bioscan-dataset/
-  thumbnail: ''
+  thumbnail: /img/publications/Gharaee2023_BIOSCAN1M.png
   summary: ''
   bibtex: |
     @inproceedings{Gharaee2023_BIOSCAN1M,
@@ -639,7 +639,7 @@
   main_link: https://doi.org/10.1109/TBME.2023.3263379
   links:
     paper: https://doi.org/10.1109/TBME.2023.3263379
-  thumbnail: ''
+  thumbnail: /img/publications/Sinclair2023_BeginningAIPreventativePAP.png
   summary: ''
   bibtex: |
     @article{Sinclair2023_BeginningAIPreventativePAP,
@@ -664,7 +664,7 @@
     paper: https://proceedings.neurips.cc/paper_files/paper/2022/hash/c05144b635df16ac9bbf8246bbbd55ca-Abstract-Conference.html
     arXiv: https://arxiv.org/abs/2110.11940
     pypi: https://pypi.org/project/pytorch-logit-logic/
-  thumbnail: ''
+  thumbnail: /img/publications/Lowe2022_LogicalActivationFunctions.png
   summary: ''
   highlighted: 1
   bibtex: |
@@ -690,7 +690,7 @@
   main_link: https://doi.org/10.1109/CCECE49351.2022.9918377
   links:
     paper: https://doi.org/10.1109/CCECE49351.2022.9918377
-  thumbnail: ''
+  thumbnail: /img/publications/Xu2022_LabelFreeMonitoring.png
   summary: ''
   bibtex: |
     @inproceedings{Xu2022_LabelFreeMonitoring,
@@ -715,7 +715,7 @@
     arXiv: https://arxiv.org/abs/2202.09648
     github: https://github.com/DeepSenseCA/echofilter
     pypi: https://pypi.org/project/echofilter/
-  thumbnail: ''
+  thumbnail: /img/publications/Lowe2022_Echofilter.png
   summary: ''
   bibtex: |
     @article{Lowe2022_Echofilter,
@@ -738,7 +738,7 @@
   main_link: https://doi.org/10.1109/TBME.2021.3138965
   links:
     paper: https://doi.org/10.1109/TBME.2021.3138965
-  thumbnail: ''
+  thumbnail: /img/publications/Hanafi2022_HighFreqLowAmpOscillometry.png
   summary: ''
   bibtex: |
     @article{Hanafi2022_HighFreqLowAmpOscillometry,
@@ -761,7 +761,7 @@
   main_link: https://arxiv.org/abs/2111.01742
   links:
     arXiv: https://arxiv.org/abs/2111.01742
-  thumbnail: ''
+  thumbnail: /img/publications/Lowe2021_LogAvgExp.png
   summary: ''
   bibtex: |
     @article{Lowe2021_LogAvgExp,
@@ -786,7 +786,7 @@
   links:
     arXiv: https://arxiv.org/abs/1911.07721
     github: https://github.com/yihe-61wu/pySVRT
-  thumbnail: ''
+  thumbnail: /img/publications/Yihe2019_ProgramSynthesis.png
   summary: ''
   bibtex: |
     @article{Yihe2019_ProgramSynthesis,
@@ -811,7 +811,7 @@
   links:
     arXiv: https://arxiv.org/abs/1907.04352
     github: https://github.com/LogaNick/magenta
-  thumbnail: ''
+  thumbnail: /img/publications/Meade2019_ExploringConditioning.png
   summary: ''
   bibtex: |
     @inproceedings{Meade2019_ExploringConditioning,
@@ -838,7 +838,7 @@
     paper: https://doi.org/10.1038/s41598-018-21640-2
     github: https://github.com/rochefort-lab/fissa
     pypi: https://pypi.python.org/pypi/fissa
-  thumbnail: ''
+  thumbnail: /img/publications/Keemink2018_FISSA.png
   summary: ''
   bibtex: |
     @article{Keemink2018_FISSA,
@@ -864,7 +864,7 @@
   main_link: https://doi.org/10.1016/j.cub.2017.12.006
   links:
     paper: https://doi.org/10.1016/j.cub.2017.12.006
-  thumbnail: ''
+  thumbnail: /img/publications/Zaldivar2018_DopamineMidFreqOsc.jpg
   summary: ''
   bibtex: |
     @article{Zaldivar2018_DopamineMidFreqOsc,
@@ -894,7 +894,7 @@
   links:
     thesis: http://hdl.handle.net/1842/28861
     PDF: /LoweSC_PhD_thesis.pdf
-  thumbnail: ''
+  thumbnail: /img/publications/Lowe2017_DecodingInfoNeural.png
   summary: ''
   bibtex: |
     @phdthesis{Lowe2017_DecodingInfoNeural,
@@ -915,7 +915,7 @@
   main_link: https://doi.org/10.7554/eLife.14985
   links:
     paper: https://doi.org/10.7554/eLife.14985
-  thumbnail: ''
+  thumbnail: /img/publications/Pakan2016_BehavioralStateModulation.jpg
   summary: ''
   bibtex: |
     @article{Pakan2016_BehavioralStateModulation,
@@ -942,7 +942,7 @@
   main_link: https://doi.org/10.1371/journal.pbio.1002257
   links:
     paper: https://doi.org/10.1371/journal.pbio.1002257
-  thumbnail: ''
+  thumbnail: /img/publications/Besserve2015_ShiftsGammaPhase.jpg
   summary: ''
   bibtex: |
     @article{Besserve2015_ShiftsGammaPhase,
