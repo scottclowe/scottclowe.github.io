@@ -63,7 +63,7 @@ title: Publications
         <p>{{ pub.authors | escape | replace: 'Scott C. Lowe', '<strong>Scott C. Lowe</strong>' | replace: 'Scott C Lowe', '<strong>Scott C Lowe</strong>' | replace: 'Scott Lowe', '<strong>Scott Lowe</strong>' | replace: 'S. Lowe', '<strong>S. Lowe</strong>' | replace: 'S Lowe', '<strong>S Lowe</strong>' | replace: ' ', '&nbsp;' | replace: ',&nbsp;', ', ' | replace: '†', '<sup>†</sup>' }}</p>
         {% assign venue_lc = pub.venue | downcase %}
         <p><i class="venue">{{ pub.venue | escape }}</i>{% if venue_lc contains 'arxiv preprint' or venue_lc contains 'biorxiv' or venue_lc contains 'under review' %} <span class="preprint-badge">preprint</span>{% endif %}</p>
-        <p>{{ pub.summary | escape }}</p>
+        {% if pub.summary and pub.summary != '' %}<p class="publication-summary">{{ pub.summary | escape }}</p>{% endif %}
 
         <div class="resource-topics">
           {% for topic in pub.topics %}
@@ -226,7 +226,7 @@ title: Publications
           <h3>${pub.main_link ? `<a href="${escapeHtml(pub.main_link)}" target="_blank" rel="noopener">${escapeHtml(pub.title)}</a>` : escapeHtml(pub.title)}</h3>
           <p>${escapeHtml(pub.authors).replace(/\b(Scott C\. Lowe|Scott C Lowe|Scott Lowe|S\. Lowe|S Lowe)\b/g, '<strong>$1</strong>').replace(/\s/g, '&nbsp;').replace(/,&nbsp;/g, ', ').replace(/†/g, '<sup>†</sup>')}</p>
           <p><i class="venue">${escapeHtml(pub.venue)}</i>${/arxiv preprint|biorxiv|under review/i.test(pub.venue) ? ' <span class="preprint-badge">preprint</span>' : ''}</p>
-          <p>${pub.summary ? escapeHtml(pub.summary) : ''}</p>
+          ${pub.summary ? `<p class="publication-summary">${escapeHtml(pub.summary)}</p>` : ''}
           <div class="resource-topics">${topicsHTML}</div>
           <div class="resource-links">
             ${linksHTML}
@@ -542,6 +542,13 @@ title: Publications
 
   .venue {
     margin-left: 0.5rem;
+  }
+
+  .publication-summary {
+    margin: 0.25rem 0 0.5rem;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
   }
 
   .resource-links, .resource-topics {

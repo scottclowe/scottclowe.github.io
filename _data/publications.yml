@@ -5,7 +5,7 @@
   topics:
   - music
   thumbnail: /img/publications/Miller2026_SmartLooper.png
-  summary: ''
+  summary: "SmartLooper is a real-time piano improvisation system that builds an evolving accompaniment by walking through a performer's own recorded loops in embedding space, so they effectively duet with themselves."
   bibtex: |
     @inproceedings{Miller2026_SmartLooper,
         title = {{SmartLooper}: a Framework for Personalized Human-{AI} Musical Improvisation},
@@ -34,7 +34,7 @@
     dataset: https://doi.org/10.5281/zenodo.15479861
     openreview: https://openreview.net/forum?id=Kn8bz1ZPvE
   thumbnail: /img/publications/Orsholm2026_MassID45.png
-  summary: ''
+  summary: "MassID45 is a dataset of bulk insect-trap samples combining photographs and DNA barcodes, with segmentation masks and species labels for over 17,000 individual specimens."
   bibtex: |
     @article{Orsholm2026_MassID45,
         title = {A multi-modal dataset for insect biodiversity with imagery and {DNA} at the trap and individual level},
@@ -62,7 +62,7 @@
   links:
     openreview: https://openreview.net/forum?id=pa3zBGDMAd
   thumbnail: ''
-  summary: ''
+  summary: "Shows that Bootleg, self-supervised pretraining that predicts a teacher's multiple hidden layers, yields visual representations that resist distribution shift better than MAE and I-JEPA and adapt well at test time."
   bibtex: |
     @inproceedings{Lowe2026_HiddenDriftResilient,
         title = {Hidden-Layer Self-Distillation Yields Drift-Resilient Visual Representations},
@@ -83,7 +83,7 @@
   links:
     arXiv: https://arxiv.org/abs/2603.15553
   thumbnail: /img/publications/Lowe2026_Bootleg.png
-  summary: ''
+  summary: "Bootleg is a self-supervised image pretraining method that predicts a teacher network's multiple hidden layers at once, capturing features across abstraction levels and beating comparable baselines on classification and segmentation."
   highlighted: 0
   bibtex: |
     @article{Lowe2026_Bootleg,
@@ -108,7 +108,7 @@
   links:
     openreview: https://openreview.net/forum?id=YkMrN90inE
   thumbnail: /img/publications/Lowe2026_Bridging.png
-  summary: ''
+  summary: "Frames Bootleg, which predicts a teacher's multiple hidden layers, as a bridge between generative pixel-reconstruction and predictive embedding-prediction in self-supervised learning, capturing the strengths of both."
   bibtex: |
     @inproceedings{Lowe2026_Bridging,
         title = {Bridging Generative and Predictive Paradigms via Hidden-Self-Distillation},
@@ -134,7 +134,7 @@
     arXiv: https://arxiv.org/abs/2311.02401
     github: https://github.com/bioscan-ml/BarcodeBERT
   thumbnail: /img/publications/Arias2026_BarcodeBERT.png
-  summary: ''
+  summary: "BarcodeBERT is a transformer trained on 1.5 million invertebrate DNA barcodes that identifies insect species from short genetic sequences, matching the standard BLAST tool's accuracy while running 55 times faster."
   bibtex: |
     @article{Arias2026_BarcodeBERT,
         title = {Barcode{BERT}: transformers for biodiversity analysis},
@@ -161,7 +161,7 @@
     openreview: https://openreview.net/forum?id=pQQuC1nIQq
     poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/124345.png?t=1765885233.0748246
   thumbnail: /img/publications/Lin2026_KLShampoo.png
-  summary: ''
+  summary: "Reinterprets the Shampoo and SOAP neural-network optimizers through Kullback-Leibler minimization, yielding KL-Shampoo, which trains language models faster and more accurately without Adam's extra memory cost."
   highlighted: 6
   bibtex: |
     @inproceedings{Lin2026_KLShampoo,
@@ -187,7 +187,7 @@
     dataset (pinned): https://huggingface.co/datasets/imageomics/Hawaii-beetles
     dataset (vial): https://huggingface.co/datasets/imageomics/2018-NEON-beetles
   thumbnail: /img/publications/Rayeed2026_GroundBeetles.jpg
-  summary: ''
+  summary: "A dataset of over 13,200 North American ground beetle specimens with high-resolution images and sub-millimeter-accurate elytra measurements, supporting automated trait extraction and species identification."
   bibtex: |
     @article{Rayeed2026_GroundBeetles,
         title = {A continental-scale dataset of ground beetles with high-resolution images and validated morphological trait measurements},
@@ -212,7 +212,7 @@
     openreview: https://openreview.net/forum?id=nXHczMetxK
     poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/123765.png?t=1765930069.7650115
   thumbnail: /img/publications/Oore2025_LoopyFramework.png
-  summary: ''
+  summary: "Argues that looping is an effective framework for real-time human-AI music collaboration, and introduces SmartLooper, which improvises by stochastically traversing a musician's own recorded fragments in a learned embedding space."
   bibtex: |
     @inproceedings{Oore2025_LoopyFramework,
         title = {A loopy framework and tool for real-time human-{AI} music collaboration},
@@ -235,7 +235,7 @@
   links:
     openreview: https://openreview.net/forum?id=OYK7psfeNe
   thumbnail: /img/publications/Quinto2025_BugSR.png
-  summary: ''
+  summary: "Super-resolution preprocessing improves segmentation of thousands of tiny, densely packed insects in bulk trap images, raising average precision by 9.3 points on the MassID45 dataset, but most gains can be attained simply with bicubic interpolation."
   bibtex: |
     @inproceedings{Quinto2025_BugSR,
         title = {Bug{SR}: Improving tiny instance segmentation on the {MassID45} dataset},
@@ -259,7 +259,7 @@
     openreview: https://openreview.net/forum?id=wOgcLKq1Hg
     poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/128739.png?t=1765885701.4723227
   thumbnail: ''
-  summary: ''
+  summary: "BarcodeMamba+ is an efficient state-space foundation model that classifies fungi from DNA barcodes, learning from mostly-unlabelled data to outperform supervised methods across all taxonomic levels."
   bibtex: |
     @inproceedings{Gao2025_BarcodeMambaPlus,
         title = {{BarcodeMamba+}: Supervised advances for state-space models in fungal biodiversity research},
@@ -290,7 +290,7 @@
   links:
     arXiv: https://arxiv.org/abs/2508.16744
   thumbnail: /img/publications/Gong2025_HyperbolicCLIBD.png
-  summary: ''
+  summary: "Embeds specimen images, DNA barcodes, and taxonomic labels into a shared hyperbolic space that mirrors biological hierarchies, improving species classification and retrieval especially at higher taxonomic ranks."
   bibtex: |
     @inproceedings{Gong2025_HyperbolicCLIBD,
         title = {Hyperbolic multimodal representation learning for biological taxonomies},
@@ -317,7 +317,7 @@
     paper: https://doi.org/10.1111/2041-210X.70140
     arXiv: https://arxiv.org/abs/2505.17317
   thumbnail: /img/publications/East2025_RulesForBioCV.png
-  summary: ''
+  summary: "Provides practical guidelines for photographing museum biodiversity specimens so that computer vision tools can more reliably identify species and measure traits from the resulting images."
   bibtex: |
     @article{East2025_RulesForBioCV,
         title = {Optimizing image capture for computer vision‐powered taxonomic identification and trait recognition of biodiversity specimens},
@@ -348,7 +348,7 @@
     arXiv: https://arxiv.org/abs/2502.18405
     github: https://github.com/bioscan-ml/BarcodeMAE
   thumbnail: /img/publications/Safari2025_BarcodeMAE.png
-  summary: ''
+  summary: "BarcodeMAE redesigns DNA foundation models with an encoder-decoder that hides masking tokens from the encoder, yielding sharper DNA-barcode features and over ten points better species classification."
   bibtex: |
     @inproceedings{Safari2025_BarcodeMAE,
         title = {Enhancing {DNA} foundation models to address masking inefficiencies},
@@ -381,7 +381,7 @@
     github: https://github.com/bioscan-ml/clibd
     model: https://huggingface.co/bioscan-ml/clibd
   thumbnail: /img/publications/Gong2025_CLIBD.png
-  summary: ''
+  summary: "CLIBD aligns insect photographs, DNA barcodes, and taxonomic labels in one shared space, letting it classify both known and unknown species without fine-tuning and beating single-source methods."
   highlighted: 2
   bibtex: |
     @inproceedings{Gong2025_CLIBD,
@@ -409,7 +409,7 @@
     dataset: https://www.frdr-dfdr.ca/repo/dataset/24c6c813-d0ff-4461-8174-3f960f1edc0d
     poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/128782.png?t=1765885775.1308475
   thumbnail: /img/publications/Lowe2025_BenthicNet.png
-  summary: ''
+  summary: "BenthicNet is a globally diverse collection of 1.3 million curated seafloor images with 3.1 million habitat annotations, enabling deep learning models that automate the analysis of benthic imagery."
   bibtex: |
     @article{Lowe2025_BenthicNet,
         title = {{BenthicNet}: A global compilation of seafloor images for deep learning applications},
@@ -449,7 +449,7 @@
     poster: https://github.com/bioscan-ml/BIOSCAN-5M/blob/main/BIOSCAN_poster/BIOSCAN5M_NeurIPS2024_Poster.pdf
     talk: https://www.youtube.com/watch?v=_JFw4ntJhLg
   thumbnail: /img/publications/Gharaee2024_BIOSCAN5M.png
-  summary: ''
+  summary: "BIOSCAN-5M is a dataset of over five million insect specimens pairing images, DNA barcodes, taxonomic labels, and geographic and size information to advance automated biodiversity monitoring."
   highlighted: 3
   bibtex: |
     @inproceedings{Gharaee2024_BIOSCAN5M,
@@ -475,7 +475,7 @@
     arXiv: https://arxiv.org/abs/2410.03662
     openreview: https://openreview.net/forum?id=ZxaipE6f62
   thumbnail: /img/publications/Lowe2024_System2Nigh.png
-  summary: ''
+  summary: "Reviews progress toward machine reasoning and argues that today's models fall just short of deliberate, human-like System 2 thought, with only a few remaining hurdles before achieving it."
   highlighted: 5
   bibtex: |
     @inproceedings{Lowe2024_System2Nigh,
@@ -503,7 +503,7 @@
     paper: https://doi.org/10.3390/data9110122
     bioRxiv: https://doi.org/10.1101/2024.07.15.600863
   thumbnail: /img/publications/Steinke2024_TowardsTaxonomy.png
-  summary: ''
+  summary: "A dataset of 5.6 million high-resolution microscope images spanning 324,000 arthropod species from 48 countries, built for training machine learning models to identify specimens taxonomically."
   bibtex: |
     @article{Steinke2024_TowardsTaxonomy,
         author = {Steinke, Dirk and Ratnasingham, Sujeevan and Agda, Jireh and Ait Boutou, Hamzah and Box, Isaiah C. H. and Boyle, Mary and Chan, Dean and Feng, Corey and Lowe, Scott C. and McKeown, Jaclyn T. A. and McLeod, Joschka and Sanchez, Alan and Smith, Ian and Walker, Spencer and Wei, Catherine Y.-Y. and Hebert, Paul D. N.},
@@ -532,7 +532,7 @@
     paper: https://doi.org/10.1109/IJCNN60899.2024.10650176
     arXiv: https://arxiv.org/abs/2409.06618
   thumbnail: /img/publications/Xu2024_HierarchicalMultiLabel.png
-  summary: ''
+  summary: "Shows how to classify seafloor habitat photos into layered category hierarchies despite patchy, inconsistent labels, finding that self-supervised pretraining on ocean imagery beats generic pretraining."
   bibtex: |
     @inproceedings{Xu2024_HierarchicalMultiLabel,
         title = {Hierarchical multi-label classification with missing information for benthic habitat imagery},
@@ -559,7 +559,7 @@
     project: https://scottclowe.com/zs-ssl-clustering/
     github: https://github.com/scottclowe/zs-ssl-clustering/
   thumbnail: /img/publications/Lowe2024_ZeroShotClustering.png
-  summary: ''
+  summary: "Shows that image encoders trained without labels can group entirely new, unseen datasets into meaningful clusters without retraining, and that cluster quality can be judged without ground-truth labels."
   highlighted: 4
   bibtex: |
     @inproceedings{Lowe2024_ZeroShotClustering,
@@ -591,7 +591,7 @@
     github: https://github.com/bioscan-ml/BIOSCAN-1M
     pypi: https://pypi.org/project/bioscan-dataset/
   thumbnail: /img/publications/Gharaee2023_BIOSCAN1M.png
-  summary: ''
+  summary: "BIOSCAN-1M is a dataset of over a million expert-labelled insect images paired with DNA barcodes, built to train computer-vision models that classify species and help catalogue global biodiversity."
   bibtex: |
     @inproceedings{Gharaee2023_BIOSCAN1M,
         title = {A step towards worldwide biodiversity assessment: The {BIOSCAN-1M} insect dataset},
@@ -615,7 +615,7 @@
   links:
     paper: https://doi.org/10.1183/13993003.congress-2023.PA573
   thumbnail: ''
-  summary: ''
+  summary: "Uses a machine-learning algorithm that predicts apnea events seconds ahead to trigger preemptive pressure boosts on PAP machines, significantly reducing the apnea-hypopnea index without disturbing sleep quality in eleven patients."
   bibtex: |
     @article{Hanafi2023_PreventionObstructiveApnea,
         title = {Prevention of obstructive apnea events with machine learning},
@@ -640,7 +640,7 @@
   links:
     paper: https://doi.org/10.1109/TBME.2023.3263379
   thumbnail: /img/publications/Sinclair2023_BeginningAIPreventativePAP.png
-  summary: ''
+  summary: "A first-in-human trial where machine learning predicts apneas from a PAP device's own airflow and pressure sensors and preemptively adjusts pressure, cutting the apnea-hypopnea index by 31.6% while preserving sleep quality."
   bibtex: |
     @article{Sinclair2023_BeginningAIPreventativePAP,
         title = {The Beginning of the AI-Enabled Preventative PAP Therapy Era: A First-in-Human Proof of Concept Interventional Study},
@@ -665,7 +665,7 @@
     arXiv: https://arxiv.org/abs/2110.11940
     pypi: https://pypi.org/project/pytorch-logit-logic/
   thumbnail: /img/publications/Lowe2022_LogicalActivationFunctions.png
-  summary: ''
+  summary: "Introduces neural network activation functions that perform Boolean logic (AND, OR, XNOR) on feature probabilities, improving accuracy on image classification, transfer learning, and reasoning tasks."
   highlighted: 1
   bibtex: |
     @inproceedings{Lowe2022_LogicalActivationFunctions,
@@ -691,7 +691,7 @@
   links:
     paper: https://doi.org/10.1109/CCECE49351.2022.9918377
   thumbnail: /img/publications/Xu2022_LabelFreeMonitoring.png
-  summary: ''
+  summary: "Shows that clustering metrics like silhouette score can track a self-supervised vision model's training progress without any labelled data, though reliability varies by method."
   bibtex: |
     @inproceedings{Xu2022_LabelFreeMonitoring,
         title = {Label-free monitoring of self-supervised learning progress},
@@ -716,7 +716,7 @@
     github: https://github.com/DeepSenseCA/echofilter
     pypi: https://pypi.org/project/echofilter/
   thumbnail: /img/publications/Lowe2022_Echofilter.png
-  summary: ''
+  summary: "Echofilter is a deep learning model that automatically marks where turbulence-driven air contaminates echosounder data at tidal energy sites, halving the manual cleanup time for fish surveys."
   bibtex: |
     @article{Lowe2022_Echofilter,
         title = {Echofilter: A deep learning segmentation model improves the automation, standardization, and timeliness for post-processing echosounder data in tidal energy streams},
@@ -739,7 +739,7 @@
   links:
     paper: https://doi.org/10.1109/TBME.2021.3138965
   thumbnail: /img/publications/Hanafi2022_HighFreqLowAmpOscillometry.png
-  summary: ''
+  summary: "Shows that high-frequency, low-amplitude airflow oscillations added to PAP machines can continuously and unobtrusively track upper-airway patency, distinguishing obstructive from central apnea and hypopnea events."
   bibtex: |
     @article{Hanafi2022_HighFreqLowAmpOscillometry,
         title = {High frequency-Low amplitude oscillometry: Continuous unobtrusive monitoring of respiratory function on {PAP} machines},
@@ -762,7 +762,7 @@
   links:
     arXiv: https://arxiv.org/abs/2111.01742
   thumbnail: /img/publications/Lowe2021_LogAvgExp.png
-  summary: ''
+  summary: "LogAvgExp is a theoretically grounded global pooling operator for neural networks whose single temperature parameter smoothly tunes behaviour between averaging and taking the maximum, improving computer vision performance."
   bibtex: |
     @article{Lowe2021_LogAvgExp,
         title = {{LogAvgExp} provides a principled and performant global pooling operator},
@@ -787,7 +787,7 @@
     arXiv: https://arxiv.org/abs/1911.07721
     github: https://github.com/yihe-61wu/pySVRT
   thumbnail: /img/publications/Yihe2019_ProgramSynthesis.png
-  summary: ''
+  summary: "Shows that a program-synthesis classifier can solve abstract visual reasoning puzzles but fails on tasks needing shape-distance comparisons, because such spatial relations scale poorly and stay hidden from its image parsings."
   bibtex: |
     @article{Yihe2019_ProgramSynthesis,
         title = {Program synthesis performance constrained by non-linear spatial relations in {S}ynthetic {V}isual {R}easoning Test},
@@ -812,7 +812,7 @@
     arXiv: https://arxiv.org/abs/1907.04352
     github: https://github.com/LogaNick/magenta
   thumbnail: /img/publications/Meade2019_ExploringConditioning.png
-  summary: ''
+  summary: "Adds human-interpretable controls to a piano music generator, letting users steer output by composer style, historical era, note density, and other intuitive musical attributes."
   bibtex: |
     @inproceedings{Meade2019_ExploringConditioning,
         title = {Exploring conditioning for generative music systems with human-interpretable controls},
@@ -839,7 +839,7 @@
     github: https://github.com/rochefort-lab/fissa
     pypi: https://pypi.python.org/pypi/fissa
   thumbnail: /img/publications/Keemink2018_FISSA.png
-  summary: ''
+  summary: "FISSA is a fast, low-memory Python toolbox that cleans calcium imaging signals by removing contamination from surrounding brain tissue, giving more accurate readings of individual neurons' activity."
   bibtex: |
     @article{Keemink2018_FISSA,
       title = {{FISSA}: {A} neuropil decontamination toolbox for calcium imaging signals},
@@ -865,7 +865,7 @@
   links:
     paper: https://doi.org/10.1016/j.cub.2017.12.006
   thumbnail: /img/publications/Zaldivar2018_DopamineMidFreqOsc.jpg
-  summary: ''
+  summary: "Shows that in monkey visual cortex dopamine raises local field potential power specifically in a mid-frequency band and boosts visual information in the output layers that feed higher cortical areas."
   bibtex: |
     @article{Zaldivar2018_DopamineMidFreqOsc,
         title = {Dopamine is signaled by mid-frequency oscillations and boosts output layers visual information in visual cortex},
@@ -895,7 +895,7 @@
     thesis: http://hdl.handle.net/1842/28861
     PDF: /LoweSC_PhD_thesis.pdf
   thumbnail: /img/publications/Lowe2017_DecodingInfoNeural.png
-  summary: ''
+  summary: "Uses information theory to decode monkey visual cortex activity, showing that training sharpens stimulus information in area V4 to match behaviour, while V1 oscillations encode distinct movie features across oscillation frequency and layer depth."
   bibtex: |
     @phdthesis{Lowe2017_DecodingInfoNeural,
         title = {Decoding information from neural populations in the visual cortex},
@@ -916,7 +916,7 @@
   links:
     paper: https://doi.org/10.7554/eLife.14985
   thumbnail: /img/publications/Pakan2016_BehavioralStateModulation.jpg
-  summary: ''
+  summary: "Shows that locomotion boosts several inhibitory neuron types in mouse visual cortex differently depending on whether the animal views stimuli or darkness, challenging the simple disinhibition model."
   bibtex: |
     @article{Pakan2016_BehavioralStateModulation,
         title = {Behavioral-state modulation of inhibition is context-dependent and cell type specific in mouse visual cortex},
@@ -943,7 +943,7 @@
   links:
     paper: https://doi.org/10.1371/journal.pbio.1002257
   thumbnail: /img/publications/Besserve2015_ShiftsGammaPhase.jpg
-  summary: ''
+  summary: "Shows that gamma-band brain waves in the monkey visual cortex travel across the tissue and dynamically steer the direction and strength of information flow between neuron groups as stimuli change."
   bibtex: |
     @article{Besserve2015_ShiftsGammaPhase,
         title = {Shifts of gamma phase across primary visual cortical sites reflect dynamic stimulus-modulated information transfer},
