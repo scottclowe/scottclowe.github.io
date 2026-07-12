@@ -537,7 +537,7 @@ title: Publications
     width: 100%;
     max-width: 150px;
     max-height: 150px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 10px;
     margin-top: 0.5rem;
   }
