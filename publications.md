@@ -801,4 +801,37 @@ title: Publications
     color: white;
     border-color: #218838;
   }
+
+  /* On narrow (portrait) screens, drop the fixed-width left column and lay the
+     whole entry out as a single vertical flow. `display: contents` promotes the
+     children of both sub-columns into one flex context so the thumbnail can be
+     reordered into the text flow (below the authors/venue, above the TL;DR). */
+  @media (max-width: 576px) {
+    .publication {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.3rem;
+    }
+    .publication-left,
+    .publication-right {
+      display: contents;
+    }
+    .publication-left strong          { order: 1; align-self: flex-start; } /* date */
+    .publication-right h3             { order: 2; }                     /* title */
+    .publication-right > p:first-of-type  { order: 3; }                 /* authors */
+    .publication-right > p:nth-of-type(2) { order: 4; }                 /* venue */
+    .publication-thumbnail            { order: 5; }
+    .publication-summary              { order: 6; }
+    .resource-topics                  { order: 7; }
+    .resource-links                   { order: 8; }
+    .bibtex-box                       { order: 9; }
+
+    .publication-thumbnail {
+      width: auto;
+      max-width: 100%;
+      max-height: 300px; /* cap so tall/square thumbnails don't dominate */
+      align-self: center;
+      margin: 0.5rem 0;
+    }
+  }
 </style>
