@@ -462,6 +462,14 @@ title: Publications
 </script>
 
 <style>
+  /* Widen the page container on desktop (beyond Bootstrap's ~1140-1320px cap)
+     so the publications list has more room. Mobile (<768px) is unaffected. */
+  @media (min-width: 768px) {
+    main.container-md {
+      max-width: min(96vw, 1350px);
+    }
+  }
+
   button {
     padding: 0.4em 0.8em;
     border-radius: 100vw;
@@ -520,7 +528,7 @@ title: Publications
     align-items: center;
     justify-content: flex-start;
     flex-shrink: 0;
-    width: 150px;
+    width: 240px;
   }
 
   .publication-right {
@@ -532,8 +540,8 @@ title: Publications
 
   .publication-thumbnail {
     width: 100%;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 240px;
+    max-height: 240px;
     object-fit: contain;
     margin-top: 0.5rem;
   }
@@ -804,11 +812,12 @@ title: Publications
     border-color: #218838;
   }
 
-  /* On narrow (portrait) screens, drop the fixed-width left column and lay the
-     whole entry out as a single vertical flow. `display: contents` promotes the
-     children of both sub-columns into one flex context so the thumbnail can be
-     reordered into the text flow (below the authors/venue, above the TL;DR). */
-  @media (max-width: 576px) {
+  /* Below 900px the fixed 240px thumbnail column crowds the text, so drop it
+     and lay the whole entry out as a single vertical flow. `display: contents`
+     promotes the children of both sub-columns into one flex context so the
+     thumbnail can be reordered into the text flow (below the authors/venue,
+     above the TL;DR). */
+  @media (max-width: 900px) {
     .publication {
       flex-direction: column;
       align-items: stretch;
