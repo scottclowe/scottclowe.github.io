@@ -478,6 +478,8 @@ title: Publications
     align-items: flex-start;
     gap: 1rem;
     position: relative;
+    background-color: #f7f5ed; /* warm off-white, so cards are distinguishable from one another */
+    border-radius: 8px;
   }
 
   /* Add separator line below highlighted publications in grouped together mode */
@@ -495,7 +497,7 @@ title: Publications
   }
 
   .highlighted-publication {
-    background-color: #f0f8ff; /* Pale blue background */
+    background-color: #e7f2ff; /* Pale blue background */
     border-radius: 8px;
   }
 
