@@ -91,6 +91,10 @@ share-links-active:
   linkedin: true
   vk: false
 
+# The protocol and hostname of your site, used to generate absolute URLs
+# (canonical links, sitemap entries, Open Graph tags, social share links)
+url: "https://scottclowe.com"
+
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
 url-pretty: "scottclowe.com"
