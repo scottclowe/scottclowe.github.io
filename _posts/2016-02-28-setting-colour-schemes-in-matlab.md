@@ -174,8 +174,6 @@ If you're using an older version of MATLAB than the most up-to-date, *MATLAB Sch
 To try out *MATLAB Schemer* head over to our [MATLAB FileExchange][fex] download page.
 Hopefully you'll find this utility for managing colour schemes for MATLAB useful and comprehensive.
 
-If it improves your MATLAB experience and you're interested in donating to the project, you can [send a small weekly donation with Gratipay][gratipay] or [put a bounty on an issue][bountysource] to encourage further development.
-
 If you find any problems with it, please open an issue on the [GitHub repository][matlab-schemer].
 
 
@@ -183,9 +181,6 @@ If you find any problems with it, please open an issue on the [GitHub repository
   [README]:             https://github.com/scottclowe/matlab-schemer#readme
   [matlab-schemes]:     https://github.com/scottclowe/matlab-schemes
   [fex]:                http://mathworks.com/matlabcentral/fileexchange/53862-matlab-schemer
-  [flattr]:             https://flattr.com/submit/auto?user_id=scottclowe&url=https://github.com/scottclowe/matlab-schemer&title=MATLAB-schemer&tags=github&category=software
-  [gratipay]:           https://gratipay.com/matlab-schemer/
-  [bountysource]:       https://www.bountysource.com/teams/matlab-schemer
   [Undocumented Matlab article]: http://undocumentedmatlab.com/blog/changing-system-preferences-programmatically
   [GTK stylesheet]:     https://wiki.gnome.org/Projects/GtkSourceView/StyleSchemes
   [Solarized]:          http://ethanschoonover.com/solarized
