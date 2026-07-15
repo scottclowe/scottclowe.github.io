@@ -36,6 +36,11 @@ navbar-links:
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
 
+# Default image for social media link previews (og:image / twitter:image) on
+# pages that don't set their own share-img. Unlike avatar, this does not
+# appear in the navbar.
+share-img: "/assets/img/scott-lowe-headshot.jpg"
+
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
 #title-img: /path/to/image

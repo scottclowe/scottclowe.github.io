@@ -113,6 +113,8 @@
       {%- endif -%}
     {%- elsif page.thumbnail-img -%}
       {{ page.thumbnail-img }}
+    {%- elsif site.share-img -%}
+      {{ site.share-img }}
     {%- elsif site.avatar -%}
       {{ site.avatar }}
     {% endif %}
@@ -140,7 +142,7 @@
   <link rel="canonical" href="{{ page.url | absolute_url | strip_index }}">
   {% endif %}
 
-  {% if img != "" and img != site.avatar %}
+  {% if img != "" and img != site.avatar and img != site.share-img %}
   <meta name="twitter:card" content="summary_large_image">
   {% else %}
   <meta name="twitter:card" content="summary">
