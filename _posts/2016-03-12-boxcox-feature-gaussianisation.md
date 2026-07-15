@@ -5,7 +5,7 @@ categories: ml feature scaling kaggle scikit-learn
 mathjax: true
 ---
 
-In this post, I'll discuss [feature scaling] and an idea I had about rescaling features so they are transformed into Gaussian distributions in additon to standardisation.
+In this post, I'll discuss [feature scaling] and an idea I had about rescaling features so they are transformed into Gaussian distributions in addition to standardisation.
 I'll be doing the Gaussianisation using the [Box-Cox transformation][Box-Cox paper].
 
 But first, some background.
@@ -17,7 +17,7 @@ Normalising continuous scaled features is widely considered to be a sensible dat
 For features containing boolean values rescaling can be detrimental (because rescaling will destroy the boolean nature of the feature), but with continuous real-valued features rescaling the feature so it is normalised is rarely a bad idea and often very useful.
 
 For some models and training algorithms, the features are assumed to have similar scalings.
-For these, normalisation of the features is an essential to ensure the algorithm performs correctly.
+For these, normalisation of the features is essential to ensure the algorithm performs correctly.
 
 - ***k*-means clustering**.
   Since the *k*-means algorithm uses the Euclidean (*L*2) distance from the cluster centre, normalisation is important to ensure it weights each feature equally.
@@ -34,9 +34,9 @@ For these, normalisation of the features is an essential to ensure the algorithm
 
 - **Regularising with *L*1 or *L*2 norm**.
   In order to reduce overfitting, we can use regularisation to try to minimise the *L*1 or *L*2 norm of the parameters whilst optimising the objective function.
-  But this constraint only makes sense if we can expect the weights on each feature to be similar sizes when they have similar infuence on the output variable.
+  But this constraint only makes sense if we can expect the weights on each feature to be similar sizes when they have similar influence on the output variable.
   Again, this is found when the features are scaled similarly to one-another.
-  Such regularisation is used for Lasso and ElasticNet models, and is often used to for neural networks (also known as weight decay).
+  Such regularisation is used for Lasso and ElasticNet models, and is often used for neural networks (also known as weight decay).
 
 - **Principal Component Analysis** (PCA).
   Because PCA picks out the vectors which explain the most variance in the data, it is important that each feature have the same scaling.
@@ -86,26 +86,26 @@ So if the shape of the distribution was not suitable for the model we want to co
 If the features are all approximately uniform or Gaussian, simply rescaling the feature using one of the methods above will be sufficient for the data to work well with all the algorithms mentioned above.
 But if one or more of the features is instead very asymmetric or heavy-tailed, this feature may still be under- or over-weighted across the majority of samples.
 
-For instance, when a feature is known to be log-normally distributed one should take the logarithm of the feature, discarding the orignal and training on its logarithm instead.
+For instance, when a feature is known to be log-normally distributed one should take the logarithm of the feature, discarding the original and training on its logarithm instead.
 This is already regarded as good practice, and helps performance because otherwise the values obtained from a log-normally distributed feature will vary greatly in order of magnitude across our training samples.
 
 Let's consider what would happen to a **log-normally distributed** feature after normalising it with each of the techniques mentioned above.
 
-- Under **max-min** scaling (where the minimum value is set to zero after normalisation), the majority of data points will be almost zero and only a few of the largest samples would be large enough look different to the rest and matter to the algorithm.
+- Under **max-min** scaling (where the minimum value is set to zero after normalisation), the majority of data points will be almost zero and only a few of the largest samples would be large enough to look different to the rest and matter to the algorithm.
 - Under **Z-scoring**, the mean and standard deviation are more heavily influenced by the minority of large values.
   Consequently, the majority of values have a decent sized negative value and only a few are positive.
 - Under **median and IQR** rescaling, the smaller values constitute the majority of the datapoints, so the median and IQR are defined so these are appropriately rescaled.
   However, larger values from the log-normal distribution will fall outside the expected range and have more impact on their samples.
 
 In addition, irrespective of which of these normalisation methods was applied, the heavy-tail means it is possible for much larger samples to show up in testing or implementation than were seen in the training data.
-These unlikely data values could cause the model to make wildly inaccurate predicitons when they do turn up.
+These unlikely data values could cause the model to make wildly inaccurate predictions when they do turn up.
 
 All these problems would be accentuated if the feature came from a power-law distribution with high degree, or from a super-exponential distribution, in which case there will be an even longer one-sided tail on the distribution.
 
 Okay, so you could identify log-normally distributed features manually and train on their logarithm instead.
 But what if you want to have an automated system without mandating such human intervention?
 There might be so many features it is not so practical to inspect each of them and pick whether to use the log-transform.
-Furthermore, some features might have an intermediate scaling best handled by something in-between linear and logarithmic transformation
+Furthermore, some features might have an intermediate scaling best handled by something in-between linear and logarithmic transformation.
 Or a super-exponential distribution where taking the logarithm is not adequate.
 
 Well, one option to resolve this is to automatically Gaussian-ise the features.
@@ -113,7 +113,7 @@ Well, one option to resolve this is to automatically Gaussian-ise the features.
 
 ## The solution: Gaussianisation
 
-To prevent asymetric and long-tailed distributions from hindering our performance, we can transform them so they are more Gaussian-like.
+To prevent asymmetric and long-tailed distributions from hindering our performance, we can transform them so they are more Gaussian-like.
 
 How do we do this? We can use a power transformation!
 
@@ -127,7 +127,7 @@ x'_i =
 \end{cases}
 $$
 
-where \\( \lambda_1 \\) and \\( \lambda_2 \\) are free parameters which we fit in order to the distribution of \\( x \\) in order to make the output distribution as Gaussian-like as possible.
+where \\( \lambda_1 \\) and \\( \lambda_2 \\) are free parameters which we fit to the distribution of \\( x \\) in order to make the output distribution as Gaussian-like as possible.
 
 As mentioned before, translation and rescaling don't change the shape of a distribution, so the subtraction of 1 and division by \\( \lambda_1 \\) does not impact the Gaussianity of the output distribution.
 
@@ -157,13 +157,13 @@ Applying power transformations in this manner to the raw features will certainly
 
 As stated before, the results of your model shouldn't change if you move from measuring money in dollars to cents.
 But after Gaussianising the same feature with the Box-Cox transformation, we've moved to measuring money in some non-linearly transformed space instead.
-This transformed space is still for building a model an though.
-In fact, it provides a representation similar to the percentile of monentary amount taken over all the samples we have for that feature.
+This transformed space is still fine for building a model in, though.
+In fact, it provides a representation similar to the percentile of monetary amount taken over all the samples we have for that feature.
 
 Furthermore, taking a power transformation of an existing feature is one way for a data scientist to perform feature engineering and attempt to find a more accurate model of the data.
 Here, we're doing the same thing but taking the human out of the routine and automating the choice of the power with which to transform the feature.
 
-If we're fitting a linear model and have no reason to suspect that there is linear relationship between a financial feature measured in dollars and the class or regression target, why not take the Box-Cox transformation of the feature?
+If we're fitting a linear model and have no reason to suspect that there is a linear relationship between a financial feature measured in dollars and the class or regression target, why not take the Box-Cox transformation of the feature?
 Without any other information, this is no less likely to be linearly related to the target variable.
 The Box-Cox transformation is essentially giving us a measure of relative purchasing power instead of actual cash, which is not necessarily a bad thing.
 
@@ -181,7 +181,7 @@ But it does add another pre-processing tool to your arsenal.
 Applying a power transformation certainly won't help if your feature is multimodal.
 If your features are sparse, or approximately uniformly or Gaussian distributed, there is no benefit to Gaussianising them.
 
-But if your feature varies is far from Gaussian, Gaussianising may very well help you construct a more accurate model.
+But if the distribution of your feature is far from Gaussian, Gaussianising may very well help you construct a more accurate model.
 
 From our earlier list of algorithms motivating feature scaling, I suspect that *k*-means and *k*-nearest neighbours are most likely to benefit from Gaussianisation of non-sparse features.
 

@@ -14,10 +14,10 @@ In this post, I'll describe a technique for doing stratified partitions of datas
 Let's say you're training a model on a dataset and you need to split it into **train** and **test** partitions.
 
 You're doing this so your training algorithm will learn a model based on some of the samples (the training set) and then evaluate how good it is on other samples (the [test set]) which were unseen during training.
-It's important that you test on unseen samples so that you know your algorithm generalises well --- otherwise it could cheat by writing down the answers while your training it, which is effectively what happens if it [overfits][overfitting].
+It's important that you test on unseen samples so that you know your algorithm generalises well --- otherwise it could cheat by writing down the answers while you're training it, which is effectively what happens if it [overfits][overfitting].
 
 Additionally, you can split your data down further into three sets: train, **validation**, and test.
-Now you can train lots of different models on the training set and then work out which is best by seeing how the perform on the validation set.
+Now you can train lots of different models on the training set and then work out which is best by seeing how they perform on the validation set.
 After picking out the best model, you can see how well it generalises by inspecting its performance on the test set.
 
 Why not cut out this step and just compare the models on the test set and report this as the final performance?
@@ -29,9 +29,9 @@ Although none of the models were trained on the validation set, by using the val
 Consequently, we should evaluate on the test set alone only at the end of selecting our model and training it.
 
 You can also do \\( k \\)-fold [cross-validation], where the training set is partitioned into \\( k \\) equally sized sets.
-We then train \\( k \\) models on (\\( k \\)-1) of the partitions and evaluate its perfomance on the remaining partition.
-The overall perfomance from these \\( k \\) repetitions can then be used to compare our models and pick the best one.
-Having \\( k \\) folds instead of 1 increases makes the model validation score more reliable, since it is based on more data.
+We then train \\( k \\) models on (\\( k \\)-1) of the partitions and evaluate its performance on the remaining partition.
+The overall performance from these \\( k \\) repetitions can then be used to compare our models and pick the best one.
+Having \\( k \\) folds instead of 1 makes the model validation score more reliable, since it is based on more data.
 
 But each time you partition the data, how do you pick out which samples should be in each subset?
 
@@ -39,12 +39,12 @@ The simplest method is **random** partitioning.
 Let's say you want the training, validating and testing partitions to have an 80/10/10% split.
 With random splits, samples are randomly ordered and then allocated to one of these partitions.
 
-A smarter method method is **stratified** partitioning.
-This method is typically applied for single-label classification problems, where each sample belongs to one of *C* classes and we want to a model which applies the correct label to each sample.
+A smarter method is **stratified** partitioning.
+This method is typically applied for single-label classification problems, where each sample belongs to one of *C* classes and we want a model which applies the correct label to each sample.
 For stratified partitioning, the distribution of samples across the classes are held constant for each partition.
 So if 30% of all samples have label 0, 60% label 1, and 10% label 2, each partition will have this proportion of samples within its members.
 
-Studies have shown that stratified cross-validation gives a more reliable (lower bias and variance) estimate of model performance ([Kohavi, 1995]), and it is common practice to use 10-fold stratified cross-validation to evaluate the perfomance of models on classification tasks.
+Studies have shown that stratified cross-validation gives a more reliable (lower bias and variance) estimate of model performance ([Kohavi, 1995]), and it is common practice to use 10-fold stratified cross-validation to evaluate the performance of models on classification tasks.
 Using stratification during model selection produces better results because the validation set(s) more accurately represent the task we need to solve.
 If one class is hard to predict, we won't have more of them (artificially hindering the performance metric) or less (assisting performance) if we use stratification.
 
@@ -112,21 +112,21 @@ At this point, we randomly allocate each of the remaining \\( R^{(L)} \\) sample
 ## Discussion
 
 The advantage of using either sorted or fractional stratification over random partitioning is that the distribution of target values is assured to be approximately the same across all the partitions.
-This is useful to make sure validation and test performance gives depicts the expected performance of the model with less bias and variance.
+This is useful to make sure validation and test performance depicts the expected performance of the model with less bias and variance.
 
 Typical performance metrics for regression are *mean squared error* and *mean absolute error*.
 With either metric, the error contributed from an individual sample typically rises as its target value rises, because a fixed percentage error will give a larger absolute difference for larger target values.
-Consequenly, poor distribution consistency will increase the variance in the result --- under or over representation of the targets with larger magnitudes will respectively result in an decrease or increase in the measuered loss.
+Consequently, poor distribution consistency will increase the variance in the result --- under or over representation of the targets with larger magnitudes will respectively result in a decrease or increase in the measured loss.
 
 Such an effect is more prominent for distributions which are heavy-tailed.
 With these, the total loss is more likely to be dominated by a minority of the samples.
 
 If your distribution is heavy-tailed, another solution to this problem is to transform the distribution of targets with [Gaussianisation][gaussianisation blog post].
-You can perform the Gaussianisation step with a Box-Cox transformation ([as described here][gaussianisation blog post]) to your \\( y \\) values before training and evalutating the model.
+You can perform the Gaussianisation step with a Box-Cox transformation ([as described here][gaussianisation blog post]) to your \\( y \\) values before training and evaluating the model.
 Afterwards, when you're making predictions on samples in the wild using your model, make sure you remember to apply the inverse transformation to the outputs.
 
 However, Gaussianisation isn't always suitable for your problem.
-When or not you need to evaluate the loss of a regression problem with a heavy-tailed distribution, stratified partitioning using sorted or fracitional stratification will always work.
+Whether or not you need to evaluate the loss of a regression problem with a heavy-tailed distribution, stratified partitioning using sorted or fractional stratification will always work.
 
 
 [test set]: https://en.wikipedia.org/wiki/Test_set

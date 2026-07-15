@@ -23,7 +23,7 @@ between the installations. But this file has a *lot* of content; the vast majori
 
 Then I read this [Undocumented Matlab article], which described how system preferences could be accessed and changed programatically. This was clearly the best long-term solution.
 
-I searched through `'matlab.prf'` and found the handles for all the Color Preferences settings. With that and the [Undocumented Matlab article] content, I rigged up a script which export the color preferences to the same format as used in `'matlab.prf'`, and another which would set the prefences to match the values in the settings file.
+I searched through `'matlab.prf'` and found the handles for all the Color Preferences settings. With that and the [Undocumented Matlab article] content, I rigged up a script which exports the color preferences to the same format as used in `'matlab.prf'`, and another which would set the preferences to match the values in the settings file.
 
 Fast forward around a year and a half, and I finally got around to finishing off this pair of functions, which now constitute the package [*MATLAB Schemer*][fex]. And with that, there is now a fully-fledged colour scheme manager for MATLAB.
 
@@ -44,7 +44,7 @@ schemer_export()
 {% endhighlight %}
 New users should note that this won't work if you've left all the GUI colour preferences as they were when you installed MATLAB! The preferences have to have been set to be exportable; but don't worry because you can always restore the default MATLAB colour scheme again with `schemer_import('schemes/default.prf')`.
 
-If you are transferring your settings from one MATLAB installlation to another, you can turn all the optional syntax highlighting on/off as you like it by importing with the `INCLUDEBOOLS` flag enabled, like so.
+If you are transferring your settings from one MATLAB installation to another, you can turn all the optional syntax highlighting on/off as you like it by importing with the `INCLUDEBOOLS` flag enabled, like so.
 {% highlight matlab %}
 schemer_import(true)
 {% endhighlight %}
@@ -59,7 +59,7 @@ A general description of common usage is also available [in the README][README].
 
 ### Enabling/Disabling optional highlighting
 
-If you're not seeing all the colours shown in the sample screenshots below enabled on your own system -- such as the global variable colour, cell-block background colour, current line background, or right-hand side character count line -- these are from colour preferences which are disabled by default on MATAB. You can enable them manually in the Preferences panel, or you can overwrite your current settings with the ones set up for the colour scheme in question with
+If you're not seeing all the colours shown in the sample screenshots below enabled on your own system -- such as the global variable colour, cell-block background colour, current line background, or right-hand side character count line -- these are from colour preferences which are disabled by default on MATLAB. You can enable them manually in the Preferences panel, or you can overwrite your current settings with the ones set up for the colour scheme in question with
 {% highlight matlab %}
 schemer_import(true)
 {% endhighlight %}
@@ -83,29 +83,29 @@ Based on the [Gedit theme, "Oblivion"](https://github.com/mig/gedit-themes/blob/
 ![Oblivion]({{ site.url }}/resources/matlab-scheme-screenshots/oblivion.png)
 
 #### Cobalt
-Based on the [GTK stylesheet], "Cobalt", by Will Farrington, which is also implmented as a Gedit theme.
+Based on the [GTK stylesheet], "Cobalt", by Will Farrington, which is also implemented as a Gedit theme.
 
 ![Cobalt]({{ site.url }}/resources/matlab-scheme-screenshots/cobalt.png)
 
 #### Darkmate
-Based on the [GTK stylesheet], "Darkmate", by [Luigi Maselli](https://grigio.org/), which is also implmented as a Gedit theme.
+Based on the [GTK stylesheet], "Darkmate", by [Luigi Maselli](https://grigio.org/), which is also implemented as a Gedit theme.
 
 ![Darkmate]({{ site.url }}/resources/matlab-scheme-screenshots/darkmate.png)
 
 #### Tango
-Based on the Gedit theme, "Tango". I found a copy of the Tango XML file for GMate, but curiously it didn't match the version I had in front of me on the screen. So I actually selected these out these settings using an on-screen colour-picker tool on the rendering of a `.m` file in Gedit.
+Based on the Gedit theme, "Tango". I found a copy of the Tango XML file for GMate, but curiously it didn't match the version I had in front of me on the screen. So I actually selected these settings using an on-screen colour-picker tool on the rendering of a `.m` file in Gedit.
 
 ![Tango]({{ site.url }}/resources/matlab-scheme-screenshots/tango.png)
 
 #### Vibrant
-Based on the [GTK stylesheet], "Vibrant", by Lateef Alabi-Oki, which is also implmented as a Gedit theme.
+Based on the [GTK stylesheet], "Vibrant", by Lateef Alabi-Oki, which is also implemented as a Gedit theme.
 
 ![Vibrant]({{ site.url }}/resources/matlab-scheme-screenshots/vibrant.png)
 
 
 ### Solarized themes
 
-[Solarized] is a popular colour scheme created by [Ethan Schoonover] which has been adapted for many editors and environments. Because it is so possible, there are some other implementations available [(1)], [(2)], [(3)] -- most of which have arisen while this project was shelved -- but I believe mine follows the structure most faithfully.
+[Solarized] is a popular colour scheme created by [Ethan Schoonover] which has been adapted for many editors and environments. Because it is so popular, there are some other implementations available [(1)], [(2)], [(3)] -- most of which have arisen while this project was shelved -- but I believe mine follows the structure most faithfully.
 
 Certainly it is the only one which defines all the colour preference options, including non-MATLAB syntax definitions.
 
@@ -122,7 +122,7 @@ Certainly it is the only one which defines all the colour preference options, in
 
 #### Dark Steel
 
-This is my own theme, a mash-up of Cobalt and Darkmate, and was the colour scheme I was originally trying to transfer between my MATLAB installations and motiviated the creation of *MATLAB Schemer*.
+This is my own theme, a mash-up of Cobalt and Darkmate, and was the colour scheme I was originally trying to transfer between my MATLAB installations and motivated the creation of *MATLAB Schemer*.
 
 ![Dark Steel]({{ site.url }}/resources/matlab-scheme-screenshots/darksteel.png)
 
@@ -156,7 +156,7 @@ Many users don't notice this since they only ever edit `.m` files, but MATLAB ac
 
 I have noticed this myself when looking at the `.c` source of a MEX-file... MATLAB offers syntax highlighting for these languages but the colours used are partially coupled to general colour settings (background and text colour) and partially set specific for the language in question.
 
-Consequently, if you've made your own theme and only set the colours for `.m` syntax highlighting, you'll find that the syntax for other languanges such as `.c` is broken.
+Consequently, if you've made your own theme and only set the colours for `.m` syntax highlighting, you'll find that the syntax for other languages such as `.c` is broken.
 
 Since we don't want to be importing broken themes in this way, *MATLAB Schemer* gets around this problem by having the syntax highlighting colours in these other languages inherit their values from the colours for related `.m` syntax highlighting. The result is that you can set-up a scheme using just `.m` highlighting and it will give a consistent experience in all the languages currently supported by MATLAB.
 
@@ -164,7 +164,7 @@ If you wish, you can still overwrite the inherited settings for the other langua
 
 ### Preferences with limited availability
 
-Over the years, MathWorks has added expanded the syntax highlighting options which are available.
+Over the years, MathWorks has expanded the syntax highlighting options which are available.
 
 If you're using an older version of MATLAB than the most up-to-date, *MATLAB Schemer* won't export the settings which don't exist in your version of MATLAB. Other users who import the theme you have designed will have the missing value filled-in with an inherited value in the same way as for the additional languages.
 

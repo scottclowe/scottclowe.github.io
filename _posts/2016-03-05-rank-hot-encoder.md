@@ -85,7 +85,7 @@ A typical example of an ordinal data feature is a rating system, such as custome
 | Very good    |
 
 As I'm sure you'll agree, the values are ranked with *Very bad < Bad < Neutral < Good < Very good*.
-But we don't have a continous scale for this variable, and customer satisfaction does not change in a linearly fashion as we progress through the scale.
+But we don't have a continuous scale for this variable, and customer satisfaction does not change in a linear fashion as we progress through the scale.
 
 Furthermore, ordinal scales can be arbitrarily non-linear.
 The non-linearity of the customer satisfaction scale may not be immediately apparent, so allow me to elaborate with a slightly contrived example.
@@ -100,10 +100,10 @@ Age, which would have been continuous if it had been left unchanged, has been br
 | 61 -- 65  |
 | 66+       |
 
-Knowing which bracket the individual's age falls into will still be useful to useful to us when estimating their income, but the feature is clearly no longer continuously scaled.
+Knowing which bracket the individual's age falls into will still be useful to us when estimating their income, but the feature is clearly no longer continuously scaled.
 As we progress through the categories in order, there is no constant rate of change in age.
 
-As we discussed for the categorical data type, we can consider the results of an dictionary encoding and a one-hot encoding of such an ordinal feature.
+As we discussed for the categorical data type, we can consider the results of a dictionary encoding and a one-hot encoding of such an ordinal feature.
 However, now we have to be careful to make sure the dictionary label mapping is ordered correctly so that we have a rank index which ascends monotonically with the ranking in the ordinal scale.
 
 | Satisfaction | Rank Index | One-Hot Encoding  |
@@ -128,7 +128,7 @@ This is because the model assumes our features scale linearly, with both multipl
 However it is also not ideal to train a linear model on the one-hot encoding, since this removes the ranking structure present in the data.
 We need a way to convey the structure of the data to the model without it making false assumptions.
 
-I investigated standard practices on how to handle ordinal variables, and the advice I found instructed to train simply chose to train the model using either the rank index and or using the one-hot encoding, with the decision left to the data scientist.
+I investigated standard practices on how to handle ordinal variables, and the advice I found instructed to simply train the model using either the rank index or the one-hot encoding, with the decision left to the data scientist.
 In practice, which method works best depends on the feature and its relationship with the output variable --- if the relationship is approximately linear or highly non-linear.
 Lacking a principled method to pick between the two representations, it is sometimes recommended to train two models, one with a rank index and the other with a one-hot encoding, and pick whichever performs best.
 
@@ -151,7 +151,7 @@ The rank-hot encoder is similar to a one-hot encoder, except every feature up to
 | Good         | 3          | `[0, 0, 0, 1, 0]` | `[1, 1, 1, 0]`    |
 | Very good    | 4          | `[0, 0, 0, 0, 1]` | `[1, 1, 1, 1]`    |
 
-Instead of answering the query "**Is the satisfaction *x*?**", the entires in a rank-hot encoder tell us "**Is the satisfaction level at least *x*?**".
+Instead of answering the query "**Is the satisfaction *x*?**", the entries in a rank-hot encoder tell us "**Is the satisfaction level at least *x*?**".
 This representation of the data allows a linear model to explain the effect of a high-rank as the additive composition of the effect of each rank in turn.
 
 It's a bit like an onion.
