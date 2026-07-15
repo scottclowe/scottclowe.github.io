@@ -2,6 +2,7 @@
 layout: post
 title: Automating Feature Rescaling with Gaussianisation
 categories: ml feature scaling kaggle scikit-learn
+mathjax: true
 ---
 
 In this post, I'll discuss [feature scaling] and an idea I had about rescaling features so they are transformed into Gaussian distributions in additon to standardisation.
