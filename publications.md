@@ -56,7 +56,7 @@ title: Publications
     <div class="publication with-border {% if pub.highlighted %}highlighted-publication{% endif %}">
       <div class="publication-left">
         <strong>{{ pub.date }}</strong>
-        {% if pub.thumbnail and pub.thumbnail != '' %}<img class="publication-thumbnail" src="{{ pub.thumbnail | escape }}" alt="">{% endif %}
+        {% if pub.thumbnail and pub.thumbnail != '' %}<img class="publication-thumbnail" src="{{ pub.thumbnail | escape }}" alt="" loading="lazy">{% endif %}
       </div>
       <div class="publication-right">
         <h3>{% if pub.main_link %}<a href="{{ pub.main_link | escape }}" target="_blank" rel="noopener">{{ pub.title | escape }}</a>{% else %}{{ pub.title | escape }}{% endif %}</h3>
@@ -220,7 +220,7 @@ title: Publications
     pubDiv.innerHTML = `
       <div class="publication-left">
           <strong>${pub.date}</strong>
-          ${pub.thumbnail ? `<img class="publication-thumbnail" src="${escapeHtml(pub.thumbnail)}" alt="">` : ''}
+          ${pub.thumbnail ? `<img class="publication-thumbnail" src="${escapeHtml(pub.thumbnail)}" alt="" loading="lazy">` : ''}
       </div>
       <div class="publication-right">
           <h3>${pub.main_link ? `<a href="${escapeHtml(pub.main_link)}" target="_blank" rel="noopener">${escapeHtml(pub.title)}</a>` : escapeHtml(pub.title)}</h3>
