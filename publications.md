@@ -337,10 +337,10 @@ title: Publications
     updatePublicationCounter(totalDisplayed, filteredHighlightedPublications.length, selectedTopics.length, isGrouped);
 
     // Reflect the current filter state in the URL so filtered views can be shared
-    updateFilterURL(selectedTopics, isAnyMode);
+    updateFilterURL(selectedTopics, isAnyMode, isGrouped);
   }
 
-  function updateFilterURL(selectedTopics, isAnyMode) {
+  function updateFilterURL(selectedTopics, isAnyMode, isGrouped) {
     const params = new URLSearchParams(window.location.search);
     if (selectedTopics.length > 0) {
       params.set('topics', selectedTopics.join(','));
@@ -351,6 +351,12 @@ title: Publications
       params.set('match', 'all');
     } else {
       params.delete('match');
+    }
+    // Grouping is on by default, so only record it in the URL when turned off
+    if (!isGrouped) {
+      params.set('group', '0');
+    } else {
+      params.delete('group');
     }
     const query = params.toString();
     const newURL = window.location.pathname + (query ? '?' + query : '') + window.location.hash;
@@ -456,6 +462,10 @@ title: Publications
     }
     if (params.get('match') === 'all') {
       document.getElementById('filter-mode').checked = false;
+    }
+    const groupParam = params.get('group');
+    if (groupParam === '0' || groupParam === 'false') {
+      document.getElementById('group-highlights').checked = false;
     }
     renderPublications();
   })();
