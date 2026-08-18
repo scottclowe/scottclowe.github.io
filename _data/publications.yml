@@ -187,6 +187,7 @@
     arXiv: https://arxiv.org/abs/2509.03378
     openreview: https://openreview.net/forum?id=pQQuC1nIQq
     poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/124345.png?t=1765885233.0748246
+    github: https://github.com/yorkerlin/KL-Methods
   thumbnail: /img/publications/Lin2026_KLShampoo.png
   summary: "Reinterprets the Shampoo and SOAP neural-network optimizers through Kullback-Leibler minimization, yielding KL-Shampoo, which trains language models faster and more accurately without Adam's extra memory cost."
   highlighted: 7
