@@ -1,3 +1,30 @@
+- date: 2026 # August # Foundation Models in the Wild Workshop, ICML 2024: 2024, Jun
+  title: An Empirical Study into Clustering of Unseen Datasets with Self-Supervised Encoders
+  venue: Transactions on Machine Learning Research
+  authors: Scott C. Lowe*, Joakim Bruslund Haurum*, Sageev Oore†, Thomas B. Moeslund†, Graham W. Taylor†
+  topics:
+  - self-supervised learning
+  - vision
+  main_link: https://openreview.net/forum?id=gdwg7ntmT5
+  links:
+    arXiv: https://arxiv.org/abs/2406.02465
+    project: https://scottclowe.com/zs-ssl-clustering/
+    github: https://github.com/scottclowe/zs-ssl-clustering/
+  thumbnail: /img/publications/Lowe2024_ZeroShotClustering.png
+  summary: "Shows that image encoders trained without labels can group entirely new, unseen datasets into meaningful clusters without retraining, and that cluster quality can be judged without ground-truth labels."
+  highlighted: 2
+  bibtex: |
+    @article{Lowe2026_ZeroShotClustering,
+        title = {An Empirical Study into Clustering of Unseen Datasets with Self-Supervised Encoders},
+        author = {Scott C. Lowe and Joakim Bruslund Haurum and Sageev Oore and Thomas B. Moeslund and Graham W. Taylor},
+        journal = {Transactions on Machine Learning Research},
+        year = {2026},
+        url = {https://openreview.net/forum?id=gdwg7ntmT5},
+        eprint = {2406.02465},
+        archivePrefix = {arXiv},
+        primaryClass = {cs.LG},
+    }
+
 - date: '2026'  # Nov
   title: 'SmartLooper: a Framework for Personalized Human-AI Musical Improvisation'
   venue: 'The 27th International Society for Music Information Retrieval Conference (ISMIR 2026)'
@@ -84,7 +111,7 @@
     arXiv: https://arxiv.org/abs/2603.15553
   thumbnail: /img/publications/Lowe2026_Bootleg.png
   summary: "Bootleg is a self-supervised image pretraining method that predicts a teacher network's multiple hidden layers at once, capturing features across abstraction levels and beating comparable baselines on classification and segmentation."
-  highlighted: 0
+  highlighted: 1
   bibtex: |
     @article{Lowe2026_Bootleg,
         title = {Self-Distillation of Hidden Layers for Self-Supervised Representation Learning},
@@ -162,7 +189,7 @@
     poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/124345.png?t=1765885233.0748246
   thumbnail: /img/publications/Lin2026_KLShampoo.png
   summary: "Reinterprets the Shampoo and SOAP neural-network optimizers through Kullback-Leibler minimization, yielding KL-Shampoo, which trains language models faster and more accurately without Adam's extra memory cost."
-  highlighted: 6
+  highlighted: 7
   bibtex: |
     @inproceedings{Lin2026_KLShampoo,
         title = {Understanding and improving {S}hampoo and {SOAP} via {K}ullback-{L}eibler minimization},
@@ -382,7 +409,6 @@
     model: https://huggingface.co/bioscan-ml/clibd
   thumbnail: /img/publications/Gong2025_CLIBD.png
   summary: "CLIBD aligns insect photographs, DNA barcodes, and taxonomic labels in one shared space, letting it classify both known and unknown species without fine-tuning and beating single-source methods."
-  highlighted: 2
   bibtex: |
     @inproceedings{Gong2025_CLIBD,
         title = {{CLIBD}: Bridging vision and genomics for biodiversity monitoring at scale},
@@ -476,7 +502,7 @@
     openreview: https://openreview.net/forum?id=ZxaipE6f62
   thumbnail: /img/publications/Lowe2024_System2Nigh.png
   summary: "Reviews progress toward machine reasoning and argues that today's models fall just short of deliberate, human-like System 2 thought, with only a few remaining hurdles before achieving it."
-  highlighted: 5
+  highlighted: 4
   bibtex: |
     @inproceedings{Lowe2024_System2Nigh,
         title = {System 2 reasoning capabilities are nigh},
@@ -544,33 +570,6 @@
         eprint = {2409.06618},
         archivePrefix = {arXiv},
         primaryClass = {cs.CV},
-    }
-
-- date: '2024'  # Jun
-  title: An Empirical Study into Clustering of Unseen Datasets with Self-Supervised Encoders
-  venue: Foundation Models in the Wild Workshop, ICML 2024
-  authors: Scott C. Lowe*, Joakim Bruslund Haurum*, Sageev Oore†, Thomas B. Moeslund†, Graham W. Taylor†
-  topics:
-  - self-supervised learning
-  - vision
-  main_link: https://arxiv.org/abs/2406.02465
-  links:
-    arXiv: https://arxiv.org/abs/2406.02465
-    project: https://scottclowe.com/zs-ssl-clustering/
-    github: https://github.com/scottclowe/zs-ssl-clustering/
-  thumbnail: /img/publications/Lowe2024_ZeroShotClustering.png
-  summary: "Shows that image encoders trained without labels can group entirely new, unseen datasets into meaningful clusters without retraining, and that cluster quality can be judged without ground-truth labels."
-  highlighted: 4
-  bibtex: |
-    @inproceedings{Lowe2024_ZeroShotClustering,
-        title = {An empirical study into clustering of unseen datasets with self-supervised foundation models},
-        author = {Scott C. Lowe and Joakim Bruslund Haurum and Sageev Oore and Thomas B. Moeslund and Graham W. Taylor},
-        booktitle = {ICML 2024 Workshop on Foundation Models in the Wild},
-        year = {2024},
-        url = {https://openreview.net/forum?id=kcgf3istoO},
-        eprint = {2406.02465},
-        archivePrefix = {arXiv},
-        primaryClass = {cs.LG},
     }
 
 - date: '2023'  # Dec
@@ -666,7 +665,7 @@
     pypi: https://pypi.org/project/pytorch-logit-logic/
   thumbnail: /img/publications/Lowe2022_LogicalActivationFunctions.png
   summary: "Introduces neural network activation functions that perform Boolean logic (AND, OR, XNOR) on feature probabilities, improving accuracy on image classification, transfer learning, and reasoning tasks."
-  highlighted: 1
+  highlighted: 5
   bibtex: |
     @inproceedings{Lowe2022_LogicalActivationFunctions,
         title = {Logical activation functions: Logit-space equivalents of probabilistic boolean operators},
