@@ -1,4 +1,73 @@
-- date: '2026'  # August  # Foundation Models in the Wild Workshop, ICML 2024: 2024, Jun
+- date: '2026'  # Dec; arXiv 2026 Mar
+  title: 'Self-Distillation of Hidden Layers for Masked Self-Supervised Representation Learning'
+  venue: Advances in Neural Information Processing Systems 40 (NeurIPS 2026)
+  authors: Scott C. Lowe, Anthony Fuller, Sageev Oore, Evan Shelhamer, Graham W. Taylor
+  topics:
+  - self-supervised learning
+  - vision
+  main_link: https://arxiv.org/abs/2603.15553
+  links:
+    arXiv: https://arxiv.org/abs/2603.15553
+  thumbnail: /img/publications/Lowe2026_Bootleg.png
+  summary: "Bootleg is a self-supervised image pretraining method that predicts a teacher network's multiple hidden layers at once, capturing features across abstraction levels and beating comparable baselines on classification and segmentation."
+  highlighted: 1
+  bibtex: |
+    @article{Lowe2026_Bootleg,
+        title = {Self-Distillation of Hidden Layers for Self-Supervised Representation Learning},
+        author = {Scott C. Lowe and Anthony Fuller and Sageev Oore and Evan Shelhamer and Graham W. Taylor},
+        year = {2026},
+        eprint = {2603.15553},
+        archivePrefix = {arXiv},
+        primaryClass = {cs.CV},
+        doi = {10.48550/arxiv.2603.15553},
+        journal = {arXiv preprint arXiv:2603.15553},
+    }
+
+- date: '2026'  # Nov
+  title: 'SmartLooper: a Framework for Personalized Human-AI Musical Improvisation'
+  venue: 'The 27th International Society for Music Information Retrieval Conference (ISMIR 2026)'
+  authors: Finlay Miller*, Sageev Oore*, Chandramouli Shama Sastry, Marvin F. da Silva, Sri Harsha Dumpala, Daniel Oore, Scott C. Lowe
+  topics:
+  - music
+  thumbnail: /img/publications/Miller2026_SmartLooper.png
+  summary: "SmartLooper is a real-time piano improvisation system that builds an evolving accompaniment by walking through a performer's own recorded loops in embedding space, so they effectively duet with themselves."
+  bibtex: |
+    @inproceedings{Miller2026_SmartLooper,
+        title = {{SmartLooper}: a Framework for Personalized Human-{AI} Musical Improvisation},
+        author = {Finlay Miller and Sageev Oore and Chandramouli Shama Sastry and Marvin F. da Silva and Sri Harsha Dumpala and Daniel Oore and Scott C. Lowe},
+        booktitle = {The 27th International Society for Music Information Retrieval Conference},
+        year = {2026},
+    }
+
+- date: '2026'  # Sep; arXiv 2026 Jan
+  title: 'A continental-scale dataset of ground beetles with high-resolution images and validated morphological trait measurements'
+  venue: arXiv preprint arXiv:2601.10687
+  authors: S. M. Rayeed*, Mridul Khurana*, Alyson East*, Isadora E. Fluck, Elizabeth G. Campolongo, Samuel Stevens, Iuliia Zarubiieva, Scott C. Lowe, Michael W. Denslow, Evan D. Donoso, Jiaman Wu, Michelle Ramirez, Benjamin Baiser, Charles V. Stewart, Paula Mabee, Tanya Berger-Wolf, Anuj Karpatne, Hilmar Lapp, Robert P. Guralnick, Graham W. Taylor†, Sydne Record†
+  topics:
+  - dataset
+  - biodiversity
+  - insect
+  - vision
+  main_link: https://arxiv.org/abs/2601.10687
+  links:
+    arXiv: https://arxiv.org/abs/2601.10687
+    dataset (pinned): https://huggingface.co/datasets/imageomics/Hawaii-beetles
+    dataset (vial): https://huggingface.co/datasets/imageomics/2018-NEON-beetles
+  thumbnail: /img/publications/Rayeed2026_GroundBeetles.jpg
+  summary: "A dataset of over 13,200 North American ground beetle specimens with high-resolution images and sub-millimeter-accurate elytra measurements, supporting automated trait extraction and species identification."
+  bibtex: |
+    @article{Rayeed2026_GroundBeetles,
+        title = {A continental-scale dataset of ground beetles with high-resolution images and validated morphological trait measurements},
+        author = {S. M. Rayeed and Mridul Khurana and Alyson East and Isadora E. Fluck and Elizabeth G. Campolongo and Samuel Stevens and Iuliia Zarubiieva and Scott C. Lowe and Michael W. Denslow and Evan D. Donoso and Jiaman Wu and Michelle Ramirez and Benjamin Baiser and Charles V. Stewart and Paula Mabee and Tanya Berger-Wolf and Anuj Karpatne and Hilmar Lapp and Robert P. Guralnick and Graham W. Taylor and Sydne Record},
+        journal={Scientific Data},
+        year={2026},
+        month={Sep},
+        day={11},
+        issn={2052-4463},
+        doi={10.1038/s41597-026-08120-3},
+    }
+
+- date: '2026'  # Aug; Foundation Models in the Wild Workshop, ICML 2024: 2024, Jun
   title: An Empirical Study into Clustering of Unseen Datasets with Self-Supervised Encoders
   venue: Transactions on Machine Learning Research
   authors: Scott C. Lowe*, Joakim Bruslund Haurum*, Sageev Oore†, Thomas B. Moeslund†, Graham W. Taylor†
@@ -23,23 +92,75 @@
         issn = {2835-8856},
     }
 
-- date: '2026'  # Nov
-  title: 'SmartLooper: a Framework for Personalized Human-AI Musical Improvisation'
-  venue: 'The 27th International Society for Music Information Retrieval Conference (ISMIR 2026)'
-  authors: Finlay Miller*, Sageev Oore*, Chandramouli Shama Sastry, Marvin F. da Silva, Sri Harsha Dumpala, Daniel Oore, Scott C. Lowe
+- date: '2026'  # Feb (workshop in Apr)
+  title: 'Hidden-Layer Self-Distillation Yields Drift-Resilient Visual Representations'
+  venue: 'Catch, Adapt, and Operate: Monitoring ML Models Under Drift Workshop, ICLR 2026'
+  authors: Scott C. Lowe, Anthony Fuller, Sageev Oore, Graham W. Taylor, Evan Shelhamer
   topics:
-  - music
-  thumbnail: /img/publications/Miller2026_SmartLooper.png
-  summary: "SmartLooper is a real-time piano improvisation system that builds an evolving accompaniment by walking through a performer's own recorded loops in embedding space, so they effectively duet with themselves."
+  - self-supervised learning
+  - vision
+  - robustness
+  main_link: https://openreview.net/forum?id=pa3zBGDMAd
+  links:
+    openreview: https://openreview.net/forum?id=pa3zBGDMAd
+  thumbnail: ''
+  summary: "Shows that Bootleg, self-supervised pretraining that predicts a teacher's multiple hidden layers, yields visual representations that resist distribution shift better than MAE and I-JEPA and adapt well at test time."
   bibtex: |
-    @inproceedings{Miller2026_SmartLooper,
-        title = {{SmartLooper}: a Framework for Personalized Human-{AI} Musical Improvisation},
-        author = {Finlay Miller and Sageev Oore and Chandramouli Shama Sastry and Marvin F. da Silva and Sri Harsha Dumpala and Daniel Oore and Scott C. Lowe},
-        booktitle = {The 27th International Society for Music Information Retrieval Conference},
+    @inproceedings{Lowe2026_HiddenDriftResilient,
+        title = {Hidden-Layer Self-Distillation Yields Drift-Resilient Visual Representations},
+        author = {Scott C. Lowe and Anthony Fuller and Sageev Oore and Graham W. Taylor and Evan Shelhamer},
+        booktitle = {Catch, Adapt, and Operate: Monitoring ML Models Under Drift Workshop},
         year = {2026},
+        url = {https://openreview.net/forum?id=pa3zBGDMAd},
     }
 
-- date: '2026'  # Apr
+- date: '2026'  # Mar (workshop in Apr)
+  title: 'Bridging Generative and Predictive Paradigms via Hidden-Self-Distillation'
+  venue: 'Multimodal Intelligence: Next Token Prediction & Beyond Workshop, ICLR 2026'
+  authors: Scott C. Lowe, Anthony Fuller, Sageev Oore, Evan Shelhamer, Graham W. Taylor
+  topics:
+  - self-supervised learning
+  - vision
+  main_link: https://openreview.net/forum?id=YkMrN90inE
+  links:
+    openreview: https://openreview.net/forum?id=YkMrN90inE
+  thumbnail: /img/publications/Lowe2026_Bridging.png
+  summary: "Frames Bootleg, which predicts a teacher's multiple hidden layers, as a bridge between generative pixel-reconstruction and predictive embedding-prediction in self-supervised learning, capturing the strengths of both."
+  bibtex: |
+    @inproceedings{Lowe2026_Bridging,
+        title = {Bridging Generative and Predictive Paradigms via Hidden-Self-Distillation},
+        author = {Scott C. Lowe and Anthony Fuller and Sageev Oore and Evan Shelhamer and Graham W. Taylor},
+        booktitle = {Multimodal Intelligence: Next Token Prediction & Beyond Workshop, ICLR 2026},
+        year = {2026},
+        url = {https://openreview.net/forum?id=YkMrN90inE},
+    }
+
+- date: '2026'  # Apr; arXiv 2025 Sept
+  title: 'Understanding and Improving Shampoo and SOAP via Kullback-Leibler Minimization'
+  venue: The Fourteenth International Conference on Learning Representations (ICLR 2026)
+  authors: Wu Lin, Scott C. Lowe, Felix Dangel, Runa Eschenhagen, Zikun Xu, Roger B. Grosse
+  topics:
+  - optimization
+  - language
+  main_link: https://arxiv.org/abs/2509.03378
+  links:
+    arXiv: https://arxiv.org/abs/2509.03378
+    openreview: https://openreview.net/forum?id=pQQuC1nIQq
+    poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/124345.png?t=1765885233.0748246
+    github: https://github.com/yorkerlin/KL-Methods
+  thumbnail: /img/publications/Lin2026_KLShampoo.png
+  summary: "Reinterprets the Shampoo and SOAP neural-network optimizers through Kullback-Leibler minimization, yielding KL-Shampoo, which trains language models faster and more accurately without Adam's extra memory cost."
+  highlighted: 7
+  bibtex: |
+    @inproceedings{Lin2026_KLShampoo,
+        title = {Understanding and improving {S}hampoo and {SOAP} via {K}ullback-{L}eibler minimization},
+        author = {Wu Lin and Scott C. Lowe and Felix Dangel and Runa Eschenhagen and Zikun Xu and Roger B. Grosse},
+        year = {2026},
+        booktitle = {The Fourteenth International Conference on Learning Representations},
+        url = {https://openreview.net/forum?id=pQQuC1nIQq},
+    }
+
+- date: '2026'  # Apr; arXiv 2025 Jul
   title: 'A multi-modal dataset for insect biodiversity with imagery and DNA at the trap and individual level'
   venue: Scientific Data 13, 630, (2026)
   authors: Johanna Orsholm*, John Quinto*, Hannu Autto, Gaia Banelyte, Nicolas Chazot, Jeremy deWaard, Stephanie deWaard, Arielle Farrell, Brendan Furneaux, Bess Hardwick, Nao Ito, Amlan Kar, Oula Kalttopää, Deirdre Kerdraon, Erik Kristensen, Jaclyn McKeown, Tommi Mononen, Ellen Nein, Hanna Rogers, Tomas Roslin, Paula Schmitz, Jayme Sones, Maija Sujala, Amy Thompson, Evgeny V. Zakharov, Iuliia Zarubiieva, Akshita Gupta, Scott C. Lowe, Graham W. Taylor
@@ -75,75 +196,7 @@
         doi={10.1038/s41597-026-07251-x},
     }
 
-- date: '2026'  # Feb (workshop in Apr)
-  title: 'Hidden-Layer Self-Distillation Yields Drift-Resilient Visual Representations'
-  venue: 'Catch, Adapt, and Operate: Monitoring ML Models Under Drift Workshop, ICLR 2026'
-  authors: Scott C. Lowe, Anthony Fuller, Sageev Oore, Graham W. Taylor, Evan Shelhamer
-  topics:
-  - self-supervised learning
-  - vision
-  - robustness
-  main_link: https://openreview.net/forum?id=pa3zBGDMAd
-  links:
-    openreview: https://openreview.net/forum?id=pa3zBGDMAd
-  thumbnail: ''
-  summary: "Shows that Bootleg, self-supervised pretraining that predicts a teacher's multiple hidden layers, yields visual representations that resist distribution shift better than MAE and I-JEPA and adapt well at test time."
-  bibtex: |
-    @inproceedings{Lowe2026_HiddenDriftResilient,
-        title = {Hidden-Layer Self-Distillation Yields Drift-Resilient Visual Representations},
-        author = {Scott C. Lowe and Anthony Fuller and Sageev Oore and Graham W. Taylor and Evan Shelhamer},
-        booktitle = {Catch, Adapt, and Operate: Monitoring ML Models Under Drift Workshop},
-        year = {2026},
-        url = {https://openreview.net/forum?id=pa3zBGDMAd},
-    }
-
-- date: '2026'  # Mar
-  title: 'Self-Distillation of Hidden Layers for Self-Supervised Representation Learning'
-  venue: arXiv preprint arXiv:2603.15553
-  authors: Scott C. Lowe, Anthony Fuller, Sageev Oore, Evan Shelhamer, Graham W. Taylor
-  topics:
-  - self-supervised learning
-  - vision
-  main_link: https://arxiv.org/abs/2603.15553
-  links:
-    arXiv: https://arxiv.org/abs/2603.15553
-  thumbnail: /img/publications/Lowe2026_Bootleg.png
-  summary: "Bootleg is a self-supervised image pretraining method that predicts a teacher network's multiple hidden layers at once, capturing features across abstraction levels and beating comparable baselines on classification and segmentation."
-  highlighted: 1
-  bibtex: |
-    @article{Lowe2026_Bootleg,
-        title = {Self-Distillation of Hidden Layers for Self-Supervised Representation Learning},
-        author = {Scott C. Lowe and Anthony Fuller and Sageev Oore and Evan Shelhamer and Graham W. Taylor},
-        year = {2026},
-        eprint = {2603.15553},
-        archivePrefix = {arXiv},
-        primaryClass = {cs.CV},
-        doi = {10.48550/arxiv.2603.15553},
-        journal = {arXiv preprint arXiv:2603.15553},
-    }
-
-- date: '2026'  # Mar (workshop in Apr)
-  title: 'Bridging Generative and Predictive Paradigms via Hidden-Self-Distillation'
-  venue: 'Multimodal Intelligence: Next Token Prediction & Beyond Workshop, ICLR 2026'
-  authors: Scott C. Lowe, Anthony Fuller, Sageev Oore, Evan Shelhamer, Graham W. Taylor
-  topics:
-  - self-supervised learning
-  - vision
-  main_link: https://openreview.net/forum?id=YkMrN90inE
-  links:
-    openreview: https://openreview.net/forum?id=YkMrN90inE
-  thumbnail: /img/publications/Lowe2026_Bridging.png
-  summary: "Frames Bootleg, which predicts a teacher's multiple hidden layers, as a bridge between generative pixel-reconstruction and predictive embedding-prediction in self-supervised learning, capturing the strengths of both."
-  bibtex: |
-    @inproceedings{Lowe2026_Bridging,
-        title = {Bridging Generative and Predictive Paradigms via Hidden-Self-Distillation},
-        author = {Scott C. Lowe and Anthony Fuller and Sageev Oore and Evan Shelhamer and Graham W. Taylor},
-        booktitle = {Multimodal Intelligence: Next Token Prediction & Beyond Workshop, ICLR 2026},
-        year = {2026},
-        url = {https://openreview.net/forum?id=YkMrN90inE},
-    }
-
-- date: '2026'  # arXiv 2023 Nov; Journal 2026 Feb
+- date: '2026'  # Feb; arXiv 2023 Nov
   title: 'BarcodeBERT: Transformers for Biodiversity Analysis'
   # venue: Self-Supervised Learning — Theory and Practice Workshop, NeurIPS 2023
   venue: Bioinformatics Advances, 6(1), vbag054, 2026
@@ -171,59 +224,6 @@
         issn = {2635-0041},
         doi = {10.1093/bioadv/vbag054},
         eprint = {https://academic.oup.com/bioinformaticsadvances/advance-article-pdf/doi/10.1093/bioadv/vbag054/66993631/vbag054.pdf},
-    }
-
-- date: '2026'  # arXiv 2025 Sept; ICLR 2026 Apr
-  title: 'Understanding and Improving Shampoo and SOAP via Kullback-Leibler Minimization'
-  venue: The Fourteenth International Conference on Learning Representations (ICLR 2026)
-  authors: Wu Lin, Scott C. Lowe, Felix Dangel, Runa Eschenhagen, Zikun Xu, Roger B. Grosse
-  topics:
-  - optimization
-  - language
-  main_link: https://arxiv.org/abs/2509.03378
-  links:
-    arXiv: https://arxiv.org/abs/2509.03378
-    openreview: https://openreview.net/forum?id=pQQuC1nIQq
-    poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/124345.png?t=1765885233.0748246
-    github: https://github.com/yorkerlin/KL-Methods
-  thumbnail: /img/publications/Lin2026_KLShampoo.png
-  summary: "Reinterprets the Shampoo and SOAP neural-network optimizers through Kullback-Leibler minimization, yielding KL-Shampoo, which trains language models faster and more accurately without Adam's extra memory cost."
-  highlighted: 7
-  bibtex: |
-    @inproceedings{Lin2026_KLShampoo,
-        title = {Understanding and improving {S}hampoo and {SOAP} via {K}ullback-{L}eibler minimization},
-        author = {Wu Lin and Scott C. Lowe and Felix Dangel and Runa Eschenhagen and Zikun Xu and Roger B. Grosse},
-        year = {2026},
-        booktitle = {The Fourteenth International Conference on Learning Representations},
-        url = {https://openreview.net/forum?id=pQQuC1nIQq},
-    }
-
-- date: '2026'  # Jan
-  title: 'A continental-scale dataset of ground beetles with high-resolution images and validated morphological trait measurements'
-  venue: arXiv preprint arXiv:2601.10687
-  authors: S. M. Rayeed*, Mridul Khurana*, Alyson East*, Isadora E. Fluck, Elizabeth G. Campolongo, Samuel Stevens, Iuliia Zarubiieva, Scott C. Lowe, Michael W. Denslow, Evan D. Donoso, Jiaman Wu, Michelle Ramirez, Benjamin Baiser, Charles V. Stewart, Paula Mabee, Tanya Berger-Wolf, Anuj Karpatne, Hilmar Lapp, Robert P. Guralnick, Graham W. Taylor†, Sydne Record†
-  topics:
-  - dataset
-  - biodiversity
-  - insect
-  - vision
-  main_link: https://arxiv.org/abs/2601.10687
-  links:
-    arXiv: https://arxiv.org/abs/2601.10687
-    dataset (pinned): https://huggingface.co/datasets/imageomics/Hawaii-beetles
-    dataset (vial): https://huggingface.co/datasets/imageomics/2018-NEON-beetles
-  thumbnail: /img/publications/Rayeed2026_GroundBeetles.jpg
-  summary: "A dataset of over 13,200 North American ground beetle specimens with high-resolution images and sub-millimeter-accurate elytra measurements, supporting automated trait extraction and species identification."
-  bibtex: |
-    @article{Rayeed2026_GroundBeetles,
-        title = {A continental-scale dataset of ground beetles with high-resolution images and validated morphological trait measurements},
-        author = {S M Rayeed and Mridul Khurana and Alyson East and Isadora E. Fluck and Elizabeth G. Campolongo and Samuel Stevens and Iuliia Zarubiieva and Scott C. Lowe and Michael W. Denslow and Evan D. Donoso and Jiaman Wu and Michelle Ramirez and Benjamin Baiser and Charles V. Stewart and Paula Mabee and Tanya Berger-Wolf and Anuj Karpatne and Hilmar Lapp and Robert P. Guralnick and Graham W. Taylor and Sydne Record},
-        year = {2026},
-        eprint = {2601.10687},
-        archivePrefix = {arXiv},
-        primaryClass = {cs.CV},
-        doi = {10.48550/arxiv.2601.10687},
-        journal = {arXiv preprint arXiv:2601.10687},
     }
 
 - date: '2025'  # Dec
