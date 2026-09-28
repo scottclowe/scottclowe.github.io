@@ -1,4 +1,4 @@
-- date: 2026 # August # Foundation Models in the Wild Workshop, ICML 2024: 2024, Jun
+- date: '2026'  # August  # Foundation Models in the Wild Workshop, ICML 2024: 2024, Jun
   title: An Empirical Study into Clustering of Unseen Datasets with Self-Supervised Encoders
   venue: Transactions on Machine Learning Research
   authors: Scott C. Lowe*, Joakim Bruslund Haurum*, Sageev Oore†, Thomas B. Moeslund†, Graham W. Taylor†
@@ -20,9 +20,7 @@
         journal = {Transactions on Machine Learning Research},
         year = {2026},
         url = {https://openreview.net/forum?id=gdwg7ntmT5},
-        eprint = {2406.02465},
-        archivePrefix = {arXiv},
-        primaryClass = {cs.LG},
+        issn = {2835-8856},
     }
 
 - date: '2026'  # Nov
