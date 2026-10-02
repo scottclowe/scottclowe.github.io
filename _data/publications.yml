@@ -41,7 +41,7 @@
 
 - date: '2026'  # Sep; arXiv 2026 Jan
   title: 'A continental-scale dataset of ground beetles with high-resolution images and validated morphological trait measurements'
-  venue: arXiv preprint arXiv:2601.10687
+  venue: Scientific Data, (2026)
   authors: S. M. Rayeed*, Mridul Khurana*, Alyson East*, Isadora E. Fluck, Elizabeth G. Campolongo, Samuel Stevens, Iuliia Zarubiieva, Scott C. Lowe, Michael W. Denslow, Evan D. Donoso, Jiaman Wu, Michelle Ramirez, Benjamin Baiser, Charles V. Stewart, Paula Mabee, Tanya Berger-Wolf, Anuj Karpatne, Hilmar Lapp, Robert P. Guralnick, Graham W. Taylor†, Sydne Record†
   topics:
   - dataset
