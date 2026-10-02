@@ -39,6 +39,33 @@
         year = {2026},
     }
 
+- date: '2026'  # Sep
+  title: 'BarcodeMAE+: Rethinking Masked Pretraining and Global Representations for DNA Barcode Foundation Models'
+  venue: arXiv preprint arXiv:2609.35877
+  authors: Monireh Safari*, Pablo Millan Arias*, Scott C. Lowe, Lila Kari, Angel X. Chang, Graham W. Taylor
+  topics:
+  - self-supervised learning
+  - DNA
+  - biodiversity
+  - insect
+  main_link: https://arxiv.org/abs/2609.35877
+  links:
+    arXiv: https://arxiv.org/abs/2609.35877
+    github: https://github.com/bioscan-ml/BarcodeMAE-plus
+  thumbnail: /img/publications/Safari2026_BarcodeMAEplus.png
+  summary: "BarcodeMAE+ redesigns DNA foundation models with an encoder-decoder that hides masking tokens from the encoder, and combines this with a supervised pretraining objective to learn whole-barcode CLS tokens useful for downstream tasks."
+  bibtex: |
+    @article{Safari2026_BarcodeMAEplus,
+        title = {{BarcodeMAE+}: Rethinking Masked Pretraining and Global Representations for DNA Barcode Foundation Models},
+        author = {Monireh Safari and Pablo Millan Arias and Scott C. Lowe and Lila Kari and Angel X. Chang and Graham W. Taylor},
+        year = {2026},
+        eprint = {2609.35877},
+        archivePrefix = {arXiv},
+        primaryClass = {q-bio.GN},
+        journal = {arXiv preprint arXiv:2609.35877},
+        doi = {10.48550/arXiv.2609.35877},
+    }
+
 - date: '2026'  # Sep; arXiv 2026 Jan
   title: 'A continental-scale dataset of ground beetles with high-resolution images and validated morphological trait measurements'
   venue: Scientific Data, (2026)
