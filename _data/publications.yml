@@ -507,12 +507,13 @@
     @inproceedings{Gharaee2024_BIOSCAN5M,
         title = {{BIOSCAN-5M}: A multimodal dataset for insect biodiversity},
         author = {Gharaee, Zahra and Lowe, Scott C. and Gong, ZeMing and Arias, Pablo Millan and Pellegrino, Nicholas and Wang, Austin T. and Haurum, Joakim Bruslund and Zarubiieva, Iuliia and Kari, Lila and Steinke, Dirk and Taylor, Graham W. and Fieguth, Paul and Chang, Angel X.},
+        editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
         booktitle = {Advances in Neural Information Processing Systems},
+        pages = {36285--36313},
         publisher = {Curran Associates, Inc.},
         volume = {37},
         year = {2024},
         doi = {10.52202/079017-1144},
-        url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/3fdbb472813041c9ecef04c20c2b1e5a-Paper-Datasets_and_Benchmarks_Track.pdf},
     }
 
 - date: '2024'  # Oct
@@ -621,12 +622,13 @@
     @inproceedings{Gharaee2023_BIOSCAN1M,
         title = {A step towards worldwide biodiversity assessment: The {BIOSCAN-1M} insect dataset},
         author = {Zahra Gharaee and ZeMing Gong and Nicholas Pellegrino and Iuliia Zarubiieva and Joakim Bruslund Haurum and Scott C. Lowe and Jaclyn T. A. McKeown and Chris C. Y. Ho and Joschka McLeod and Yi-Yun C Wei and Jireh Agda and Sujeevan Ratnasingham and Dirk Steinke and Angel X. Chang and Graham W. Taylor and Paul Fieguth},
+        editor = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
         booktitle = {Advances in Neural Information Processing Systems},
         pages = {43593--43619},
         publisher = {Curran Associates, Inc.},
         year = {2023},
         volume = {36},
-        url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/87dbbdc3a685a97ad28489a1d57c45c1-Paper-Datasets_and_Benchmarks.pdf},
+        doi = {10.52202/075280-1889},
     }
 
 - date: '2023'  # Sep
