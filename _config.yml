@@ -297,6 +297,8 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - make_favicon.sh
+  - make_thumbnail.py
 
 plugins:
   - jekyll-paginate
