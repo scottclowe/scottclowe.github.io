@@ -40,6 +40,30 @@
     }
 
 - date: '2026'  # Sep
+  title: 'Masked Swingers: Harnessing Data Augmentation to Advance Autoencoders for Self-Supervised Learning'
+  venue: arXiv preprint arXiv:2609.38278
+  authors: Anthony Fuller, Scott C. Lowe, Daniel G. Kyrollos, Graham W. Taylor†, Evan Shelhamer†, James R. Green†
+  topics:
+  - self-supervised learning
+  - vision
+  main_link: https://arxiv.org/abs/2609.38278
+  links:
+    arXiv: https://arxiv.org/abs/2609.38278
+  thumbnail: /img/publications/Fuller2026_MaskedSwingers.jpg
+  summary: "We swap the CLS tokens between two views of the same image, encouraging the model to learn a view-agnostic summary of the image."
+  bibtex: |
+    @article{Fuller2026_MaskedSwingers,
+        title = {Masked Swingers: Harnessing Data Augmentation to Advance Autoencoders for Self-Supervised Learning},
+        author = {Anthony Fuller and Scott C. Lowe and Daniel G. Kyrollos and Graham W. Taylor and Evan Shelhamer and James R. Green},
+        year = {2026},
+        eprint = {2609.38278},
+        archivePrefix = {arXiv},
+        primaryClass = {cs.CV},
+        journal = {arXiv preprint arXiv:2609.38278},
+        doi = {10.48550/arXiv.2609.38278},
+    }
+
+- date: '2026'  # Sep
   title: 'BarcodeMAE+: Rethinking Masked Pretraining and Global Representations for DNA Barcode Foundation Models'
   venue: arXiv preprint arXiv:2609.35877
   authors: Monireh Safari*, Pablo Millan Arias*, Scott C. Lowe, Lila Kari, Angel X. Chang, Graham W. Taylor
