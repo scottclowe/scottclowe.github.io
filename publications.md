@@ -519,6 +519,23 @@ title: Publications
     border-radius: 8px;
   }
 
+  /* Pale star in the top-right corner of highlighted cards */
+  .highlighted-publication::before {
+    content: '';
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z' fill='%23b5d4f4' stroke='%23b5d4f4' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center / contain;
+    pointer-events: none;
+  }
+
+  /* Keep long titles clear of the star */
+  .highlighted-publication h3 {
+    padding-right: 1.5rem;
+  }
+
   /* Highlighted publications with border (grouped together mode) */
   .highlighted-publication.with-border {
     margin-top: 1rem;
