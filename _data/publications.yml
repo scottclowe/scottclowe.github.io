@@ -39,6 +39,33 @@
         year = {2026},
     }
 
+- date: '2026'  # Oct
+  title: 'SpireBench: Evaluating Long-Horizon Strategic Play of Agentic Models with Slay the Spire'
+  venue: arXiv preprint arXiv:2610.12596
+  authors: Scott C. Lowe, Sander W. Keemink
+  topics:
+  - reasoning
+  - language
+  - video game
+  - benchmark
+  main_link: https://arxiv.org/abs/2610.12596
+  links:
+    arXiv: https://arxiv.org/abs/2610.12596
+  thumbnail: /img/publications/Lowe2026_SpireBench.png
+  summary: "On strategy game Slay the Spire, frontier agentic LLMs perform comparably to average humans, but trail significantly behind expert players. They are unable to consolidate memories or learn strategies from in-context information to improve their performance."
+  highlighted: 3
+  bibtex: |
+    @article{Lowe2026_SpireBench,
+        title = {{S}pire{B}ench: Evaluating Long-Horizon Strategic Play of Agentic Models with {S}lay the {S}pire},
+        author = {Scott C. Lowe and Sander W. Keemink},
+        year = {2026},
+        eprint = {2610.12596},
+        archivePrefix = {arXiv},
+        primaryClass = {cs.AI},
+        journal = {arXiv preprint arXiv:2610.12596},
+        doi = {10.48550/arXiv.2610.12596},
+    }
+
 - date: '2026'  # Sep
   title: 'Masked Swingers: Harnessing Data Augmentation to Advance Autoencoders for Self-Supervised Learning'
   venue: arXiv preprint arXiv:2609.38278
@@ -201,7 +228,6 @@
     github: https://github.com/yorkerlin/KL-Methods
   thumbnail: /img/publications/Lin2026_KLShampoo.png
   summary: "Reinterprets the Shampoo and SOAP neural-network optimizers through Kullback-Leibler minimization, yielding KL-Shampoo, which trains language models faster and more accurately without Adam's extra memory cost."
-  highlighted: 7
   bibtex: |
     @inproceedings{Lin2026_KLShampoo,
         title = {Understanding and improving {S}hampoo and {SOAP} via {K}ullback-{L}eibler minimization},
@@ -526,7 +552,7 @@
     talk: https://www.youtube.com/watch?v=_JFw4ntJhLg
   thumbnail: /img/publications/Gharaee2024_BIOSCAN5M.png
   summary: "BIOSCAN-5M is a dataset of over five million insect specimens pairing images, DNA barcodes, taxonomic labels, and geographic and size information to advance automated biodiversity monitoring."
-  highlighted: 3
+  highlighted: 5
   bibtex: |
     @inproceedings{Gharaee2024_BIOSCAN5M,
         title = {{BIOSCAN-5M}: A multimodal dataset for insect biodiversity},
@@ -717,7 +743,7 @@
     pypi: https://pypi.org/project/pytorch-logit-logic/
   thumbnail: /img/publications/Lowe2022_LogicalActivationFunctions.png
   summary: "Introduces neural network activation functions that perform Boolean logic (AND, OR, XNOR) on feature probabilities, improving accuracy on image classification, transfer learning, and reasoning tasks."
-  highlighted: 5
+  highlighted: 6
   bibtex: |
     @inproceedings{Lowe2022_LogicalActivationFunctions,
         title = {Logical activation functions: Logit-space equivalents of probabilistic boolean operators},
