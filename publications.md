@@ -48,6 +48,9 @@ title: Publications
 </div>
 <!-- End of JavaScript controls -->
 
+{%- comment -%} High-resolution thumbnails (made by make_thumbnail.py), served to high-density screens via srcset {%- endcomment -%}
+{%- assign hires_thumbnails = site.static_files | where_exp: "f", "f.path contains '/img/publications/hires/'" -%}
+
 <!-- Container for All Publications -->
 <div id="all-publications-section">
   <h2 id="all-publications-header">Publications</h2>
@@ -56,7 +59,7 @@ title: Publications
     <div class="publication with-border {% if pub.highlighted %}highlighted-publication{% endif %}">
       <div class="publication-left">
         <strong>{{ pub.date }}</strong>
-        {% if pub.thumbnail and pub.thumbnail != '' %}<img class="publication-thumbnail" src="{{ pub.thumbnail | escape }}" alt="" loading="lazy">{% endif %}
+        {% if pub.thumbnail and pub.thumbnail != '' %}{% assign thumb_key = pub.thumbnail | split: '/' | last | split: '.' | first %}{% assign hires = hires_thumbnails | where: "basename", thumb_key | first %}<img class="publication-thumbnail" src="{{ pub.thumbnail | escape }}"{% if hires %} srcset="{{ pub.thumbnail | escape }} 1x, {{ hires.path | escape }} 2x"{% endif %} alt="" loading="lazy">{% endif %}
       </div>
       <div class="publication-right">
         <h3>{% if pub.main_link %}<a href="{{ pub.main_link | escape }}" target="_blank" rel="noopener">{{ pub.title | escape }}</a>{% else %}{{ pub.title | escape }}{% endif %}</h3>
@@ -93,6 +96,20 @@ title: Publications
 
   // Publications data from YAML (inserted by Jekyll)
   const publicationsRaw = {{ site.data.publications | jsonify }};
+
+  // High-resolution thumbnail paths, keyed by filename without extension
+  const hiresThumbnails = {
+    {%- for f in hires_thumbnails %}
+    {{ f.basename | jsonify }}: {{ f.path | jsonify }},
+    {%- endfor %}
+  };
+
+  // Return a srcset attribute serving the high-resolution thumbnail to high-density screens
+  function thumbnailSrcset(thumbnail) {
+    const key = thumbnail.split('/').pop().replace(/\.[^.]+$/, '');
+    const hires = hiresThumbnails[key];
+    return hires ? ` srcset="${escapeHtml(thumbnail)} 1x, ${escapeHtml(hires)} 2x"` : '';
+  }
 
   // Add original index to each publication for sorting
   const publications = publicationsRaw.map((pub, index) => ({
@@ -220,7 +237,7 @@ title: Publications
     pubDiv.innerHTML = `
       <div class="publication-left">
           <strong>${pub.date}</strong>
-          ${pub.thumbnail ? `<img class="publication-thumbnail" src="${escapeHtml(pub.thumbnail)}" alt="" loading="lazy">` : ''}
+          ${pub.thumbnail ? `<img class="publication-thumbnail" src="${escapeHtml(pub.thumbnail)}"${thumbnailSrcset(pub.thumbnail)} alt="" loading="lazy">` : ''}
       </div>
       <div class="publication-right">
           <h3>${pub.main_link ? `<a href="${escapeHtml(pub.main_link)}" target="_blank" rel="noopener">${escapeHtml(pub.title)}</a>` : escapeHtml(pub.title)}</h3>
@@ -859,7 +876,8 @@ title: Publications
     .bibtex-box                       { order: 9; }
 
     .publication-thumbnail {
-      width: auto;
+      width: min(100%, 300px); /* explicit, as the srcset image's intrinsic size varies */
+      height: auto;
       max-width: 100%;
       max-height: 300px; /* cap so tall/square thumbnails don't dominate */
       align-self: center;

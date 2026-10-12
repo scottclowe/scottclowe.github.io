@@ -510,7 +510,7 @@
     arXiv: https://arxiv.org/abs/2405.05241
     dataset: https://www.frdr-dfdr.ca/repo/dataset/24c6c813-d0ff-4461-8174-3f960f1edc0d
     poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/128782.png?t=1765885775.1308475
-  thumbnail: /img/publications/Lowe2025_BenthicNet.png
+  thumbnail: /img/publications/Lowe2025_BenthicNet.jpg
   summary: "BenthicNet is a globally diverse collection of 1.3 million curated seafloor images with 3.1 million habitat annotations, enabling deep learning models that automate the analysis of benthic imagery."
   bibtex: |
     @article{Lowe2025_BenthicNet,
@@ -605,7 +605,7 @@
   links:
     paper: https://doi.org/10.3390/data9110122
     bioRxiv: https://doi.org/10.1101/2024.07.15.600863
-  thumbnail: /img/publications/Steinke2024_TowardsTaxonomy.png
+  thumbnail: /img/publications/Steinke2024_TowardsTaxonomy.jpg
   summary: "A dataset of 5.6 million high-resolution microscope images spanning 324,000 arthropod species from 48 countries, built for training machine learning models to identify specimens taxonomically."
   bibtex: |
     @article{Steinke2024_TowardsTaxonomy,
@@ -792,7 +792,7 @@
     arXiv: https://arxiv.org/abs/2202.09648
     github: https://github.com/DeepSenseCA/echofilter
     pypi: https://pypi.org/project/echofilter/
-  thumbnail: /img/publications/Lowe2022_Echofilter.png
+  thumbnail: /img/publications/Lowe2022_Echofilter.jpg
   summary: "Echofilter is a deep learning model that automatically marks where turbulence-driven air contaminates echosounder data at tidal energy sites, halving the manual cleanup time for fish surveys."
   bibtex: |
     @article{Lowe2022_Echofilter,
