@@ -519,12 +519,6 @@ title: Publications
     border-radius: 8px;
   }
 
-  /* Highlighted publications without border get margin for spacing */
-  .highlighted-publication:not(.with-border) {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
   /* Highlighted publications with border (grouped together mode) */
   .highlighted-publication.with-border {
     margin-top: 1rem;
