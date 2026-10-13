@@ -111,6 +111,23 @@ title: Publications
     return hires ? ` srcset="${escapeHtml(thumbnail)} 1x, ${escapeHtml(hires)} 2x"` : '';
   }
 
+  // Expand a thumbnail to fill the screen when clicked, using its high-resolution copy if there is one
+  const thumbnailViewer = document.createElement('dialog');
+  thumbnailViewer.className = 'thumbnail-viewer';
+  thumbnailViewer.innerHTML = '<img alt="">';
+  document.body.appendChild(thumbnailViewer);
+  thumbnailViewer.addEventListener('click', () => thumbnailViewer.close());
+  document.addEventListener('click', (event) => {
+    const thumb = event.target.closest('.publication-thumbnail');
+    if (!thumb) return;
+    const src = thumb.getAttribute('src');
+    const key = src.split('/').pop().replace(/\.[^.]+$/, '');
+    const viewerImage = thumbnailViewer.querySelector('img');
+    viewerImage.src = hiresThumbnails[key] || src;
+    viewerImage.alt = thumb.closest('.publication')?.querySelector('h3')?.textContent.trim() || '';
+    thumbnailViewer.showModal();
+  });
+
   // Add original index to each publication for sorting
   const publications = publicationsRaw.map((pub, index) => ({
     ...pub,
@@ -582,6 +599,27 @@ title: Publications
     max-height: 240px;
     object-fit: contain;
     margin-top: 0.5rem;
+    cursor: zoom-in;
+  }
+
+  .thumbnail-viewer {
+    padding: 0.75rem;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: #fff;
+    max-width: 95vw;
+    max-height: 95vh;
+    cursor: zoom-out;
+  }
+  .thumbnail-viewer::backdrop {
+    background: rgba(0, 0, 0, 0.75);
+  }
+  .thumbnail-viewer img {
+    display: block;
+    max-width: calc(95vw - 1.5rem);
+    max-height: calc(95vh - 1.5rem);
+    object-fit: contain;
   }
 
   .publication p, h3 {
