@@ -24,7 +24,7 @@
     }
 
 - date: '2026'  # Nov
-  title: 'SmartLooper: a Framework for Personalized Human-AI Musical Improvisation'
+  title: 'SmartLooper: A Framework for Personalized Human-AI Musical Improvisation'
   venue: 'The 27th International Society for Music Information Retrieval Conference (ISMIR 2026)'
   authors: Finlay Miller*, Sageev Oore*, Chandramouli Shama Sastry, Marvin F. da Silva, Sri Harsha Dumpala, Daniel Oore, Scott C. Lowe
   topics:
@@ -33,7 +33,7 @@
   summary: "SmartLooper is a real-time piano improvisation system that builds an evolving accompaniment by walking through a performer's own recorded loops in embedding space, so they effectively duet with themselves."
   bibtex: |
     @inproceedings{Miller2026_SmartLooper,
-        title = {{SmartLooper}: a Framework for Personalized Human-{AI} Musical Improvisation},
+        title = {{SmartLooper}: A Framework for Personalized Human-{AI} Musical Improvisation},
         author = {Finlay Miller and Sageev Oore and Chandramouli Shama Sastry and Marvin F. da Silva and Sri Harsha Dumpala and Daniel Oore and Scott C. Lowe},
         booktitle = {The 27th International Society for Music Information Retrieval Conference},
         year = {2026},
