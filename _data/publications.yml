@@ -485,6 +485,7 @@
     model: https://huggingface.co/bioscan-ml/clibd
   thumbnail: /img/publications/Gong2025_CLIBD.png
   summary: "CLIBD aligns insect photographs, DNA barcodes, and taxonomic labels in one shared space, letting it classify both known and unknown species without fine-tuning and beating single-source methods."
+  highlighted: 6
   bibtex: |
     @inproceedings{Gong2025_CLIBD,
         title = {{CLIBD}: Bridging vision and genomics for biodiversity monitoring at scale},
@@ -743,7 +744,6 @@
     pypi: https://pypi.org/project/pytorch-logit-logic/
   thumbnail: /img/publications/Lowe2022_LogicalActivationFunctions.png
   summary: "Introduces neural network activation functions that perform Boolean logic (AND, OR, XNOR) on feature probabilities, improving accuracy on image classification, transfer learning, and reasoning tasks."
-  highlighted: 6
   bibtex: |
     @inproceedings{Lowe2022_LogicalActivationFunctions,
         title = {Logical activation functions: Logit-space equivalents of probabilistic boolean operators},
