@@ -752,7 +752,7 @@
   summary: "Introduces neural network activation functions that perform Boolean logic (AND, OR, XNOR) on feature probabilities, improving accuracy on image classification, transfer learning, and reasoning tasks."
   bibtex: |
     @inproceedings{Lowe2022_LogicalActivationFunctions,
-        title = {Logical activation functions: Logit-space equivalents of probabilistic boolean operators},
+        title = {Logical activation functions: Logit-space equivalents of probabilistic {B}oolean operators},
         author = {Lowe, Scott and Earle, Robert and d\textquotesingle Eon, Jason and Trappenberg, Thomas and Oore, Sageev},
         booktitle = {Advances in Neural Information Processing Systems},
         pages = {29733--29747},
