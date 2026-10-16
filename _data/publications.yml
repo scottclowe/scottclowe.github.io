@@ -425,8 +425,8 @@
   summary: "Provides practical guidelines for photographing museum biodiversity specimens so that computer vision tools can more reliably identify species and measure traits from the resulting images."
   bibtex: |
     @article{East2025_RulesForBioCV,
-        title = {Optimizing image capture for computer vision‐powered taxonomic identification and trait recognition of biodiversity specimens},
-        author = {East, Alyson and Campolongo, Elizabeth G. and Meyers, Luke and Rayeed, S. M. and Stevens, Samuel and Zarubiieva, Iuliia and Fluck, Isadora E. and Girón, Jennifer C. and Jousse, Maximiliane. and Lowe, Scott and Perry, Kayla I. and Betancourt, Isabelle and Charney, Noah and Donoso, Evan and Fox, Nathan and Landsbergen, Kim J. and Nepovinnykh, Ekaterina and Ramirez, Michelle and Singh, Parkash and Thapa‐Magar, Khum and Thompson, Matthew and Waite, Evan and Berger‐Wolf, Tanya and Lapp, Hilmar and Mabee, Paula and Stewart, Charles and Taylor, Graham and Record, Sydne},
+        title = {Optimizing image capture for computer vision-powered taxonomic identification and trait recognition of biodiversity specimens},
+        author = {East, Alyson and Campolongo, Elizabeth G. and Meyers, Luke and Rayeed, S. M. and Stevens, Samuel and Zarubiieva, Iuliia and Fluck, Isadora E. and Girón, Jennifer C. and Jousse, Maximiliane. and Lowe, Scott and Perry, Kayla I. and Betancourt, Isabelle and Charney, Noah and Donoso, Evan and Fox, Nathan and Landsbergen, Kim J. and Nepovinnykh, Ekaterina and Ramirez, Michelle and Singh, Parkash and Thapa-Magar, Khum and Thompson, Matthew and Waite, Evan and Berger-Wolf, Tanya and Lapp, Hilmar and Mabee, Paula and Stewart, Charles and Taylor, Graham and Record, Sydne},
         volume = {16},
         issn = {2041-210X},
         doi = {10.1111/2041-210x.70140},
