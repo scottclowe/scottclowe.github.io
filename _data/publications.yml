@@ -826,7 +826,7 @@
   summary: "Shows that high-frequency, low-amplitude airflow oscillations added to PAP machines can continuously and unobtrusively track upper-airway patency, distinguishing obstructive from central apnea and hypopnea events."
   bibtex: |
     @article{Hanafi2022_HighFreqLowAmpOscillometry,
-        title = {High frequency-Low amplitude oscillometry: Continuous unobtrusive monitoring of respiratory function on {PAP} machines},
+        title = {High frequency-low amplitude oscillometry: Continuous unobtrusive monitoring of respiratory function on {PAP} machines},
         author = {Alamdari, Hamed Hanafi and Hacquebard, Luke and Driscoll, Stephen and El-Sankary, Kamal and Roach, David C and LeBlanc, Robin and Lowe, Scott and Oore, Sageev and Penzel, Thomas and Fietze, Ingo and Schmidt, Michael and Morrison, Debra},
         journal = {IEEE Transactions on Biomedical Engineering},
         year = {2022},
