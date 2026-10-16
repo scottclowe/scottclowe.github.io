@@ -1,5 +1,5 @@
 - date: '2026'  # Dec; arXiv 2026 Mar
-  title: 'Self-Distillation of Hidden Layers for Masked Self-Supervised Representation Learning'
+  title: 'Self-distillation of hidden layers for masked self-supervised representation learning'
   venue: Advances in Neural Information Processing Systems 40 (NeurIPS 2026)
   authors: Scott C. Lowe, Anthony Fuller, Sageev Oore, Evan Shelhamer, Graham W. Taylor
   topics:
@@ -24,7 +24,7 @@
     }
 
 - date: '2026'  # Nov
-  title: 'SmartLooper: A Framework for Personalized Human-AI Musical Improvisation'
+  title: 'SmartLooper: A framework for personalized human-AI musical improvisation'
   venue: 'The 27th International Society for Music Information Retrieval Conference (ISMIR 2026)'
   authors: Finlay Miller*, Sageev Oore*, Chandramouli Shama Sastry, Marvin F. da Silva, Sri Harsha Dumpala, Daniel Oore, Scott C. Lowe
   topics:
@@ -40,7 +40,7 @@
     }
 
 - date: '2026'  # Oct
-  title: 'SpireBench: Evaluating Long-Horizon Strategic Play of Agentic Models with Slay the Spire'
+  title: 'SpireBench: Evaluating long-horizon strategic play of agentic models with Slay the Spire'
   venue: arXiv preprint arXiv:2610.12596
   authors: Scott C. Lowe, Sander W. Keemink
   topics:
@@ -67,7 +67,7 @@
     }
 
 - date: '2026'  # Sep
-  title: 'Masked Swingers: Harnessing Data Augmentation to Advance Autoencoders for Self-Supervised Learning'
+  title: 'Masked Swingers: Harnessing data augmentation to advance autoencoders for self-supervised learning'
   venue: arXiv preprint arXiv:2609.38278
   authors: Anthony Fuller, Scott C. Lowe, Daniel G. Kyrollos, Graham W. Taylor†, Evan Shelhamer†, James R. Green†
   topics:
@@ -91,7 +91,7 @@
     }
 
 - date: '2026'  # Sep
-  title: 'BarcodeMAE+: Rethinking Masked Pretraining and Global Representations for DNA Barcode Foundation Models'
+  title: 'BarcodeMAE+: Rethinking masked pretraining and global representations for DNA barcode foundation models'
   venue: arXiv preprint arXiv:2609.35877
   authors: Monireh Safari*, Pablo Millan Arias*, Scott C. Lowe, Lila Kari, Angel X. Chang, Graham W. Taylor
   topics:
@@ -147,7 +147,7 @@
     }
 
 - date: '2026'  # Aug; Foundation Models in the Wild Workshop, ICML 2024: 2024, Jun
-  title: An Empirical Study into Clustering of Unseen Datasets with Self-Supervised Encoders
+  title: 'An empirical study into clustering of unseen datasets with self-supervised encoders'
   venue: Transactions on Machine Learning Research
   authors: Scott C. Lowe*, Joakim Bruslund Haurum*, Sageev Oore†, Thomas B. Moeslund†, Graham W. Taylor†
   topics:
@@ -173,7 +173,7 @@
     }
 
 - date: '2026'  # Feb (workshop in Apr)
-  title: 'Hidden-Layer Self-Distillation Yields Drift-Resilient Visual Representations'
+  title: 'Hidden-layer self-distillation yields drift-resilient visual representations'
   venue: 'Catch, Adapt, and Operate: Monitoring ML Models Under Drift Workshop, ICLR 2026'
   authors: Scott C. Lowe, Anthony Fuller, Sageev Oore, Graham W. Taylor, Evan Shelhamer
   topics:
@@ -195,7 +195,7 @@
     }
 
 - date: '2026'  # Mar (workshop in Apr)
-  title: 'Bridging Generative and Predictive Paradigms via Hidden-Self-Distillation'
+  title: 'Bridging generative and predictive paradigms via hidden-self-distillation'
   venue: 'Multimodal Intelligence: Next Token Prediction & Beyond Workshop, ICLR 2026'
   authors: Scott C. Lowe, Anthony Fuller, Sageev Oore, Evan Shelhamer, Graham W. Taylor
   topics:
@@ -216,7 +216,7 @@
     }
 
 - date: '2026'  # Apr; arXiv 2025 Sept
-  title: 'Understanding and Improving Shampoo and SOAP via Kullback-Leibler Minimization'
+  title: 'Understanding and improving Shampoo and SOAP via Kullback-Leibler minimization'
   venue: The Fourteenth International Conference on Learning Representations (ICLR 2026)
   authors: Wu Lin, Scott C. Lowe, Felix Dangel, Runa Eschenhagen, Zikun Xu, Roger B. Grosse
   topics:
@@ -276,7 +276,7 @@
     }
 
 - date: '2026'  # Feb; arXiv 2023 Nov
-  title: 'BarcodeBERT: Transformers for Biodiversity Analysis'
+  title: 'BarcodeBERT: Transformers for biodiversity analysis'
   # venue: Self-Supervised Learning — Theory and Practice Workshop, NeurIPS 2023
   venue: Bioinformatics Advances, 6(1), vbag054, 2026
   authors: Pablo Millan Arias*, Niousha Sadjadi*, Monireh Safari*, ZeMing Gong, Austin T. Wang, Joakim Bruslund Haurum, Iuliia Zarubiieva, Dirk Steinke, Lila Kari, Angel X. Chang, Scott C. Lowe†, Graham W. Taylor†
@@ -306,7 +306,7 @@
     }
 
 - date: '2025'  # Dec
-  title: 'A Loopy Framework and Tool for Real-time Human-AI Music Collaboration'
+  title: 'A loopy framework and tool for real-time human-AI music collaboration'
   venue: 'Artificial Intelligence for Music: Where Creativity Meets Computation Workshop, NeurIPS 2025'
   authors: Sageev Oore*, Finlay Miller*, Chandramouli Shama Sastry, Sri Harsha Dumpala, Marvin F. da Silva, Daniel Oore, Scott C. Lowe
   topics:
@@ -328,7 +328,7 @@
     }
 
 - date: '2025'  # Dec
-  title: 'BugSR: Improving Tiny Instance Segmentation on the MassID45 Dataset'
+  title: 'BugSR: Improving tiny instance segmentation on the MassID45 dataset'
   venue: 'Imageomics: Discovering Biological Knowledge from Images Using AI Workshop, NeurIPS 2025'
   authors: John Quinto, Scott C. Lowe, Akshita Gupta, Johanna Orsholm, Prajakta Darade, Iuliia Zarubiieva, Brendan Furneaux, Tommi Mononen, Tomas Roslin, Graham W. Taylor
   topics:
@@ -351,7 +351,7 @@
     }
 
 - date: '2025'  # Dec
-  title: 'BarcodeMamba+: Advancing State-Space Models for Fungal Biodiversity Research'
+  title: 'BarcodeMamba+: Advancing state-space models for fungal biodiversity research'
   venue: 'Imageomics: Discovering Biological Knowledge from Images Using AI Workshop, NeurIPS 2025'
   authors: Tiancheng Gao, Scott C. Lowe, Brendan Furneaux, Angel X. Chang, Graham W. Taylor
   topics:
@@ -379,7 +379,7 @@
     }
 
 - date: '2025'  # July
-  title: 'Hyperbolic Multimodal Representation Learning for Biological Taxonomies'
+  title: 'Hyperbolic multimodal representation learning for biological taxonomies'
   venue: '2nd Beyond Euclidean Workshop: Hyperbolic and Hyperspherical Learning for Computer Vision Workshop, ICCV 2025'
   authors: ZeMing Gong, Chuanqi Tang, Xiaoliang Huo, Nicholas Pellegrino, Austin Wang, Graham W. Taylor, Angel X. Chang, Scott C. Lowe†, Joakim Bruslund Haurum†
   topics:
@@ -410,7 +410,7 @@
     }
 
 - date: '2025'  # May
-  title: 'Optimizing Image Capture for Computer Vision-Powered Taxonomic Identification and Trait Recognition of Biodiversity Specimens'
+  title: 'Optimizing image capture for computer vision-powered taxonomic identification and trait recognition of biodiversity specimens'
   venue: Methods in Ecology and Evolution, 00, 1–16, 2025
   authors: Alyson East, Elizabeth G. Campolongo, Luke Meyers, S.M. Rayeed, Samuel Stevens, Iuliia Zarubiieva, Isadora E. Fluck, Jennifer C. Girón, Maximiliane Jousse, Scott Lowe, Kayla I. Perry, Isabelle Betancourt, Noah Charney, Evan Donoso, Nathan Fox, Kim J. Landsbergen, Ekaterina Nepovinnykh, Michelle Ramirez, Parkash Singh, Khum Thapa-Magar, Matthew Thompson, Evan Waite, Tanya Berger-Wolf, Hilmar Lapp, Paula Mabee, Graham Taylor, Sydne Record
   topics:
@@ -439,7 +439,7 @@
     }
 
 - date: '2025'  # Feb
-  title: 'Enhancing DNA Foundation Models to Address Masking Inefficiencies'
+  title: 'Enhancing DNA foundation models to address masking inefficiencies'
   venue: Artificial Intelligence for Nucleic Acids (AI4NA) Workshop, ICLR 2025
   # venue: Machine Learning for Genomics Explorations (MLGenX) Workshop, ICLR 2025
   authors: Monireh Safari*, Pablo Millan Arias*, Scott C. Lowe, Lila Kari, Angel X. Chang, Graham W. Taylor
@@ -467,7 +467,7 @@
     }
 
 - date: '2025'  # Apr
-  title: 'CLIBD: Bridging Vision and Genomics for Biodiversity Monitoring at Scale'
+  title: 'CLIBD: Bridging vision and genomics for biodiversity monitoring at scale'
   venue: The Thirteenth International Conference on Learning Representations (ICLR 2025)
   authors: ZeMing Gong, Austin T. Wang, Xiaoliang Huo, Joakim Bruslund Haurum, Scott C. Lowe, Graham W. Taylor, Angel X. Chang
   topics:
@@ -531,7 +531,7 @@
     }
 
 - date: '2024'  # Dec
-  title: 'BIOSCAN-5M: A Multimodal Dataset for Insect Biodiversity'
+  title: 'BIOSCAN-5M: A multimodal dataset for insect biodiversity'
   venue: Advances in Neural Information Processing Systems 37 (NeurIPS 2024)
   authors: Zahra Gharaee*, Scott C. Lowe*, ZeMing Gong*, Pablo Millan Arias*, Nicholas Pellegrino, Austin T. Wang, Joakim Bruslund Haurum, Iuliia Zarubiieva, Lila Kari, Dirk Steinke†, Graham W. Taylor†, Paul Fieguth†, Angel X. Chang†
   topics:
@@ -571,7 +571,7 @@
     }
 
 - date: '2024'  # Oct
-  title: System 2 Reasoning Capabilities Are Nigh
+  title: 'System 2 reasoning capabilities are nigh'
   venue: The First Workshop on System-2 Reasoning at Scale, NeurIPS 2024
   authors: Scott C. Lowe
   topics:
@@ -598,7 +598,7 @@
     }
 
 - date: '2024'  # Oct
-  title: 'Towards a Taxonomy Machine: A Training Set of 5.6 Million Arthropod Images'
+  title: 'Towards a taxonomy machine: A training set of 5.6 million arthropod images'
   venue: Data 9 (11), 122, 2024
   authors: Dirk Steinke, Sujeevan Ratnasingham, Jireh Agda, Hamzah Ait Boutou, Isaiah C.H. Box, Mary Boyle, Dean Chan, Corey Feng, Scott C. Lowe, Jaclyn T.A. McKeown, Joschka McLeod, Alan Sanchez, Ian Smith, Spencer Walker, Catherine Y.-Y. Wei, Paul D.N. Hebert
   topics:
@@ -714,7 +714,7 @@
     }
 
 - date: '2023'  # Oct
-  title: 'The Beginning of the AI-Enabled Preventative PAP Therapy Era: A First-in-Human Proof of Concept Interventional Study'
+  title: 'The beginning of the AI-enabled preventative PAP therapy era: A first-in-human proof of concept interventional study'
   venue: IEEE Transactions on Biomedical Engineering 70 (10), 2776–2787, 2023
   authors: Meagan Sinclair, Hamed Hanafi Alamdari, Julia Paffile, Kamal El-Sankary, Scott C. Lowe, Stephen Driscoll, Sageev Oore, Heather Tomson, Gregory Begin, Guillermo Aristi, Michael Schmidt, David Roach, Thomas Penzel, Ingo Fietze, Sanjay R. Patel, Reena Mehra, Debra Morrison
   topics:
@@ -738,7 +738,7 @@
     }
 
 - date: '2022'  # Dec
-  title: 'Logical Activation Functions: Logit-space equivalents of Probabilistic Boolean Operators'
+  title: 'Logical activation functions: Logit-space equivalents of probabilistic Boolean operators'
   venue: Advances in Neural Information Processing Systems 35 (NeurIPS 2022)
   authors: Scott C. Lowe, Robert Earle, Jason d'Eon, Thomas Trappenberg, Sageev Oore
   topics:
@@ -763,7 +763,7 @@
     }
 
 - date: '2022'  # Sep
-  title: Label-free Monitoring of Self-Supervised Learning Progress
+  title: 'Label-free monitoring of self-supervised learning progress'
   venue: IEEE Canadian Conference on Electrical and Computer Engineering (CCECE), 2022
   authors: Isaac Xu, Scott C. Lowe, Thomas Trappenberg
   topics:
@@ -787,7 +787,7 @@
     }
 
 - date: '2022'  # Aug
-  title: 'Echofilter: A Deep Learning Segmention Model Improves the Automation, Standardization, and Timeliness for Post-Processing Echosounder Data in Tidal Energy Streams'
+  title: 'Echofilter: A deep learning segmentation model improves the automation, standardization, and timeliness for post-processing echosounder data in tidal energy streams'
   venue: Frontiers in Marine Science 9, 867857, 2022
   authors: Scott C. Lowe, Louise P. McGarry, Jessica Douglas, Jason Newport, Sageev Oore, Christopher Whidden, Daniel J. Hasselman
   topics:
@@ -837,7 +837,7 @@
     }
 
 - date: '2021'  # Nov
-  title: LogAvgExp Provides a Principled and Performant Global Pooling Operator
+  title: 'LogAvgExp provides a principled and performant global pooling operator'
   venue: arXiv preprint arXiv:2111.01742
   authors: Scott C. Lowe, Thomas Trappenberg, Sageev Oore
   topics:

@@ -31,7 +31,7 @@ Most common edit. Each entry follows this schema:
 
 ```yaml
 - date: '2025'           # Year string (quoted), used for display and sorting
-  title: 'Paper Title'
+  title: 'Paper title in sentence case'
   venue: 'Conference or Journal Name'
   authors: First Last, Second Author, Third Author  # plain text, commas between
   topics:                # list of lowercase topic tags for filtering
@@ -59,6 +59,10 @@ Most common edit. Each entry follows this schema:
 Thumbnails: generate with `python make_thumbnail.py <source-figure> <CitationKey>` (add `--jpeg` for photos). It crops to content, downscales to <=240px (the thumbnail slot size, so it displays 1:1), and compresses into `img/publications/`; it also writes a <=1200px copy to `img/publications/hires/` (same filename), which `publications.md` serves to high-density screens via `srcset` (matched by filename stem, so a missing hi-res copy just falls back to the 240px one). Use `--hires-only` to add a hi-res copy for an existing thumbnail. Source figures live in `_thumbnail_candidates/<CitationKey>/` (gitignored). Needs `pip install pyoxipng` for full compression.
 
 Entries are ordered newest-first in the YAML file. The JS on `publications.md` provides topic filtering, highlight grouping, BibTeX copy/download. The Liquid template renders a static fallback for non-JS browsers.
+
+### Title casing
+
+Display titles use sentence case, even if the venue published them in title case: capitalize only the first word, the first word after a colon, and proper nouns, acronyms, and method/model/dataset names (e.g. `SmartLooper: A framework for personalized human-AI musical improvisation`). Obvious typos in the published title may be corrected. Always single-quote titles (many contain `: `, which YAML would otherwise misparse).
 
 ### Author notation
 
