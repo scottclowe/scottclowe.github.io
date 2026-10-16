@@ -926,15 +926,15 @@
   summary: "FISSA is a fast, low-memory Python toolbox that cleans calcium imaging signals by removing contamination from surrounding brain tissue, giving more accurate readings of individual neurons' activity."
   bibtex: |
     @article{Keemink2018_FISSA,
-      title = {{FISSA}: {A} neuropil decontamination toolbox for calcium imaging signals},
-      author = {Keemink, Sander W. and Lowe, Scott C. and Pakan, Janelle M. P. and Dylda, Evelyn and van Rossum, Mark C. W. and Rochefort, Nathalie L.},
-      journal = {Scientific Reports},
-      year = {2018},
-      volume = {8},
-      number = {1},
-      pages = {3493},
-      issn = {2045-2322},
-      doi = {10.1038/s41598-018-21640-2},
+        title = {{FISSA}: {A} neuropil decontamination toolbox for calcium imaging signals},
+        author = {Keemink, Sander W. and Lowe, Scott C. and Pakan, Janelle M. P. and Dylda, Evelyn and van Rossum, Mark C. W. and Rochefort, Nathalie L.},
+        journal = {Scientific Reports},
+        year = {2018},
+        volume = {8},
+        number = {1},
+        pages = {3493},
+        issn = {2045-2322},
+        doi = {10.1038/s41598-018-21640-2},
     }
 
 - date: '2018'  # Jan
