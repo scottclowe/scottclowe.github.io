@@ -46,7 +46,7 @@
   topics:
   - reasoning
   - language
-  - video game
+  # - video game
   - benchmark
   main_link: https://arxiv.org/abs/2610.12596
   links:
@@ -97,6 +97,7 @@
   topics:
   - self-supervised learning
   - DNA
+  - clustering
   - biodiversity
   - insect
   main_link: https://arxiv.org/abs/2609.35877
@@ -151,6 +152,7 @@
   authors: Scott C. Lowe*, Joakim Bruslund Haurum*, Sageev Oore†, Thomas B. Moeslund†, Graham W. Taylor†
   topics:
   - self-supervised learning
+  - clustering
   - vision
   main_link: https://openreview.net/forum?id=gdwg7ntmT5
   links:
@@ -541,6 +543,7 @@
   - vision
   - DNA
   - language
+  - clustering
   main_link: https://arxiv.org/abs/2406.12723
   links:
     paper: https://proceedings.neurips.cc/paper_files/paper/2024/hash/3fdbb472813041c9ecef04c20c2b1e5a-Abstract-Datasets_and_Benchmarks_Track.html
@@ -602,6 +605,7 @@
   - dataset
   - biodiversity
   - insect
+  - vision
   main_link: https://doi.org/10.3390/data9110122
   links:
     paper: https://doi.org/10.3390/data9110122
@@ -631,6 +635,7 @@
   - hierarchical
   - biodiversity
   - ocean
+  - self-supervised learning
   main_link: https://doi.org/10.1109/IJCNN60899.2024.10650176
   links:
     paper: https://doi.org/10.1109/IJCNN60899.2024.10650176
@@ -660,6 +665,7 @@
   - DNA
   - biodiversity
   - insect
+  - multimodal
   main_link: https://proceedings.neurips.cc/paper_files/paper/2023/hash/87dbbdc3a685a97ad28489a1d57c45c1-Abstract-Datasets_and_Benchmarks.html
   links:
     paper: https://proceedings.neurips.cc/paper_files/paper/2023/hash/87dbbdc3a685a97ad28489a1d57c45c1-Abstract-Datasets_and_Benchmarks.html
@@ -762,6 +768,7 @@
   authors: Isaac Xu, Scott C. Lowe, Thomas Trappenberg
   topics:
   - self-supervised learning
+  - clustering
   - vision
   - ocean
   main_link: https://doi.org/10.1109/CCECE49351.2022.9918377
@@ -786,6 +793,7 @@
   topics:
   - image segmentation
   - ocean
+  - toolbox
   main_link: https://doi.org/10.3389/fmars.2022.867857
   links:
     paper: https://doi.org/10.3389/fmars.2022.867857
@@ -811,7 +819,6 @@
   authors: Hamed Hanafi Alamdari, Luke Hacquebard, Stephen Driscoll, Kamal El-Sankary, David C. Roach, Robin LeBlanc, Scott C. Lowe, Sageev Oore, Thomas Penzel, Ingo Fietze, Michael Schmidt, Debra Morrison
   topics:
   - sleep apnea
-  - forecasting
   main_link: https://doi.org/10.1109/TBME.2021.3138965
   links:
     paper: https://doi.org/10.1109/TBME.2021.3138965
