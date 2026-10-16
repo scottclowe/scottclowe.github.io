@@ -24,7 +24,7 @@
     }
 
 - date: '2026'  # Nov
-  title: 'SmartLooper: A framework for personalized human-AI musical improvisation'
+  title: 'SmartLooper: A framework for personalized human–AI musical improvisation'
   venue: 'The 27th International Society for Music Information Retrieval Conference (ISMIR 2026)'
   authors: Finlay Miller*, Sageev Oore*, Chandramouli Shama Sastry, Marvin F. da Silva, Sri Harsha Dumpala, Daniel Oore, Scott C. Lowe
   topics:
@@ -33,7 +33,7 @@
   summary: "SmartLooper is a real-time piano improvisation system that builds an evolving accompaniment by walking through a performer's own recorded loops in embedding space, so they effectively duet with themselves."
   bibtex: |
     @inproceedings{Miller2026_SmartLooper,
-        title = {{SmartLooper}: A Framework for Personalized Human-{AI} Musical Improvisation},
+        title = {{SmartLooper}: A Framework for Personalized Human--{AI} Musical Improvisation},
         author = {Finlay Miller and Sageev Oore and Chandramouli Shama Sastry and Marvin F. da Silva and Sri Harsha Dumpala and Daniel Oore and Scott C. Lowe},
         booktitle = {The 27th International Society for Music Information Retrieval Conference},
         year = {2026},
@@ -216,7 +216,7 @@
     }
 
 - date: '2026'  # Apr; arXiv 2025 Sept
-  title: 'Understanding and improving Shampoo and SOAP via Kullback-Leibler minimization'
+  title: 'Understanding and improving Shampoo and SOAP via Kullback–Leibler minimization'
   venue: The Fourteenth International Conference on Learning Representations (ICLR 2026)
   authors: Wu Lin, Scott C. Lowe, Felix Dangel, Runa Eschenhagen, Zikun Xu, Roger B. Grosse
   topics:
@@ -229,10 +229,10 @@
     poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/124345.png?t=1765885233.0748246
     github: https://github.com/yorkerlin/KL-Methods
   thumbnail: /img/publications/Lin2026_KLShampoo.png
-  summary: "Reinterprets the Shampoo and SOAP neural-network optimizers through Kullback-Leibler minimization, yielding KL-Shampoo, which trains language models faster and more accurately without Adam's extra memory cost."
+  summary: "Reinterprets the Shampoo and SOAP neural-network optimizers through Kullback–Leibler minimization, yielding KL-Shampoo, which trains language models faster and more accurately without Adam's extra memory cost."
   bibtex: |
     @inproceedings{Lin2026_KLShampoo,
-        title = {Understanding and improving {S}hampoo and {SOAP} via {K}ullback-{L}eibler minimization},
+        title = {Understanding and improving {S}hampoo and {SOAP} via {K}ullback--{L}eibler minimization},
         author = {Wu Lin and Scott C. Lowe and Felix Dangel and Runa Eschenhagen and Zikun Xu and Roger B. Grosse},
         year = {2026},
         booktitle = {The Fourteenth International Conference on Learning Representations},
@@ -306,7 +306,7 @@
     }
 
 - date: '2025'  # Dec
-  title: 'A loopy framework and tool for real-time human-AI music collaboration'
+  title: 'A loopy framework and tool for real-time human–AI music collaboration'
   venue: 'Artificial Intelligence for Music: Where Creativity Meets Computation Workshop, NeurIPS 2025'
   authors: Sageev Oore*, Finlay Miller*, Chandramouli Shama Sastry, Sri Harsha Dumpala, Marvin F. da Silva, Daniel Oore, Scott C. Lowe
   topics:
@@ -317,10 +317,10 @@
     openreview: https://openreview.net/forum?id=nXHczMetxK
     poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/123765.png?t=1765930069.7650115
   thumbnail: /img/publications/Oore2025_LoopyFramework.png
-  summary: "Argues that looping is an effective framework for real-time human-AI music collaboration, and introduces SmartLooper, which improvises by stochastically traversing a musician's own recorded fragments in a learned embedding space."
+  summary: "Argues that looping is an effective framework for real-time human–AI music collaboration, and introduces SmartLooper, which improvises by stochastically traversing a musician's own recorded fragments in a learned embedding space."
   bibtex: |
     @inproceedings{Oore2025_LoopyFramework,
-        title = {A loopy framework and tool for real-time human-{AI} music collaboration},
+        title = {A loopy framework and tool for real-time human--{AI} music collaboration},
         author = {Sageev Oore and Finlay Miller and Chandramouli Shama Sastry and Sri Harsha Dumpala and Marvin F. da Silva and Daniel Oore and Scott C. Lowe},
         booktitle = {AI for Music Workshop},
         year = {2025},
@@ -814,7 +814,7 @@
     }
 
 - date: '2022'  # Jul
-  title: 'High frequency-low amplitude oscillometry: Continuous unobtrusive monitoring of respiratory function on PAP machines'
+  title: 'High frequency–low amplitude oscillometry: Continuous unobtrusive monitoring of respiratory function on PAP machines'
   venue: IEEE Transactions on Biomedical Engineering 69 (7), 2202–2211, 2021
   authors: Hamed Hanafi Alamdari, Luke Hacquebard, Stephen Driscoll, Kamal El-Sankary, David C. Roach, Robin LeBlanc, Scott C. Lowe, Sageev Oore, Thomas Penzel, Ingo Fietze, Michael Schmidt, Debra Morrison
   topics:
@@ -826,7 +826,7 @@
   summary: "Shows that high-frequency, low-amplitude airflow oscillations added to PAP machines can continuously and unobtrusively track upper-airway patency, distinguishing obstructive from central apnea and hypopnea events."
   bibtex: |
     @article{Hanafi2022_HighFreqLowAmpOscillometry,
-        title = {High frequency-low amplitude oscillometry: Continuous unobtrusive monitoring of respiratory function on {PAP} machines},
+        title = {High frequency--low amplitude oscillometry: Continuous unobtrusive monitoring of respiratory function on {PAP} machines},
         author = {Alamdari, Hamed Hanafi and Hacquebard, Luke and Driscoll, Stephen and El-Sankary, Kamal and Roach, David C and LeBlanc, Robin and Lowe, Scott and Oore, Sageev and Penzel, Thomas and Fietze, Ingo and Schmidt, Michael and Morrison, Debra},
         journal = {IEEE Transactions on Biomedical Engineering},
         year = {2022},
