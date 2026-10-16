@@ -80,7 +80,7 @@
   summary: "We swap the CLS tokens between two views of the same image, encouraging the model to learn a view-agnostic summary of the image."
   bibtex: |
     @article{Fuller2026_MaskedSwingers,
-        title = {Masked Swingers: Harnessing Data Augmentation to Advance Autoencoders for Self-Supervised Learning},
+        title = {{M}asked {S}wingers: Harnessing Data Augmentation to Advance Autoencoders for Self-Supervised Learning},
         author = {Anthony Fuller and Scott C. Lowe and Daniel G. Kyrollos and Graham W. Taylor and Evan Shelhamer and James R. Green},
         year = {2026},
         eprint = {2609.38278},
@@ -108,7 +108,7 @@
   summary: "BarcodeMAE+ redesigns DNA foundation models with an encoder-decoder that hides masking tokens from the encoder, and combines this with a supervised pretraining objective to learn whole-barcode CLS tokens useful for downstream tasks."
   bibtex: |
     @article{Safari2026_BarcodeMAEplus,
-        title = {{BarcodeMAE+}: Rethinking Masked Pretraining and Global Representations for DNA Barcode Foundation Models},
+        title = {{BarcodeMAE+}: Rethinking Masked Pretraining and Global Representations for {DNA} Barcode Foundation Models},
         author = {Monireh Safari and Pablo Millan Arias and Scott C. Lowe and Lila Kari and Angel X. Chang and Graham W. Taylor},
         year = {2026},
         eprint = {2609.35877},
@@ -586,7 +586,7 @@
   highlighted: 4
   bibtex: |
     @inproceedings{Lowe2024_System2Nigh,
-        title = {System 2 reasoning capabilities are nigh},
+        title = {{S}ystem 2 reasoning capabilities are nigh},
         author = {Scott C. Lowe},
         booktitle = {The First Workshop on System-2 Reasoning at Scale, NeurIPS'24},
         year = {2024},
@@ -727,7 +727,7 @@
   summary: "A first-in-human trial where machine learning predicts apneas from a PAP device's own airflow and pressure sensors and preemptively adjusts pressure, cutting the apnea-hypopnea index by 31.6% while preserving sleep quality."
   bibtex: |
     @article{Sinclair2023_BeginningAIPreventativePAP,
-        title = {The Beginning of the AI-Enabled Preventative PAP Therapy Era: A First-in-Human Proof of Concept Interventional Study},
+        title = {The Beginning of the {AI}-Enabled Preventative {PAP} Therapy Era: A First-in-Human Proof of Concept Interventional Study},
         author = {Sinclair, Meagan and Alamdari, Hamed Hanafi and Paffile, Julia and El-Sankary, Kamal and Lowe, Scott and Driscoll, Stephen and Oore, Sageev and Tomson, Heather and Begin, Gregory and Aristi, Guillermo and Schmidt, Michael and Roach, David and Penzel, Thomas and Fietze, Ingo and Patel, Sanjay R and Mehra, Reena and Morrison, Debra},
         journal = {IEEE Transactions on Biomedical Engineering},
         year = {2023},
