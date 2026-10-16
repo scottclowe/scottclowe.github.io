@@ -367,7 +367,7 @@
   summary: "BarcodeMamba+ is an efficient state-space foundation model that classifies fungi from DNA barcodes, learning from mostly-unlabelled data to outperform supervised methods across all taxonomic levels."
   bibtex: |
     @inproceedings{Gao2025_BarcodeMambaPlus,
-        title = {{BarcodeMamba+}: Supervised advances for state-space models in fungal biodiversity research},
+        title = {{BarcodeMamba+}: Advancing State-Space Models for Fungal Biodiversity Research},
         author = {Tiancheng Gao and Scott C. Lowe and Brendan Furneaux and Angel X. Chang and Graham W. Taylor},
         booktitle = {NeurIPS 2025 Workshop for Imageomics: Discovering Biological Knowledge from Images Using AI},
         year = {2025},
