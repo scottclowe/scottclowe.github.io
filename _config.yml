@@ -58,8 +58,8 @@ social-network-links:
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
   github: scottclowe    # eg. daattali
   twitter: scottclowe   # eg. daattali
-  bluesky: scottclowe.bsky.social
-  facebook: scottclowe  # eg. daattali
+#  bluesky: scottclowe.bsky.social
+#  facebook: scottclowe  # eg. daattali
 #  patreon: DeanAttali
 #  youtube: "@daattali"
 #  whatsapp: 15551212
