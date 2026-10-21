@@ -612,7 +612,7 @@
   highlighted: 4
   bibtex: |
     @inproceedings{Lowe2024_System2Nigh,
-        title = {{S}ystem 2 reasoning capabilities are nigh},
+        title = {{S}ystem~2 reasoning capabilities are nigh},
         author = {Scott C. Lowe},
         booktitle = {The First Workshop on System-2 Reasoning at Scale, NeurIPS'24},
         year = {2024},
