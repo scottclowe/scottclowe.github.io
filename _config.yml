@@ -289,6 +289,8 @@ remove-ads: true
 
 # Exclude these files from production site
 exclude:
+  - AGENTS.md
+  - CLAUDE.md
   - .gitignore
   - .travis.yml
   - Appraisals
