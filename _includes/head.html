@@ -58,10 +58,13 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
   {% endif %}
 
+  {% comment %} Analytics only in production builds (JEKYLL_ENV=production, set in CI), so local test builds aren't tracked {% endcomment %}
+  {% if jekyll.environment == "production" %}
   {% include gtag.html %}
   {% include gtm_head.html %}
   {% include google_analytics.html %}
   {% include cloudflare_analytics.html %}
+  {% endif %}
   {% include mathjax.html %}
 
   {% if layout.common-ext-css %}
