@@ -1,26 +1,59 @@
-name: Beautiful Jekyll CI
-on: [push, pull_request]
+name: Build and deploy
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
 jobs:
-  build:
-    name: Build Jekyll
+  # Check the site still builds under both Jekyll 3 and Jekyll 4 (see Appraisals).
+  test:
+    name: Test build (Jekyll 3 and 4)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3'
+          ruby-version: '3.2'  # Keep in sync with local Ruby (Gemfile.lock is resolved against it)
       - name: Install dependencies
         run: bundle install && bundle exec appraisal install
+      - name: Build site
+        run: bundle exec appraisal jekyll build --future
+
+  # Build the site to deploy, exactly as it builds locally (Gemfile.lock versions).
+  build:
+    name: Build site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'  # Keep in sync with local Ruby (Gemfile.lock is resolved against it)
+          bundler-cache: true
       - name: Setup Pages
         id: configure-pages
-        uses: actions/configure-pages@v5
-      - name: Setup CI config
-        run: |
-          echo "---" > _config_ci.yml
-          echo "baseurl: ${{ steps.configure-pages.outputs.base_path }}" >> _config_ci.yml
+        uses: actions/configure-pages@v6
       - name: Build site
         env:
           JEKYLL_ENV: production
-        run: bundle exec appraisal jekyll build --future --config _config_ci.yml,_config.yml
+        run: bundle exec jekyll build --baseurl "${{ steps.configure-pages.outputs.base_path }}"
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
+
+  deploy:
+    name: Deploy to GitHub Pages
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+    needs: [test, build]
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
