@@ -1,3 +1,49 @@
+- date: '2026'  # Dec; accepted 2026 Nov
+  title: 'Hierarchical embedding of DNA barcode taxonomy with hyperbolic entailment cones'
+  venue: UniReps Workshop, 2026
+  authors: ZeMing Gong, Austin T. Wang, Chuanqi Tang, Graham W. Taylor, Angel X. Chang, Joakim Bruslund Haurum, Scott C. Lowe
+  topics:
+  - hierarchical
+  - DNA
+  - biodiversity
+  - insect
+  main_link: https://openreview.net/forum?id=TWgmS7479U
+  links:
+    openreview: https://openreview.net/forum?id=TWgmS7479U
+  thumbnail: /img/publications/Gong2026_SSEL.png
+  summary: "Embeds DNA barcodes and taxonomic labels in a shared hyperbolic space where each taxon's entailment cone nests inside its parent's and stays clear of its siblings', so barcodes from species unseen in training can be flagged as novel (84.6% recall) and still placed at genus level (73.1% accuracy), without needing a labelled reference library."
+  bibtex: |
+    @inproceedings{Gong2026_SSEL,
+        title = {Hierarchical Embedding of {DNA} Barcode Taxonomy with Hyperbolic Entailment Cones},
+        author = {ZeMing Gong and Austin T. Wang and Chuanqi Tang and Graham W. Taylor and Angel X. Chang and Joakim Bruslund Haurum and Scott C. Lowe},
+        booktitle = {UniReps Workshop},
+        year = {2026},
+        url = {https://openreview.net/forum?id=TWgmS7479U},
+    }
+
+- date: '2026'  # Dec; accepted 2026 Sep
+  title: 'Same errors, different models: Benchmarking taxonomic classification on MassID45'
+  venue: "I Can't Believe It's Not Better: Failure Modes of AI in Biology Workshop, NeurIPS 2026, Sydney"
+  authors: Neelu Madan, John Quinto, Scott C. Lowe, Johanna Orsholm, Tomas Roslin, Tommi Mononen, Nicolas Chazot, Brendan Furneaux, Otso Ovaskainen, Andreas Møgelmose, Thomas B. Moeslund, Graham W. Taylor
+  topics:
+  - vision
+  - biodiversity
+  - insect
+  - dataset
+  main_link: https://openreview.net/forum?id=KcjIkxm3u5
+  links:
+    openreview: https://openreview.net/forum?id=KcjIkxm3u5
+  thumbnail: /img/publications/Madan2026_SameErrors.png
+  summary: "Introduces MassID45-Cls, a benchmark of 15,023 insect specimens cropped from bulk-trap images across 34 long-tailed classes, and finds that six different models all plateau at 70–74% top-1 accuracy and make nearly the same per-class errors, suggesting the difficulty lies mainly in the data, especially in catch-all classes defined by exclusion."
+  bibtex: |
+    @inproceedings{Madan2026_SameErrors,
+        title = {Same Errors, Different Models: Benchmarking Taxonomic Classification on {MassID45}},
+        author = {Neelu Madan and John Quinto and Scott C. Lowe and Johanna Orsholm and Tomas Roslin and Tommi Mononen and Nicolas Chazot and Brendan Furneaux and Otso Ovaskainen and Andreas Møgelmose and Thomas B. Moeslund and Graham W. Taylor},
+        booktitle = {I Can't Believe It's Not Better: Failure Modes of AI in Biology Workshop},
+        year = {2026},
+        url = {https://openreview.net/forum?id=KcjIkxm3u5},
+    }
+
 - date: '2026'  # Dec; arXiv 2026 Mar
   title: 'Self-distillation of hidden layers for masked self-supervised representation learning'
   venue: Advances in Neural Information Processing Systems 40 (NeurIPS 2026)
