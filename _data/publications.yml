@@ -34,6 +34,7 @@
     paper: https://ismir2026program.ismir.net/poster_458.html#paper
     project: https://osageev.github.io/projects/looper/
     video: https://www.youtube.com/watch?v=tfmDzJYUm3c
+    blog: https://osageev.github.io/blog/introducing-smartlooper/
   thumbnail: /img/publications/Miller2026_SmartLooper.png
   summary: "SmartLooper is a real-time piano improvisation system that builds an evolving accompaniment by walking through a performer's own recorded loops in embedding space, so they effectively duet with themselves."
   bibtex: |
@@ -347,6 +348,7 @@
     openreview: https://openreview.net/forum?id=nXHczMetxK
     poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/123765.png?t=1765930069.7650115
     video: https://www.youtube.com/watch?v=tfmDzJYUm3c
+    blog: https://osageev.github.io/blog/introducing-smartlooper/
   thumbnail: /img/publications/Oore2025_LoopyFramework.png
   summary: "Argues that looping is an effective framework for real-time human–AI music collaboration, and introduces SmartLooper, which improvises by stochastically traversing a musician's own recorded fragments in a learned embedding space."
   bibtex: |
