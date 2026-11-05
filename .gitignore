@@ -1,6 +1,6 @@
 # project
 .vagrant
-Gemfile.lock
+gemfiles/
 beautiful-jekyll-theme-*.gem
 
 
