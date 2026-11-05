@@ -45,6 +45,32 @@
         year = {2026},
     }
 
+- date: '2026'  # Nov
+  title: 'BIOTRAM: Biochemistry-informed transformer for relative abundance via metabarcoding'
+  venue: arXiv preprint arXiv:2611.05418
+  authors: Emma Boehly, Scott C. Lowe, Ken A. Thompson, Anthony Fuller, Will Armstrong, Iuliia Zarubiieva, Neelu Madan, Tiancheng Gao, Sameer Padhye, Jayme Sones, Kate H. J. Perez, Bess Hardwick, Brendan Furneaux, Evgeny V. Zakharov, Dirk Steinke, Jeremy R. deWaard, Stephanie L. deWaard, Jaclyn McKeown, Norman Monkhouse, Cole Pace, Sujeevan Ratnasingham, Raina Schmuck, Amy Thompson, Jorge L. León-Cortés, Luciano Cagnolo, Julieta Soledad Arena, Jeremías Domínguez Masciale, Errol Douwes, Elli Groner, Masae Iwamoto Ishihara, Shunsuke Matsuoka, Mailyn A. Gonzalez, Alexandre Antonelli, Renata S. Sousa-Lima, Armin Niessner, Patrícia Guedes, Elizabeth G. Biro, Zuania Colón-Piñeiro, Dezene P. W. Huber, Santosh Mazumdar, Magda Bou Dagher Kharrat, Eddie P. Mondejar, Pablo Luis Tubaro, Eugene Marais, Marie-Eugénie Maggia, Darío Alejandro Lijtmaer, Sean W. J. Prosser, Andrea Murillo-Vázquez, Paola Pulido-Santacruz, Paula Leitman, Thiago Arnt Dorigo, Nao Ito, Paul Knoops, Maria L. Kuzmina, Hikaru Morishita, Keishi Kimoto, Dimby Raharinjanahary, Rhian J. Smith, Solny A. Adalsteinsson, Kevin G. Borja-Acosta, Paul Amouroux, Angela M. Mendoza-Henao, Angélica Diaz-Pulido, Anamaria Dal Molin, Luke L. Powell, Diego Inclan, Alice Calvente, David Dunson, Brian Fisher, Tomas Roslin, Otso Ovaskainen, Paul D. N. Hebert, Graham W. Taylor
+  topics:
+  - biodiversity
+  - insect
+  - DNA
+  main_link: https://arxiv.org/abs/2611.05418
+  links:
+    arXiv: https://arxiv.org/abs/2611.05418
+  thumbnail: /img/publications/Boehly2026_BIOTRAM.png
+  summary: "BIOTRAM turns metabarcoding read counts from bulk arthropod samples into per-taxon specimen count estimates by learning how many reads each specimen yields, cutting the divergence from the true composition by two thirds compared with raw read proportions, and generalizing better than generic deep networks to unseen regions, dates, and labs."
+  highlighted: 6
+  bibtex: |
+    @article{Boehly2026_BIOTRAM,
+        title = {{BIOTRAM}: Biochemistry-informed Transformer for Relative Abundance via Metabarcoding},
+        author = {Emma Boehly and Scott C. Lowe and Ken A. Thompson and Anthony Fuller and Will Armstrong and Iuliia Zarubiieva and Neelu Madan and Tiancheng Gao and Sameer Padhye and Jayme Sones and Kate H. J. Perez and Bess Hardwick and Brendan Furneaux and Evgeny V. Zakharov and Dirk Steinke and Jeremy R. deWaard and Stephanie L. deWaard and Jaclyn McKeown and Norman Monkhouse and Cole Pace and Sujeevan Ratnasingham and Raina Schmuck and Amy Thompson and Jorge L. León-Cortés and Luciano Cagnolo and Julieta Soledad Arena and Jeremías Domínguez Masciale and Errol Douwes and Elli Groner and Masae Iwamoto Ishihara and Shunsuke Matsuoka and Mailyn A. Gonzalez and Alexandre Antonelli and Renata S. Sousa-Lima and Armin Niessner and Patrícia Guedes and Elizabeth G. Biro and Zuania Colón-Piñeiro and Dezene P. W. Huber and Santosh Mazumdar and Magda Bou Dagher Kharrat and Eddie P. Mondejar and Pablo Luis Tubaro and Eugene Marais and Marie-Eugénie Maggia and Darío Alejandro Lijtmaer and Sean W. J. Prosser and Andrea Murillo-Vázquez and Paola Pulido-Santacruz and Paula Leitman and Thiago Arnt Dorigo and Nao Ito and Paul Knoops and Maria L. Kuzmina and Hikaru Morishita and Keishi Kimoto and Dimby Raharinjanahary and Rhian J. Smith and Solny A. Adalsteinsson and Kevin G. Borja-Acosta and Paul Amouroux and Angela M. Mendoza-Henao and Angélica Diaz-Pulido and Anamaria Dal Molin and Luke L. Powell and Diego Inclan and Alice Calvente and David Dunson and Brian Fisher and Tomas Roslin and Otso Ovaskainen and Paul D. N. Hebert and Graham W. Taylor},
+        year = {2026},
+        eprint = {2611.05418},
+        archivePrefix = {arXiv},
+        primaryClass = {q-bio.GN},
+        journal = {arXiv preprint arXiv:2611.05418},
+        doi = {10.48550/arXiv.2611.05418},
+    }
+
 - date: '2026'  # Oct
   title: 'Using set learning to improve set-valued classifiers on long-tailed data'
   venue: arXiv preprint arXiv:2610.27443
@@ -521,7 +547,7 @@
     model: https://huggingface.co/bioscan-ml/clibd
   thumbnail: /img/publications/Gong2025_CLIBD.png
   summary: "CLIBD aligns insect photographs, DNA barcodes, and taxonomic labels in one shared space, letting it classify both known and unknown species without fine-tuning and beating single-source methods."
-  highlighted: 6
+  highlighted: 7
   bibtex: |
     @inproceedings{Gong2025_CLIBD,
         title = {{CLIBD}: Bridging vision and genomics for biodiversity monitoring at scale},
