@@ -71,7 +71,7 @@ Display titles use sentence case, even if the venue published them in title case
 
 ### BibTeX conventions
 
-- Protect capitalization with braces: `{SOAP}`, `{K}ullback`
+- Protect capitalization with braces only for proper nouns, acronyms, and method/model/dataset names: `{SOAP}`, `{K}ullback`, `{BIOTRAM}`. Leave ordinary title-case words unbraced so the citation style can set their case (e.g. `{{BIOTRAM}: Biochemistry-informed Transformer for Relative Abundance via Metabarcoding}`, not `{B}iochemistry-informed {T}ransformer ...`)
 - Use `month = sep` style (three-letter lowercase, no braces), with spaces around `=`
 - Trailing comma after last field
 - 4-space indentation for fields
