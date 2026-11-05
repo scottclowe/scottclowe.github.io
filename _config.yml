@@ -301,6 +301,8 @@ exclude:
   - CNAME
   - make_favicon.sh
   - make_thumbnail.py
+  - beautiful-jekyll-theme.gemspec
+  - staticman.yml
 
 plugins:
   - jekyll-paginate
